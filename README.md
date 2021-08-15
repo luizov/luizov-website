@@ -4,7 +4,22 @@ My personal website, built using Next.js/React/Notion API/Tailwind CSS.
 
 ## Running locally
 
-First, run the development server:
+First, follow Notions getting started guide to get a NOTION_TOKEN and a NOTION_DATABASE_ID, then add them to a file called .env.local.
+
+```bash
+NOTION_TOKEN=
+NOTION_DATABASE_ID=
+```
+
+Install dependencies
+
+```bash
+npm install
+# or
+yarn
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -31,6 +46,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 ## Built using
 
-* [Next.js](https://nestjs.org)
-* [Tailwind](https://tailwindcss.com)
-* [Notion API](https://developers.notion.com)
+- [Next.js](https://nestjs.org)
+- [Tailwind](https://tailwindcss.com)
+- [Notion API](https://developers.notion.com)
