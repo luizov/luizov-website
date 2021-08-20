@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter/Inter-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter/Inter-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter/Inter-Medium.ttf");
+    font-style: nprmal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("../public/fonts/Inter/Inter-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf");
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf");
+    font-style: nprmal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "SpaceGrotesk";
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik/Rubik-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik/Rubik-Medium.ttf");
+    font-style: nprmal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik/Rubik-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik/Rubik-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+}
+
+::selection {
+  background-color: #1db8de;
+  color: #fefefe;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.focus:focus {
+  @apply border-spiro-500 outline-none;
+  /*   box-shadow: 0 0 0 3px rgba(103, 222, 255, 1); */
+}
+
+.container {
+  @apply max-w-screen-lg;
+}
+
+// Typography
+.h1 {
+    @apply text-4xl font-bold leading-tight tracking-tight;
+}
+
+.h2 {
+    @apply text-3xl font-bold leading-tight tracking-tight;
+}
+
+.h3 {
+    @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+    @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@screen md {
+    .h1 {
+        @apply text-5xl;
+    }
+
+    .h2 {
+        @apply text-4xl;
+    }
+}
+
+// Buttons
+.btn,
+.btn-sm {
+  @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+    @apply px-8 py-3 shadow-lg;
+}
+
+.btn-sm {
+    @apply px-4 py-2 shadow;
+}
+
+// Forms
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+    @apply bg-white border border-electric-300 focus:border-electric-500;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox {
+    @apply rounded;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+    @apply py-3 px-4;
+}
+
+.form-input,
+.form-textarea {
+    @apply placeholder-electric-500;
+}
+
+.form-select {
+    @apply pr-10;
+}
+
+.form-checkbox,
+.form-radio {
+    @apply text-electric-800 rounded-sm;
+}
