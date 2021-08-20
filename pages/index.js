@@ -33,7 +33,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export default function Home({ posts, repos }) {
+export default function HomePage({ posts, repos }) {
   return (
     <Page>
       <NextSeo

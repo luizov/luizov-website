@@ -75,7 +75,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="articles" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/articles" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Articles
                                         </NextLink>
@@ -83,7 +83,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="playground" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/concepts" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Concepts
                                         </NextLink>
@@ -91,7 +91,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="bookmarks" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/bookmarks" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Bookmarks
                                         </NextLink>

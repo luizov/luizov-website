@@ -3,7 +3,7 @@ import { getDatabase } from "../../lib/notion";
 import { config } from '../../config';
 import Page from '../../layouts/Page';
 import PageHeader from "../../components/PageHeader";
-import { Blog } from '../../components/sections/Blog';
+import { Articles } from '../../components/sections/Articles';
 
 export const getStaticProps = async () => {
 
@@ -34,7 +34,7 @@ export default function ArticlesPage({ posts }) {
                 description="I write about development, design, React, CSS, animations and more!"
             />
 
-            <Blog posts={posts} />
+            <Articles posts={posts} />
         </Page>
     )
 }

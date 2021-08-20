@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
-import Page from '../layouts/Page';
-import PageHeader from '../components/PageHeader';
+import Page from '../../layouts/Page';
+import PageHeader from '../../components/PageHeader';
 
 const IMAGE_LIST = [
     {
@@ -100,20 +100,20 @@ export const PlaygroundImage = ({ src, alt }) => {
     )
 }
 
-export default function Playground() {
+export default function ConceptsPage() {
     return (
         <Page>
             <NextSeo
-                title="Playgorund · Luizov"
+                title="Design Concepts · Luizov"
                 description="A short description goes here."
             />
 
             <PageHeader
-                title="Playground"
+                title="Design Concepts"
             />
 
             <section className="relative py-16 overflow-hidden">
-                <div className="container">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6">
                     <div className="mt-12 space-y-8 lg:grid lg:grid-cols-1 lg:gap-x-6">
                         {IMAGE_LIST.slice(0).reverse().map((entry, index) => (
                             <PlaygroundImage
