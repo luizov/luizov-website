@@ -5,98 +5,18 @@
 @layer base {
   @font-face {
     font-family: "Inter";
-    src: url("../public/fonts/Inter/Inter-ExtraLight.ttf");
+    src: url("../public/fonts/Inter/Inter-var-latin.woff2") format("woff2");
     font-style: normal;
-    font-weight: 200;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Inter";
-    src: url("../public/fonts/Inter/Inter-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Inter";
-    src: url("../public/fonts/Inter/Inter-Medium.ttf");
-    font-style: nprmal;
-    font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Inter";
-    src: url("../public/fonts/Inter/Inter-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
+    font-weight: 100 900;
+    font-display: optional;
   }
 
   @font-face {
     font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Light.ttf");
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2") format("woff2");
     font-style: normal;
-    font-weight: 200;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf");
-    font-style: nprmal;
-    font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    src: url("../public/fonts/Rubik/Rubik-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    src: url("../public/fonts/Rubik/Rubik-Medium.ttf");
-    font-style: nprmal;
-    font-weight: 500;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    src: url("../public/fonts/Rubik/Rubik-SemiBold.ttf");
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Rubik";
-    src: url("../public/fonts/Rubik/Rubik-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
+    font-weight: 100 800;
+    font-display: optional;
   }
 }
 
@@ -120,29 +40,29 @@ html {
 
 // Typography
 .h1 {
-    @apply text-4xl font-bold leading-tight tracking-tight;
+  @apply text-4xl font-bold leading-tight tracking-tight;
 }
 
 .h2 {
-    @apply text-3xl font-bold leading-tight tracking-tight;
+  @apply text-3xl font-bold leading-tight tracking-tight;
 }
 
 .h3 {
-    @apply text-3xl font-bold leading-tight;
+  @apply text-3xl font-bold leading-tight;
 }
 
 .h4 {
-    @apply text-2xl font-bold leading-snug tracking-tight;
+  @apply text-2xl font-bold leading-snug tracking-tight;
 }
 
 @screen md {
-    .h1 {
-        @apply text-5xl;
-    }
+  .h1 {
+    @apply text-5xl;
+  }
 
-    .h2 {
-        @apply text-4xl;
-    }
+  .h2 {
+    @apply text-4xl;
+  }
 }
 
 // Buttons
@@ -152,11 +72,11 @@ html {
 }
 
 .btn {
-    @apply px-8 py-3 shadow-lg;
+  @apply px-8 py-3 shadow-lg;
 }
 
 .btn-sm {
-    @apply px-4 py-2 shadow;
+  @apply px-4 py-2 shadow;
 }
 
 // Forms
@@ -166,7 +86,7 @@ html {
 .form-select,
 .form-checkbox,
 .form-radio {
-    @apply bg-white border border-electric-300 focus:border-electric-500;
+  @apply bg-white border border-electric-300 focus:border-electric-500;
 }
 
 .form-input,
@@ -174,26 +94,26 @@ html {
 .form-multiselect,
 .form-select,
 .form-checkbox {
-    @apply rounded;
+  @apply rounded;
 }
 
 .form-input,
 .form-textarea,
 .form-multiselect,
 .form-select {
-    @apply py-3 px-4;
+  @apply py-3 px-4;
 }
 
 .form-input,
 .form-textarea {
-    @apply placeholder-electric-500;
+  @apply placeholder-electric-500;
 }
 
 .form-select {
-    @apply pr-10;
+  @apply pr-10;
 }
 
 .form-checkbox,
 .form-radio {
-    @apply text-electric-800 rounded-sm;
+  @apply text-electric-800 rounded-sm;
 }

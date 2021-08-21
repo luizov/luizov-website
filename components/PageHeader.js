@@ -1,6 +1,6 @@
 export default function PageHeader({ title, description, children }) {
     return (
-        <section className="relative pt-48 pb-16 border-b border-electric-150 overflow-hidden">
+        <section className="relative pt-32 pb-16 border-b border-electric-150 overflow-hidden">
             <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-150">
             </div>
             <div className="relative max-w-4xl mx-auto px-4 sm:px-6">

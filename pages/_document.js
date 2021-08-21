@@ -7,51 +7,17 @@ class MyDocument extends Document {
                 <Head>
                     <link
                         rel="preload"
-                        href="/fonts/Inter/Inter-Regular.ttf"
+                        href="/fonts/Inter/Inter-var-latin.woff2"
                         as="font"
                         crossOrigin="anonymous"
+                        type="font/woff2"
                     />
                     <link
                         rel="preload"
-                        href="/fonts/Inter/Inter-Medium.ttf"
+                        href="/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2"
                         as="font"
                         crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/Rubik/Rubik-Regular.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/Rubik/Rubik-Medium.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/Rubik/Rubik-SemiBold.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
-                    />
-                    <link
-                        rel="preload"
-                        href="/fonts/Rubik/Rubik-Bold.ttf"
-                        as="font"
-                        crossOrigin="anonymous"
+                        type="font/woff2"
                     />
                     <link href="/favicons/site.webmanifest" rel="manifest" />
                     <link rel="shortcut icon" href="/favicons/favicon.ico" />
