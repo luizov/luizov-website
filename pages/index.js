@@ -6,6 +6,7 @@ import { getDatabase } from "../lib/notion";
 import Page from '../layouts/Page';
 
 import HomeHeader from '../components/HomeHeader';
+import About from '../components/sections/About';
 import Products from '../components/sections/Products';
 import Newsletter from '../components/sections/Newsletter';
 import { Articles } from '../components/sections/Articles';
@@ -42,15 +43,16 @@ export default function HomePage({ posts, repos }) {
       />
 
       <HomeHeader
-        title="Product Design, Development &amp; More."
+        title="Product Design &amp; Development"
         description="A freelance front-end engineer with a strong focus on interfaces working remotely from Bulgaria."
       />
 
       <Products />
-      <Newsletter />
       <Articles posts={posts} />
 
       <GithubActivity {...repos} />
+   {/*    <About /> */}
+      <Newsletter />
     </Page>
   )
 };

@@ -1,4 +1,5 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
@@ -49,7 +50,8 @@ module.exports = {
           700: '#0F93B8',
           800: '#016E8F',
           900: '#014B61'
-        }
+        },
+        orange: colors.orange,
       },
       animation: {
         enter: "enter 200ms ease-out",
@@ -64,7 +66,7 @@ module.exports = {
       boxShadow: {
         'btn-primary': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.1)',
         'btn-secondary': 'inset 0 -1px 3px 0 rgba(30,38,50,.2),0 3px 6px 0 rgba(30,38,50,.2)',
-        'card': '0 24px 66px 0 rgba(29,184,222,.02),0 16px 40px 0 rgba(29,184,222,.03),0 2px 8px 0 rgba(29,184,222,.1),0 1px 2px 0 rgba(29,184,222,.07)',
+        'card': '0 24px 66px 0 rgba(10,107,255,.02),0 16px 40px 0 rgba(10,107,255,.03),0 2px 8px 0 rgba(10,107,255,.1),0 1px 2px 0 rgba(10,107,255,.07)',
       },
       container: {
         padding: {

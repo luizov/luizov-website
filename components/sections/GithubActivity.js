@@ -3,14 +3,14 @@ import { config } from '../../config';
 const RepoList = ({ repos, title, url }) => {
     return (
         <div>
-            <h3 className="text-2xl font-headings tracking-tight text-electric-300">{title}</h3>
+            <h3 className="mt-1 text-2xl font-headings tracking-tight text-electric-300">
+                {title}
+            </h3>
             <ul>
                 {repos.map(({ id, name, url, description, owner }) => (
                     <li key={id}>
                         <a
                             href={url}
-                            data-splitbee-event={"Open External Link"}
-                            data-splitbee-event-url={url}
                             className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 hover:shadow-card rounded-md transition duration-150"
                         >
                             <div className="font-headings">
@@ -41,9 +41,9 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
-        <section className="relative py-16 overflow-hidden">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6">
-                <h2 className="text-4xl text-electric-700 font-headings font-semibold tracking-tight">
+        <section className="relative py-16 pb-48 overflow-hidden">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                <h2 className="text-4xl text-electric-800 font-headings font-semibold tracking-tight">
                     GitHub Activity
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-32">

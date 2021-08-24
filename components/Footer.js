@@ -31,7 +31,7 @@ export default function Footer() {
             <div className="absolute z-0 top-0 inset-0 hidden md:block h-full bg-gradient-to-t from-blue-100">
             </div>
 
-            <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">
+            <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">
                 <div className="flex items-center space-x-3">
                     <Link href="/">
                         <a className="flex items-center">

@@ -13,7 +13,8 @@
 
   @font-face {
     font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2") format("woff2");
+    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2")
+      format("woff2");
     font-style: normal;
     font-weight: 100 800;
     font-display: optional;
@@ -72,7 +73,11 @@ html {
 }
 
 .btn {
-  @apply px-8 py-3 shadow-lg;
+  @apply px-8 py-3;
+}
+
+.btn-lg {
+  @apply px-9 py-5 text-lg;
 }
 
 .btn-sm {
