@@ -13,7 +13,7 @@ export default function ProductsPage() {
 
             <PageHeader
                 title="Products"
-                description="I write about development, design, React, CSS, animations and more!"
+                description="Things I Have Made in the Past"
             />
         </Page>
     )

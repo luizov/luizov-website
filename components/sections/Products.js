@@ -94,7 +94,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
         <div className={`${background} group relative flex flex-row justify-between rounded-lg overflow-hidden transition duration-500 ease-in-out`}>
 
             {/* Left Side */}
-            <div className="flex flex-col p-8">
+            <div className="flex flex-col max-w-sm p-8">
                 <h3 className={`${color} text-3xl font-bold`}>
                     <a href={href} className="flex items-center">
                         <span className="absolute inset-0" />
@@ -132,7 +132,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
     return (
-        <section id="products" className="relative py-16 overflow-hidden">
+        <section id="products" className="relative py-16 bg-electric-100 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-electric-800 font-headings font-semibold tracking-tight">
                     Products

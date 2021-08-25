@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Articles = ({ posts }) => {
     return (
-        <section className="relative py-16 border-t border-b border-electric-150 overflow-hidden">
+        <section className="relative py-16 bg-electric-100 border-t border-b border-electric-150 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-electric-800 font-headings font-semibold tracking-tight">
                     Articles
