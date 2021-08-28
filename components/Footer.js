@@ -26,9 +26,9 @@ const ExternalLink = ({ href, children }) => {
 
 export default function Footer() {
     return (
-        <footer className="relative py-10 border-t border-electric-150">
+        <footer className="relative py-10 border-t border-electric-150 dark:border-electric-800">
 
-            <div className="absolute z-0 top-0 inset-0 hidden md:block h-full bg-gradient-to-t from-blue-100">
+            <div className="absolute z-0 top-0 inset-0 hidden md:block h-full bg-gradient-to-t from-blue-100 dark:from-electric-950">
             </div>
 
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">

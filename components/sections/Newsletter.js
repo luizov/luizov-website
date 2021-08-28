@@ -44,8 +44,8 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="relative py-16 pb-32 bg-electric-100 border-t border-electric-150">
-            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-250">
+        <section className="relative py-16 pb-32 bg-electric-100 dark:bg-electric-950 border-t border-electric-150 dark:border-electric-800">
+            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-250 dark:from-spiro-900">
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}

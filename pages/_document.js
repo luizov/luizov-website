@@ -7,13 +7,6 @@ class MyDocument extends Document {
                 <Head>
                     <link
                         rel="preload"
-                        href="/fonts/Inter/Inter-var-latin.woff2"
-                        as="font"
-                        crossOrigin="anonymous"
-                        type="font/woff2"
-                    />
-                    <link
-                        rel="preload"
                         href="/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2"
                         as="font"
                         crossOrigin="anonymous"

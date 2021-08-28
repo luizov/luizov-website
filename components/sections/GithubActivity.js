@@ -3,7 +3,7 @@ import { config } from '../../config';
 const RepoList = ({ repos, title, url }) => {
     return (
         <div>
-            <h3 className="mt-1 text-2xl font-headings tracking-tight text-electric-300">
+            <h3 className="mt-1 text-2xl font-headings tracking-tight text-electric-400">
                 {title}
             </h3>
             <ul>
@@ -11,13 +11,14 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 hover:shadow-card rounded-md transition duration-150"
+                            className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 dark:hover:border-electric-800 hover:shadow-card rounded-md transition duration-150"
                         >
                             <div className="font-headings">
                                 <span className="text-blue-500">{owner.login}/</span>
                                 <span className="text-blue-500">{name}</span>
                             </div>
-                            <div>{description}</div>
+                            <div className="text-electric-400 dark:text-electric-400">      {description}
+                            </div>
                         </a>
                     </li>
                 ))}
@@ -43,7 +44,7 @@ export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
         <section className="relative py-16 pb-48 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 className="text-4xl text-electric-800 font-headings font-semibold tracking-tight">
+                <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
                     GitHub Activity
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-32">

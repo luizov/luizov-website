@@ -1,4 +1,5 @@
 import '../styles/main.scss';
+import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
@@ -8,7 +9,9 @@ function MyApp({ Component, pageProps }) {
       initial={false}
       onExitComplete={() => window.scrollTo(0, 0)}
     >
-      <Component {...pageProps} />
+      <ThemeProvider attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </AnimatePresence>
   )
 }

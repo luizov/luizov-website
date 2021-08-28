@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { MenuAlt4Icon } from '@heroicons/react/solid';
+import ThemeChanger from './ThemeChanger';
 
 
 const links = [
@@ -42,13 +43,13 @@ export default function NavMenu() {
                         <div className="flex justify-center items-center">
                             {/*   text link here */}
                             <div className={`${open && 'translate-x-6 ease-out'} transition duration-300`}>
-                                <div className={`${open && 'opacity-0'} font-headings font-medium text-lg text-electric-700 group-hover:translate-x-3 transition duration-300 ease-out`}>
+                                <div className={`${open && 'opacity-0'} font-headings font-medium text-lg text-electric-700 dark:text-blue-150 group-hover:translate-x-3 transition duration-300 ease-out`}>
                                     Menu
                                 </div>
                             </div>
                             {/*  round button here */}
-                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border border-electric-200 group-hover:bg-blue-500 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
-                                <MenuAlt4Icon className={`${open && 'rotate-90'} h-5 w-5 text-electric-700 group-hover:opacity-0 transition duration-150 ease-in`}
+                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border border-electric-200 dark:border-electric-500 group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
+                                <MenuAlt4Icon className={`${open && 'rotate-90'} h-5 w-5 text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`}
                                 />
                             </div>
                         </div>
@@ -63,11 +64,11 @@ export default function NavMenu() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-10"
                     >
-                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 text-white divide-y divide-gray-100 rounded focus:outline-none">
+                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 dark:bg-spiro-800 text-white shadow-btn-primary divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden">
                             <div className="py-4 px-6">
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="products" className={`${active && 'text-blue-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="products" className={`${active && 'text-blue-300 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
                                             Products
                                         </NextLink>
@@ -75,7 +76,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/articles" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/articles" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Articles
                                         </NextLink>
@@ -83,7 +84,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/concepts" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/concepts" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Concepts
                                         </NextLink>
@@ -91,7 +92,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/bookmarks" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/bookmarks" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Bookmarks
                                         </NextLink>
@@ -99,12 +100,16 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="articles" className={`${active && 'text-blue-250 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="articles" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
                                         >
                                             Instagram
                                         </NextLink>
                                     )}
                                 </Menu.Item>
+                            </div>
+                            <div className="flex justify-between items-center pt-3 pb-4 px-8 pr-4 bg-black bg-opacity-5">
+                                <span>Dark Mode</span>
+                                <ThemeChanger />
                             </div>
                         </Menu.Items>
                     </Transition>

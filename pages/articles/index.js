@@ -1,27 +1,25 @@
 import { NextSeo } from "next-seo";
-import { getDatabase } from "../../lib/notion";
-import { config } from '../../config';
+import { getAllPosts } from "../../lib/mdx";
 import Page from '../../layouts/Page';
 import PageHeader from "../../components/PageHeader";
-import { Articles } from '../../components/sections/Articles';
 
-export const getStaticProps = async () => {
-
-    const [
-        posts
-    ] = await Promise.all([
-        getDatabase(config.notionDatabaseId)
-    ]);
+export async function getStaticProps() {
+    const allPosts = getAllPosts([
+        'title',
+        'date',
+        'slug',
+        'author',
+        'coverImage',
+        'excerpt',
+    ])
 
     return {
-        props: {
-            posts: posts.data
-        },
-        revalidate: 10
-    };
-};
+        props: { allPosts },
+    }
+}
 
-export default function ArticlesPage({ posts }) {
+export default function ArticlesPage() {
+
     return (
         <Page>
             <NextSeo
@@ -33,8 +31,6 @@ export default function ArticlesPage({ posts }) {
                 title="Articles"
                 description="I write about development, design, React, CSS, animations and more!"
             />
-
-            <Articles posts={posts} />
         </Page>
     )
 }

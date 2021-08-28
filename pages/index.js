@@ -6,10 +6,9 @@ import { getDatabase } from "../lib/notion";
 import Page from '../layouts/Page';
 
 import HomeHeader from '../components/HomeHeader';
-import About from '../components/sections/About';
 import Products from '../components/sections/Products';
 import Newsletter from '../components/sections/Newsletter';
-import { Articles } from '../components/sections/Articles';
+import { Bookmarks } from '../components/sections/Bookmarks';
 import { GithubActivity } from '../components/sections/GithubActivity';
 
 export const getStaticProps = async () => {
@@ -48,10 +47,9 @@ export default function HomePage({ posts, repos }) {
       />
 
       <Products />
-      <Articles posts={posts} />
+      <Bookmarks posts={posts} />
 
       <GithubActivity {...repos} />
-   {/*    <About /> */}
       <Newsletter />
     </Page>
   )

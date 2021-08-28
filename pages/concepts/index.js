@@ -94,7 +94,7 @@ export const PlaygroundImage = ({ src, alt }) => {
                 layout="fill"
                 className="w-full h-full object-center object-cover"
                 placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(1600, 1200))}`}
             />
         </div>
     )
@@ -113,7 +113,7 @@ export default function ConceptsPage() {
             />
 
             <section className="relative py-16 overflow-hidden">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
                     <div className="mt-12 space-y-8 lg:grid lg:grid-cols-1 lg:gap-x-6">
                         {IMAGE_LIST.slice(0).reverse().map((entry, index) => (
                             <PlaygroundImage
