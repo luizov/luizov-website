@@ -49,10 +49,10 @@ export default function Newsletter() {
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
-                <div className="relative bg-gradient-to-t from-blue-100 to-white dark:from-electric-950 dark:to-electric-700 border border-electric-150 dark:border-electric-800 shadow-card rounded-lg -mt-48 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+                <div className="relative bg-gradient-to-t from-blue-100 to-white dark:from-electric-950 dark:to-electric-900 border border-electric-150 dark:border-electric-800 shadow rounded-lg -mt-48 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
                     {/* Background illustration */}
-                    <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" aria-hidden="true">
+                    <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">
                         <svg width="438" height="328" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <radialGradient cx="35.542%" cy="34.553%" fx="28.542%" fy="32.553%" r="94.0%" id="ni-a">
@@ -103,7 +103,7 @@ export default function Newsletter() {
                                     />
                                     <button
                                         type="submit"
-                                        className="btn text-white bg-blue-500 hover:bg-blue-600 shadow-btn-primary"
+                                        className="btn text-white bg-blue-500 hover:bg-blue-600 dark:bg-spiro-800 dark:hover:bg-spiro-700 shadow-blue dark:shadow-spiro"
                                     >
                                         {form.state === 'loading' ? <LoadingSpinner /> : 'Subscribe'}
                                     </button>

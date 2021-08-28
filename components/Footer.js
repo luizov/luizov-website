@@ -4,7 +4,7 @@ import Image from 'next/image';
 const FooterLink = ({ href, children }) => {
     return (
         <Link href={href}>
-            <a className="flex items-center text-electric-400 hover:text-electric-900 hover:bg-electric-200 hover:bg-opacity-10 rounded px-3 py-2 transition ease-in">
+            <a className="flex items-center text-electric-400 hover:text-electric-900 hover:bg-electric-200 hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-5 dark:hover:text-electric-200 rounded px-3 py-2 transition ease-linear duration-75">
                 {children}
             </a>
         </Link>
@@ -14,7 +14,7 @@ const FooterLink = ({ href, children }) => {
 const ExternalLink = ({ href, children }) => {
     return (
         <a
-            className="flex items-center text-electric-400 hover:text-electric-900 hover:bg-electric-200 hover:bg-opacity-10 rounded px-3 py-2 transition ease-in"
+            className="flex items-center text-electric-400 hover:text-electric-900 hover:bg-electric-200 hover:bg-opacity-10 dark:hover:bg-white dark:hover:bg-opacity-5 dark:hover:text-electric-200 rounded px-3 py-2 transition ease-in"
             target="_blank"
             rel="noopener noreferrer"
             href={href}
@@ -48,7 +48,7 @@ export default function Footer() {
                         {' · '}
                         <span>
                             <a
-                                className="underline text-electric-500 hover:text-electric-900 transition ease-in"
+                                className="underline text-electric-500 hover:text-electric-900 dark:hover:text-electric-600 transition ease-in"
                                 href="https://github.com/luizov/luizov-website">
                                 Source
                             </a>

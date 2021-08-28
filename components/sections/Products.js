@@ -9,7 +9,7 @@ const PRODUCT_LIST = [
         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         href: '/octatheme',
         color: 'text-orange-600',
-        background: 'bg-orange-200'
+        background: 'bg-green-600',
     },
     {
         name: 'Lograpid',
@@ -18,7 +18,7 @@ const PRODUCT_LIST = [
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: 'https://lograpid.com',
         color: 'text-white',
-        background: 'bg-electric-950'
+        background: 'bg-electric-250',
     },
     {
         name: 'Tipsterwise',
@@ -27,7 +27,7 @@ const PRODUCT_LIST = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: 'https://tipsterwise.com',
         color: 'text-white',
-        background: 'bg-electric-950'
+        background: 'bg-electric-950',
     },
 ];
 
@@ -91,7 +91,7 @@ export const Product = ({ title, image, alt, href, description }) => {
 
 const ProductCard = ({ title, image, alt, href, description, color, background }) => {
     return (
-        <div className={`${background} group relative flex flex-row justify-between rounded-lg overflow-hidden transition duration-500 ease-in-out`}>
+        <div className={`${background} border border-electric-150 dark:border-electric-700 group relative flex flex-row justify-between rounded-md overflow-hidden hover:shadow-2xl transition duration-500 ease-in-out`}>
 
             {/* Left Side */}
             <div className="flex flex-col max-w-sm p-8">
@@ -100,6 +100,8 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
                         <span className="absolute inset-0" />
                         {title}
                         <svg
+                            aria-hidden="true"
+                            focusable="false"
                             className="inline-flex ml-2 fill-current w-7 h-7"
                             viewBox="0 0 24 24"
                             fill="none"
@@ -132,7 +134,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
     return (
-        <section id="products" className="relative py-16 bg-electric-100 dark:bg-electric-950 overflow-hidden">
+        <section id="products" className="relative py-16 bg-electric-100 dark:bg-electric-900 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
                     Products

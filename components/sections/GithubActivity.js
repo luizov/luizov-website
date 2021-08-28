@@ -11,11 +11,13 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 dark:hover:border-electric-800 hover:shadow-card rounded-md transition duration-150"
+                            className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 dark:hover:border-electric-800 hover:shadow rounded-md transition duration-150"
                         >
                             <div className="font-headings">
-                                <span className="text-blue-500">{owner.login}/</span>
-                                <span className="text-blue-500">{name}</span>
+                                <span className="text-blue-500 dark:text-spiro-700">
+                                    {owner.login}/
+                                </span>
+                                <span className="text-blue-500 dark:text-blue-200">{name}</span>
                             </div>
                             <div className="text-electric-400 dark:text-electric-400">      {description}
                             </div>
@@ -23,9 +25,9 @@ const RepoList = ({ repos, title, url }) => {
                     </li>
                 ))}
             </ul>
-            <a href={url} className="flex items-center space-x-1 text-blue-500 text-sm">
+            <a href={url} className="flex items-center space-x-1 text-blue-500 dark:text-spiro-700 text-sm">
                 <span>View more on</span>
-                <span className="font-semibold">GitHub</span>
+                <span className="font-medium">GitHub</span>
                 <svg
                     className="inline-flex ml-1 fill-current w-4 h-4"
                     viewBox="0 0 24 24"
@@ -42,7 +44,7 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
-        <section className="relative py-16 pb-48 overflow-hidden">
+        <section className="relative py-16 pb-52 bg-electric-900 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
                     GitHub Activity

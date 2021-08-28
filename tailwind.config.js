@@ -64,7 +64,8 @@ module.exports = {
         'home': "url('/utility/home-bg.svg')",
       },
       boxShadow: {
-        'btn-primary': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.1)',
+        'blue': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.1)',
+        'spiro': 'inset 0 -1px 3px 0 rgba(1,75,97,.5),0 3px 6px 0 rgba(0,63,82,.1)',
         'btn-secondary': 'inset 0 -1px 3px 0 rgba(30,38,50,.2),0 3px 6px 0 rgba(30,38,50,.2)',
         'card': '0 24px 66px 0 rgba(10,107,255,.02),0 16px 40px 0 rgba(10,107,255,.03),0 2px 8px 0 rgba(10,107,255,.1),0 1px 2px 0 rgba(10,107,255,.07)',
       },
