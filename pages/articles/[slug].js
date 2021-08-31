@@ -24,12 +24,13 @@ export default function Article({ post }) {
                 description={seoDesc}
                 canonical={url}
             />
-            <article className="max-w-6xl mx-auto py-12 px-4 sm:px-6">
+            <article className="max-w-6xl mx-auto py-16 px-4 sm:px-6">
                 <PostHeader
                     title={post.title}
                     coverImage={post.coverImage}
                     date={post.date}
                     author={post.author}
+                    length={post.content}
                 />
                 <PostBody content={post.content} />
             </article>
