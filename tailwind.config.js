@@ -87,7 +87,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.electric.400'),
+            color: theme('colors.electric.500'),
             a: {
               color: theme('colors.blue.500'),
               '&:hover': {
@@ -120,7 +120,7 @@ module.exports = {
             },
             pre: {
               color: null,
-              backgroundColor: null,
+              backgroundColor: theme('colors.electric.900'),
               overflowX: 'auto',
               fontSize: theme('fontSize.base'),
               padding: 0,
@@ -165,6 +165,38 @@ module.exports = {
               borderRadius: '50%',
             },
           },
+        },
+        dark: {
+          css: {
+            color: theme('colors.electric.300'),
+            a: {
+              color: theme('colors.blue.500'),
+              '&:hover': {
+                color: theme('colors.blue.700')
+              },
+              code: { color: theme('colors.blue.400') }
+            },
+            h1: {
+              color: theme('colors.blue.150'),
+              lineHeight: '1.23',
+              letterSpacing: '-.52px'
+            },
+            h2: {
+              color: theme('colors.blue.150'),
+              lineHeight: '1.3',
+              letterSpacing: '-.4px'
+            },
+            h3: {
+              color: theme('colors.blue.150'),
+              lineHeight: '1.38',
+              letterSpacing: '-.32px'
+            },
+            h4: {
+              color: theme('colors.blue.150'),
+              lineHeight: '1.42',
+              letterSpacing: '-.12px'
+            },
+          }
         },
       }),
     },

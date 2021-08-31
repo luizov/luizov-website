@@ -3,9 +3,11 @@ import { getAllPosts } from '../../lib/api';
 import Page from '../../layouts/Page';
 import PageHeader from "../../components/PageHeader";
 import HeroPost from '../../components/HeroPost';
+import MoreArticles from '../../components/MoreArticles';
 
 export default function ArticlesPage({ allPosts }) {
     const heroPost = allPosts[0];
+    const morePosts = allPosts.slice(1);
 
     return (
         <Page>
@@ -30,6 +32,7 @@ export default function ArticlesPage({ allPosts }) {
                             excerpt={heroPost.excerpt}
                         />
                     )}
+                    {morePosts.length > 0 && <MoreArticles posts={morePosts} />}
                 </div>
             </section>
         </Page>
