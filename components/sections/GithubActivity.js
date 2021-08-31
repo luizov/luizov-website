@@ -44,7 +44,7 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
-        <section className="relative py-16 pb-52 bg-electric-900 overflow-hidden">
+        <section className="relative py-16 pb-52 dark:bg-electric-900 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
                     GitHub Activity

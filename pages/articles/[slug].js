@@ -1,8 +1,41 @@
 import { NextSeo } from "next-seo";
-import Image from 'next/image';
-import { getPostBySlug, getAllPosts, markdownToHtml } from "../../lib/mdx";
+import { useRouter } from 'next/router'
+import ErrorPage from 'next/error'
 import Page from '../../layouts/Page';
-import PageHeader from '../../components/PageHeader';
+import PostHeader from '../../components/PostHeader';
+import PostBody from '../../components/PostBody';
+import { getPostBySlug, getAllPosts } from '../../lib/api';
+import markdownToHtml from '../../lib/markdownToHtml';
+
+export default function Article({ post }) {
+    const router = useRouter()
+    if (!router.isFallback && !post?.slug) {
+        return <ErrorPage statusCode={404} />
+    }
+
+    const seoTitle = `${post.title} · Luizov`;
+    const seoDesc = `${post.excerpt}`;
+    const url = `https://luizov.com/articles/${post.slug}`;
+
+    return (
+        <Page>
+            <NextSeo
+                title={seoTitle}
+                description={seoDesc}
+                canonical={url}
+            />
+            <article className="max-w-6xl mx-auto py-12 px-4 sm:px-6">
+                <PostHeader
+                    title={post.title}
+                    coverImage={post.coverImage}
+                    date={post.date}
+                    author={post.author}
+                />
+                <PostBody content={post.content} />
+            </article>
+        </Page>
+    )
+};
 
 export async function getStaticProps({ params }) {
     const post = getPostBySlug(params.slug, [
@@ -39,56 +72,4 @@ export async function getStaticPaths() {
         }),
         fallback: false,
     }
-}
-
-export default function Post({ post }) {
-    const seoTitle = `${post.title} · Luizov`;
-    const seoDesc = `${meta.summary}`;
-    const url = `https://luizov.com/articles/${meta.slug}`;
-
-    return (
-        <Page>
-            <NextSeo
-                title={seoTitle}
-                description={seoDesc}
-                canonical={url}
-            />
-            <PageHeader
-                title={meta.title}
-                description="A freelance front-end engineer with a strong focus on interfaces working remotely from Bulgaria."
-            />
-            <article
-                className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full"
-            >
-                <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-electric-900 dark:text-white">
-                    {frontMatter.title}
-                </h1>
-                <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
-                    <div className="flex items-center">
-                        <Image
-                            alt="Dimitar Luizov"
-                            height={24}
-                            width={24}
-                            src="/logo.svg"
-                            className="rounded-full"
-                        />
-                        <p className="text-sm text-electric-700 dark:text-electric-300 ml-2">
-                            {frontMatter.by}
-                            {'Dimitar Luizov / '}
-                            {format(parseISO(frontMatter.publishedAt), 'MMMM dd, yyyy')}
-                        </p>
-                    </div>
-                    <p className="text-sm text-gray-500 min-w-32 mt-2 md:mt-0">
-                        {frontMatter.readingTime.text}
-                        {` • `}
-                        { /* TO DO */}
-                        {/*                 <ViewCounter slug={frontMatter.slug} /> */}
-                    </p>
-                </div>
-                <div className="prose dark:prose-dark max-w-none w-full">
-                    {children}
-                </div>
-            </article>
-        </Page>
-    )
 }

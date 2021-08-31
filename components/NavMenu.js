@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { MenuAlt4Icon } from '@heroicons/react/solid';
 import ThemeChanger from './ThemeChanger';
 
 
@@ -49,8 +48,13 @@ export default function NavMenu() {
                             </div>
                             {/*  round button here */}
                             <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border border-electric-200 dark:border-electric-500 group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
-                                <MenuAlt4Icon className={`${open && 'rotate-90'} h-5 w-5 text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`}
-                                />
+
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16" />
+                                </svg>
+
+                          {/*       <MenuAlt4Icon className={`${open && 'rotate-90'} h-5 w-5 text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`}
+                                /> */}
                             </div>
                         </div>
                     </Menu.Button>
@@ -68,7 +72,7 @@ export default function NavMenu() {
                             <div className="py-4 px-6">
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="products" className={`${active && 'text-blue-300 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/products" className={`${active && 'text-blue-300 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
                                             Products
                                         </NextLink>
