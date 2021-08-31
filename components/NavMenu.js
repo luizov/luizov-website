@@ -42,19 +42,16 @@ export default function NavMenu() {
                         <div className="flex justify-center items-center">
                             {/*   text link here */}
                             <div className={`${open && 'translate-x-6 ease-out'} transition duration-300`}>
-                                <div className={`${open && 'opacity-0'} font-headings font-medium text-lg text-electric-700 dark:text-blue-150 group-hover:translate-x-3 transition duration-300 ease-out`}>
+                                <div className={`${open && 'opacity-0'} font-headings font-medium text-lg text-electric-700 dark:text-electric-400 group-hover:translate-x-3 transition duration-300 ease-out`}>
                                     Menu
                                 </div>
                             </div>
                             {/*  round button here */}
-                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border border-electric-200 dark:border-electric-500 group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
+                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border-2 border-electric-200 dark:border-electric-800 group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
 
-                                <svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-electric-700 dark:text-electric-400 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16" />
                                 </svg>
-
-                          {/*       <MenuAlt4Icon className={`${open && 'rotate-90'} h-5 w-5 text-electric-700 dark:text-blue-150 group-hover:opacity-0 transition duration-150 ease-in`}
-                                /> */}
                             </div>
                         </div>
                     </Menu.Button>

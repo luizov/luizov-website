@@ -3,8 +3,12 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', // or 'media' or 'class'
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './layouts/**/*.{js,ts,jsx,tsx}'
+  ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -36,7 +40,8 @@ module.exports = {
           700: '#394558',
           800: '#2B3545',
           900: '#1E2632',
-          950: '#131C28'
+          950: '#131C28',
+          980: '#0C0F12'
         },
         spiro: {
           100: '#F9FDFE',
@@ -96,27 +101,27 @@ module.exports = {
               code: { color: theme('colors.blue.400') }
             },
             h1: {
-              color: theme('colors.gray.200'),
+              color: theme('colors.electric.800'),
               lineHeight: '1.23',
               letterSpacing: '-.52px'
             },
             h2: {
-              color: theme('colors.electric.900'),
+              color: theme('colors.electric.800'),
               lineHeight: '1.3',
               letterSpacing: '-.4px'
             },
             h3: {
-              color: theme('colors.electric.900'),
+              color: theme('colors.electric.800'),
               lineHeight: '1.38',
               letterSpacing: '-.32px'
             },
             h4: {
-              color: theme('colors.electric.900'),
+              color: theme('colors.electric.800'),
               lineHeight: '1.42',
               letterSpacing: '-.12px'
             },
             strong: {
-              color: theme('colors.electric.900'),
+              color: theme('colors.electric.800'),
             },
             pre: {
               color: null,
@@ -170,31 +175,18 @@ module.exports = {
           css: {
             color: theme('colors.electric.300'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.spiro.500'),
               '&:hover': {
-                color: theme('colors.blue.700')
+                color: theme('colors.spiro.600')
               },
               code: { color: theme('colors.blue.400') }
             },
-            h1: {
-              color: theme('colors.blue.150'),
-              lineHeight: '1.23',
-              letterSpacing: '-.52px'
+            blockquote: {
+              borderLeftColor: theme('colors.electric.700'),
+              color: theme('colors.electric.200')
             },
-            h2: {
-              color: theme('colors.blue.150'),
-              lineHeight: '1.3',
-              letterSpacing: '-.4px'
-            },
-            h3: {
-              color: theme('colors.blue.150'),
-              lineHeight: '1.38',
-              letterSpacing: '-.32px'
-            },
-            h4: {
-              color: theme('colors.blue.150'),
-              lineHeight: '1.42',
-              letterSpacing: '-.12px'
+            'h1,h2,h3,h4': {
+              color: theme('colors.blue.150')
             },
           }
         },

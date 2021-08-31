@@ -20,7 +20,7 @@ export default function Header() {
               />
             </a>
           </Link>
-          <span className="text-lg text-electric-700 dark:text-blue-150 tracking-tight font-medium hidden sm:block">
+          <span className="text-lg text-electric-700 dark:text-electric-400 tracking-tight font-medium hidden sm:block">
             Dimitar Luizov
           </span>
         </div>
