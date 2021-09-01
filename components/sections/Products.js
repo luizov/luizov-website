@@ -8,8 +8,8 @@ const PRODUCT_LIST = [
         imageSrc: '/products/1.jpg',
         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         href: '/octatheme',
-        color: 'text-orange-600',
-        background: 'bg-green-600',
+        color: 'text-white',
+        background: 'bg-blue-500',
     },
     {
         name: 'Lograpid',
@@ -91,7 +91,7 @@ export const Product = ({ title, image, alt, href, description }) => {
 
 const ProductCard = ({ title, image, alt, href, description, color, background }) => {
     return (
-        <div className={`${background} border border-electric-150 dark:border-electric-700 group relative flex flex-row justify-between rounded-md overflow-hidden hover:shadow-2xl transition duration-500 ease-in-out`}>
+        <div className={`${background} group relative flex flex-row justify-between rounded-md overflow-hidden shadow-inset transition duration-500 ease-in-out`}>
 
             {/* Left Side */}
             <div className="flex flex-col max-w-sm p-8">

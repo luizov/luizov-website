@@ -73,6 +73,7 @@ module.exports = {
         'spiro': 'inset 0 -1px 3px 0 rgba(1,75,97,.5),0 3px 6px 0 rgba(0,63,82,.1)',
         'btn-secondary': 'inset 0 -1px 3px 0 rgba(30,38,50,.2),0 3px 6px 0 rgba(30,38,50,.2)',
         'card': '0 24px 66px 0 rgba(10,107,255,.02),0 16px 40px 0 rgba(10,107,255,.03),0 2px 8px 0 rgba(10,107,255,.1),0 1px 2px 0 rgba(10,107,255,.07)',
+        'inset': 'inset 0 0 0 1px rgba(255,255,255,0.05),inset 0 1px 0 0 rgba(255,255,255,0.2),inset 0 -1px 0 0 rgba(255,255,255,0.1),0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.1)',
       },
       container: {
         padding: {
@@ -122,36 +123,6 @@ module.exports = {
             },
             strong: {
               color: theme('colors.electric.800'),
-            },
-            pre: {
-              color: null,
-              backgroundColor: theme('colors.electric.900'),
-              overflowX: 'auto',
-              fontSize: theme('fontSize.base'),
-              padding: 0,
-            },
-            'pre pre': {
-              padding: theme('spacing.4'),
-              margin: 0,
-            },
-            'pre code': {
-              backgroundColor: 'transparent',
-              borderWidth: '0',
-              borderRadius: '0',
-              fontWeight: '400',
-              color: 'inherit',
-              fontFamily: 'inherit',
-              lineHeight: 'inherit',
-            },
-            code: {
-              color: theme('colors.electric.900'),
-              fontWeight: '500',
-            },
-            'code::before': {
-              content: '""',
-            },
-            'code::after': {
-              content: '""',
             },
             thead: {
               color: theme('colors.electric.900'),
