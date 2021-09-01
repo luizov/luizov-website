@@ -20,7 +20,7 @@ Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris 
 
 ## Code examples
 
-```
+```js
 function test() {
   console.log("notice the blank line before this function?");
 }
@@ -30,6 +30,10 @@ function test() {
 require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
+```
+
+```js
+const doc = getDocBySlug(params.slug);
 ```
 
 ## Blockquote Example

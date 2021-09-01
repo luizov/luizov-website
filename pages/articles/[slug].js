@@ -6,6 +6,7 @@ import PostHeader from '../../components/PostHeader';
 import PostBody from '../../components/PostBody';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
+import 'prismjs/themes/prism-okaidia.css';
 
 export default function Article({ post }) {
     const router = useRouter()
