@@ -5,7 +5,8 @@
 @layer base {
   @font-face {
     font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2")
+    src:
+      url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2")
       format("woff2");
     font-style: normal;
     font-weight: 100 800;
@@ -24,7 +25,8 @@ html {
 
 .focus:focus {
   @apply border-spiro-500 outline-none;
-  /*   box-shadow: 0 0 0 3px rgba(103, 222, 255, 1); */
+
+  /* box-shadow: 0 0 0 3px rgba(103, 222, 255, 1); */
 }
 
 .container {
