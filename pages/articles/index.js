@@ -9,11 +9,32 @@ export default function ArticlesPage({ allPosts }) {
     const heroPost = allPosts[0];
     const morePosts = allPosts.slice(1);
 
+    const seoTitle = "Articles · Luizov";
+    const seoDesc = "I write about development, design, React, CSS, animations and more!";
+
     return (
         <Page>
             <NextSeo
-                title="Articles · Luizov"
-                description="A short description goes here."
+                title={seoTitle}
+                description={seoDesc}
+                openGraph={{
+                    title: seoTitle,
+                    description: seoDesc,
+                    url: `https://luizov.com/articles/`,
+                    site_name: 'Dimitar Luizov',
+                    images: [
+                        {
+                            url: `https://luizov.com/utility/og.png`,
+                            width: 1200,
+                            height: 630,
+                            alt: 'Luizov.com',
+                        }
+                    ]
+                }}
+                twitter={{
+                    handle: "@dimitarluizov",
+                    cardType: "summary_large_image",
+                }}
             />
 
             <PageHeader
