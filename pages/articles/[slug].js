@@ -6,6 +6,7 @@ import PostHeader from '../../components/PostHeader';
 import PostBody from '../../components/PostBody';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
+import readingTime from 'reading-time';
 
 export default function Article({ post }) {
     const router = useRouter()
@@ -16,6 +17,7 @@ export default function Article({ post }) {
     const seoTitle = `${post.title} · Luizov`;
     const seoDesc = `${post.excerpt}`;
     const url = `https://luizov.com/articles/${post.slug}`;
+    const timeAsText = readingTime(post.content).text;
 
     return (
         <Page>
@@ -23,6 +25,33 @@ export default function Article({ post }) {
                 title={seoTitle}
                 description={seoDesc}
                 canonical={url}
+                openGraph={{
+                    title: seoTitle,
+                    description: seoDesc,
+                    url: url,
+                    site_name: 'Dimitar Luizov',
+                    images: [
+                        {
+                            url: post.ogImage
+                                ? `https://luizov.com${post.ogImage}`
+                                : `https://luizov-og-image.vercel.app${encodeURIComponent(post.title)}?desc=${encodeURIComponent(
+                                    seoDesc,
+                                )}&md=1&article=1&time=${encodeURIComponent(
+                                    timeAsText,
+                                )}&entryImage=${post.ogImage}&theme=light.png`,
+                            alt: post.title,
+                        },
+                    ],
+                    type: 'article',
+                    article: {
+                        publishedTime: post.date,
+                        modifiedTime: post.updatedAt, // TO DO
+                        authors: ['https://luizov.com'],
+                    },
+                }}
+                twitter={{
+                    cardType: 'summary_large_image',
+                }}
             />
             <article className="max-w-6xl mx-auto py-16 px-4 sm:px-6">
                 <PostHeader
