@@ -1,28 +1,13 @@
-import { NextSeo } from "next-seo";
-import { getDatabase } from "../../lib/notion";
+import { NextSeo } from 'next-seo';
+import { getDatabase } from '../../lib/notion';
 import { config } from '../../config';
 import Page from '../../layouts/Page';
-import PageHeader from "../../components/PageHeader";
+import PageHeader from '../../components/PageHeader';
+import { BookmarkCard } from '../../components/sections/Bookmarks';
 
-export const getStaticProps = async () => {
-
-    const [
-        posts
-    ] = await Promise.all([
-        getDatabase(config.notionDatabaseId)
-    ]);
-
-    return {
-        props: {
-            posts: posts.data
-        },
-        revalidate: 10
-    };
-};
-
-export default function BookmarksPage() {
+export default function BookmarksPage({ posts }) {
     const seoTitle = "Bookmarks · Luizov";
-    const seoDesc = "A short description goes here.";
+    const seoDesc = "A collection of my favourite articles/resources/websites that I've stumbled upon.";
 
     return (
         <Page>
@@ -53,6 +38,49 @@ export default function BookmarksPage() {
                 title="Bookmarks"
                 description="This page contains a collection of my favourite articles/resources/websites that I've stumbled upon."
             />
+
+            <section className="relative py-16 bg-electric-100 border-t border-electric-150 overflow-hidden">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-8">
+                    <div className="hidden lg:block lg:col-span-3">
+                        <div aria-label="Sidebar" className="sticky top-6 divide-y divide-gray-300">
+                            <h2 className="text-2xl text-electric-800 font-bold tracking-tight">
+                                Categories
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div className="lg:col-span-9">
+                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                            {console.log(posts)}
+                            {posts.map((entry) => (
+                                <BookmarkCard
+                                    key={entry.id}
+                                    title={entry.properties.Bookmark.title[0].plain_text}
+                                    href={entry.properties.Url.url}
+                                    description={entry.properties.Description.rich_text[0].plain_text}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
         </Page>
     )
+}
+
+export const getStaticProps = async () => {
+
+    const [
+        posts
+    ] = await Promise.all([
+        getDatabase(config.notionDatabaseId)
+
+    ]);
+
+    return {
+        props: {
+            posts: posts.data
+        },
+        revalidate: 60 * 60 // 1 hour
+    };
 }

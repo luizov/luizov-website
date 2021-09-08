@@ -9,7 +9,7 @@ const PRODUCT_LIST = [
         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         href: '/octatheme',
         color: 'text-white',
-        background: 'bg-blue-500',
+        background: 'bg-transparent',
     },
     {
         name: 'Lograpid',
