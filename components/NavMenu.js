@@ -65,7 +65,7 @@ export default function NavMenu() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-10"
                     >
-                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 dark:bg-spiro-800 text-white shadow-blue dark:shadow-spiro divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden">
+                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 dark:bg-spiro-800 text-white shadow-primary-xl dark:shadow-spiro divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden">
                             <div className="py-4 px-6">
                                 <Menu.Item>
                                     {({ active }) => (

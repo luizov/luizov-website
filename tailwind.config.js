@@ -54,7 +54,8 @@ module.exports = {
           600: '#1DB8DE',
           700: '#0F93B8',
           800: '#016E8F',
-          900: '#014B61'
+          900: '#014B61',
+          950: '#003F52'
         },
         orange: colors.orange,
       },
@@ -69,7 +70,10 @@ module.exports = {
         'home': "url('/utility/home-bg.svg')",
       },
       boxShadow: {
-        'blue': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.1)',
+        'primary': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.12)',
+        'primary-sm': 'inset 0 -1px 2px 0 rgba(1,60,136,.45),0 2px 4px 0 rgba(0,44,97,.1)',
+        'primary-lg': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.12)',
+        'primary-xl': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 4px 6px 0 rgba(0,44,97,.14)',
         'spiro': 'inset 0 -1px 3px 0 rgba(1,75,97,.5),0 3px 6px 0 rgba(0,63,82,.1)',
         'btn-secondary': 'inset 0 -1px 3px 0 rgba(30,38,50,.2),0 3px 6px 0 rgba(30,38,50,.2)',
         'card': '0 24px 66px 0 rgba(10,107,255,.02),0 16px 40px 0 rgba(10,107,255,.03),0 2px 8px 0 rgba(10,107,255,.1),0 1px 2px 0 rgba(10,107,255,.07)',
@@ -167,6 +171,7 @@ module.exports = {
   variants: {
     extend: {
       translate: ['active'],
+      backgroundColor: ['active'],
       boxShadow: ['active'],
     },
   },

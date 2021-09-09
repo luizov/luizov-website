@@ -62,20 +62,26 @@ html {
 
 // Buttons
 .btn,
-.btn-sm {
+.btn-sm,
+.btn-lg,
+.btn-xl {
   @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
 }
 
 .btn {
-  @apply px-8 py-3;
-}
-
-.btn-lg {
-  @apply px-9 py-5 text-lg;
+  @apply px-4 py-3;
 }
 
 .btn-sm {
-  @apply px-4 py-2 shadow;
+  @apply px-2.5 py-2;
+}
+
+.btn-lg {
+  @apply px-6 py-4 text-lg leading-snug;
+}
+
+.btn-xl {
+  @apply px-9 py-5 text-lg leading-snug;
 }
 
 // Forms
