@@ -7,7 +7,7 @@ const ThemeChangerButton = () => {
         <button
             type="button"
             aria-label="Toggle Dark Mode"
-            className={`flex relative w-10 h-10 rounded-full justify-center items-center ml-3 bg-black bg-opacity-5 border border-blue-600 dark:border-electric-500 shadow-btn-primary group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}
+            className={`flex relative w-10 h-10 rounded-full justify-center items-center ml-3 bg-black bg-opacity-5 border border-blue-600 dark:border-electric-500 shadow-primary group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
         >
             {mounted && (
