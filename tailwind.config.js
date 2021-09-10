@@ -81,6 +81,14 @@ module.exports = {
         'spiro-xl': '0px 0px 3px rgba(1, 75, 97, 0.12), 0px 4px 6px rgba(1, 75, 97, 0.14), 0px 4px 20px rgba(1, 75, 97, 0.18), inset 0px -1px 3px rgba(1, 110, 143, 0.64)',
         'spiro-2xl': '0px 0px 3px rgba(1, 75, 97, 0.12), 0px 0px 4px rgba(1, 75, 97, 0.12), 0px 8px 40px rgba(1, 75, 97, 0.22), inset 0px -1px 3px rgba(1, 110, 143, 0.64)',
         'inset': 'inset 0 0 0 1px rgba(255,255,255,0.05),inset 0 1px 0 0 rgba(255,255,255,0.2),inset 0 -1px 0 0 rgba(255,255,255,0.1),0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.1)',
+        'xs': '0px 1px 0px rgba(12, 15, 18, 0.06)',
+        'sm': '0px 1px 2px rgba(12, 15, 18, 0.06)',
+        'DEFAULT': '0px 2px 1px rgba(12, 15, 18, 0.06), 0px 0px 1px rgba(12, 15, 18, 0.25)',
+        'md': '0px 0px 2px -1px rgba(12, 15, 18, 0.2), 0px 2px 10px -1px rgba(12, 15, 18, 0.1), 0px 0px 1px -1px rgba(12, 15, 18, 0.25)',
+        'lg': '0px 10px 15px -2px rgba(12, 15, 18, 0.1), 0px 4px 6px -1px rgba(12, 15, 18, 0.06), 0px 0px 1px -1px rgba(12, 15, 18, 0.25)',
+        'xl': '0px 20px 25px -5px rgba(12, 15, 18, 0.1), 0px 4px 10px -5px rgba(12, 15, 18, 0.04), 0px 0px 4px -2px rgba(12, 15, 18, 0.1)',
+        '2xl': '0px 25px 50px -12px rgba(12, 15, 18, 0.25), 0px 0px 4px -2px rgba(12, 15, 18, 0.1)',
+        '3xl': '0px 0px 4px -2px rgba(0, 0, 0, 0.1), 0px 35px 60px -16px rgba(12, 15, 18, 0.26)',
       },
       container: {
         padding: {
