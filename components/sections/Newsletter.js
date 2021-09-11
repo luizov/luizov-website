@@ -44,12 +44,12 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="relative py-16 pb-32 bg-electric-100 dark:bg-electric-950 border-t border-electric-150 dark:border-electric-800">
-            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-250 dark:from-spiro-900">
+        <section className="relative py-16 pb-32 bg-electric-100 dark:bg-electric-900 border-t border-electric-150 dark:border-electric-800">
+            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-electric-150 dark:from-spiro-900">
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
-                <div className="relative bg-gradient-to-t from-blue-100 to-white dark:from-electric-950 dark:to-electric-900 border border-electric-150 dark:border-electric-800 shadow rounded-lg -mt-48 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+                <div className="relative bg-white dark:bg-electric-900 border border-electric-150 dark:border-electric-800 shadow-lg rounded-lg -mt-48 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
                     {/* Background illustration */}
                     <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">
@@ -103,7 +103,7 @@ export default function Newsletter() {
                                     />
                                     <button
                                         type="submit"
-                                        className="btn text-white bg-blue-500 hover:bg-blue-600 dark:bg-spiro-800 dark:hover:bg-spiro-700 shadow-blue dark:shadow-spiro"
+                                        className="btn btn-primary"
                                     >
                                         {form.state === 'loading' ? <LoadingSpinner /> : 'Subscribe'}
                                     </button>

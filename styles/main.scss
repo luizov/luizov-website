@@ -15,8 +15,7 @@
 }
 
 ::selection {
-  background-color: #1db8de;
-  color: #fefefe;
+  @apply bg-violet-5 text-violet-12 dark:bg-violetDark-5 dark:text-violetDark-12;
 }
 
 html {
@@ -82,6 +81,18 @@ html {
 
 .btn-xl {
   @apply px-9 py-5 text-lg leading-snug;
+}
+
+.btn-primary {
+  @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white dark:bg-violetDark-4 dark:hover:bg-violetDark-5 dark:active:bg-violetDark-6 dark:text-violetDark-11;
+}
+
+.btn-secondary {
+  @apply bg-electric-700 hover:bg-electric-800 active:bg-electric-900 text-blue-150;
+}
+
+.btn-primary-shadow {
+  @apply shadow-primary hover:shadow-primary-sm active:shadow-primary-sm;
 }
 
 // Forms

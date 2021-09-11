@@ -47,7 +47,7 @@ export default function NavMenu() {
                                 </div>
                             </div>
                             {/*  round button here */}
-                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border-2 border-electric-150 dark:border-electric-800 group-hover:bg-blue-500 dark:group-hover:bg-spiro-800 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
+                            <div className={`flex relative w-12 h-12 rounded-full justify-center items-center ml-3 bg-transparent border-2 border-electric-150 dark:border-electric-800 group-hover:bg-blue-500 dark:group-hover:bg-violetDark-4 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
 
                                 <svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-electric-700 dark:text-electric-400 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16" />
@@ -65,45 +65,60 @@ export default function NavMenu() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-10"
                     >
-                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 dark:bg-spiro-800 text-white shadow-primary-xl dark:shadow-spiro divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden">
-                            <div className="py-4 px-6">
+                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 text-white shadow-primary-xl divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden dark:bg-violetDark-4 dark:text-violetDark-11 dark:shadow-none">
+                            <div className="py-4">
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/products" className={`${active && 'text-blue-300 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/products" className={`${active && 'text-blue-300 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
-                                            Products
+                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                                Products
+                                            </div>
+
                                         </NextLink>
                                     )}
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/articles" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/articles" className={`${active && 'text-blue-300 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
-                                            Articles
+                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                                Articles
+                                            </div>
+
                                         </NextLink>
                                     )}
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/concepts" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/concepts" className={`${active && 'text-blue-300 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
-                                            Concepts
+                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                                Concepts
+                                            </div>
+
                                         </NextLink>
                                     )}
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/bookmarks" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/bookmarks" className={`${active && 'text-blue-300 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
-                                            Bookmarks
+                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                                Bookmarks
+                                            </div>
+
                                         </NextLink>
                                     )}
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="articles" className={`${active && 'text-blue-250 dark:text-spiro-300 translate-x-2'} group flex rounded-md items-center w-full px-2 py-2 text-xl font-headings transition duration-200`}
+                                        <NextLink href="/instagram" className={`${active && 'text-blue-300 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
                                         >
-                                            Instagram
+                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                                Instagram
+                                            </div>
+
                                         </NextLink>
                                     )}
                                 </Menu.Item>

@@ -57,7 +57,34 @@ module.exports = {
           900: '#014B61',
           950: '#003F52'
         },
-        orange: colors.orange,
+        violet: {
+          1: '#FDFCFE',
+          2: '#FBFAFF',
+          3: '#F5F2FF',
+          4: '#EDE9FE',
+          5: '#E4DEFC',
+          6: '#D7CFF9',
+          7: '#C4B8F3',
+          8: '#AA99EC',
+          9: '#6E56CF',
+          10: '#644FC1',
+          11: '#5746AF',
+          12: '#20134B'
+        },
+        violetDark: {
+          1: '#17151F',
+          2: '#1C172B',
+          3: '#251E40',
+          4: '#2C2250',
+          5: '#32275F',
+          6: '#392C72',
+          7: '#443592',
+          8: '#5842C3',
+          9: '#6E56CF',
+          10: '#7C66DC',
+          11: '#9E8CFC',
+          12: '#F1EEFE'
+        },
       },
       animation: {
         enter: "enter 200ms ease-out",
@@ -71,7 +98,7 @@ module.exports = {
       },
       boxShadow: {
         'primary-sm': 'inset 0 -1px 2px 0 rgba(1,60,136,.45),0 2px 4px 0 rgba(0,44,97,.1)',
-        'primary': 'inset 0 -1px 3px 0 rgba(1,60,136,.5),0 3px 6px 0 rgba(0,44,97,.12)',
+        'primary': 'inset 0 -1px 2px 0 rgba(1,60,136,.45),0 3px 6px 0 rgba(0,44,97,.12)',
         'primary-lg': '0px 3px 6px rgba(0, 44, 97, 0.12), 0px 2px 10px rgba(1, 60, 136, 0.12), 0px 0px 2px rgba(1, 60, 136, 0.22), inset 0px -1px 3px rgba(1, 60, 136, 0.64)',
         'primary-xl': '0px 0px 3px rgba(1, 60, 136, 0.12), 0px 4px 6px rgba(1, 60, 136, 0.14), 0px 4px 20px rgba(1, 60, 136, 0.18), inset 0px -1px 3px rgba(1, 60, 136, 0.64)',
         'primary-2xl': '0px 0px 3px rgba(1, 60, 136, 0.12), 0px 0px 4px rgba(1, 60, 136, 0.12), 0px 8px 40px rgba(1, 60, 136, 0.22), inset 0px -1px 3px rgba(1, 60, 136, 0.64)',

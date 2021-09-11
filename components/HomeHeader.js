@@ -21,7 +21,7 @@ export default function HomeHeader({ title, description, children }) {
                     <div className="flex flex-col sm:flex-row items-center space-x-2 mt-6">
                         <a
                             href="#products"
-                            className="btn btn-xl text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 dark:bg-spiro-800 dark:hover:bg-spiro-700 shadow-primary-xl hover:shadow-primary-lg active:shadow-primary-sm dark:shadow-spiro-xl dark:hover:shadow-spiro-lg dark:active:shadow-spiro-sm">
+                            className="btn btn-xl btn-primary">
                             <svg className="-ml-2 mr-2 h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z" fill="currentColor" />
                             </svg>
@@ -29,7 +29,7 @@ export default function HomeHeader({ title, description, children }) {
                         </a>
                         <Link href="/concepts" passHref>
                             <a
-                                className="btn btn-xl text-blue-500 hover:text-blue-600 dark:text-spiro-800 dark:hover:text-spiro-700">
+                                className="btn btn-xl text-blue-500 hover:text-blue-600 dark:text-violetDark-10 dark:hover:text-violetDark-11">
                                 Or design concepts
                             </a>
                         </Link>

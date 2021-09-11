@@ -91,7 +91,7 @@ export const Product = ({ title, image, alt, href, description }) => {
 
 const ProductCard = ({ title, image, alt, href, description, color, background }) => {
     return (
-        <div className={`${background} group relative flex flex-row justify-between rounded-md overflow-hidden shadow-inset transition duration-500 ease-in-out`}>
+        <div className={`${background} group relative flex flex-row justify-between rounded-md overflow-hidden shadow transition duration-500 ease-in-out`}>
 
             {/* Left Side */}
             <div className="flex flex-col max-w-sm p-8">

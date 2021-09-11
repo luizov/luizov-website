@@ -58,7 +58,7 @@ const ThemeChanger = () => {
             <span className="sr-only">Enable Dark mode</span>
             <span
                 aria-hidden="true"
-                className={`${theme === 'dark' ? 'translate-x-5 bg-spiro-800' : 'translate-x-0 bg-blue-500'}
+                className={`${theme === 'dark' ? 'translate-x-5 bg-violetDark-5' : 'translate-x-0 bg-blue-500'}
             pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200`}
             >
                 {mounted && (
