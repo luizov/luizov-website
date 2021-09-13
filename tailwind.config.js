@@ -215,7 +215,7 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.electric.300'),
+            color: theme('colors.mauveDark.11'),
             a: {
               color: theme('colors.violetDark.11'),
               '&:hover': {
@@ -224,11 +224,11 @@ module.exports = {
               code: { color: theme('colors.blue.400') }
             },
             blockquote: {
-              borderLeftColor: theme('colors.electric.700'),
-              color: theme('colors.electric.200')
+              borderLeftColor: theme('colors.mauveDark.6'),
+              color: theme('colors.mauveDark.11')
             },
             'h1,h2,h3,h4': {
-              color: theme('colors.blue.150')
+              color: theme('colors.mauveDark.12')
             },
           }
         },

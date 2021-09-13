@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 export default function HomeHeader({ title, description, children }) {
     return (
-        <section className="relative py-12 pb-24 border-b border-electric-150 dark:border-mauveDark-6 overflow-hidden">
+        <section className="relative py-12 pb-24 overflow-hidden">
             <div className="relative max-w-4xl mx-auto px-4 sm:px-6">
                 <div className="flex flex-col items-center text-center">
-                    <h1 className="text-5xl sm:text-6xl text-electric-900 dark:text-mauveDark-12 font-headings font-bold tracking-tight sm:max-w-3xl">
+                    <h1 className="text-5xl sm:text-6xl text-mauve-12 dark:text-mauveDark-12 font-headings font-bold tracking-tight sm:max-w-3xl">
                         {title}
                     </h1>
                     {description &&

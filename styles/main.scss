@@ -137,23 +137,27 @@ html {
   @apply block mt-3 mb-8 text-base;
 }
 
+.prose strong {
+  @apply text-mauve-12 dark:text-mauveDark-12;
+}
+
 .prose pre {
-  @apply border border-electric-200 bg-electric-100 dark:border-electric-800 dark:bg-electric-950;
+  @apply bg-mauve-2 rounded border border-mauve-7 dark:bg-violetDark-2 dark:border-violetDark-6;
 }
 
 .prose code {
-  @apply text-electric-700 dark:text-electric-250 px-1 py-0.5 border border-electric-200 dark:border-electric-800 rounded-md bg-electric-100 dark:bg-electric-950;
+  @apply px-1 py-0.5 rounded border border-mauve-7 text-mauve-12 bg-mauve-2 dark:text-violetDark-12 dark:bg-violetDark-2 dark:border-violetDark-6;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-electric-700 dark:text-electric-200;
+  @apply text-mauve-11 dark:text-violetDark-11;
 }
 
 .token.punctuation {
-  @apply text-electric-700 dark:text-electric-200;
+  @apply text-mauve-11 dark:text-mauveDark-11;
 }
 
 .token.property,
@@ -202,7 +206,7 @@ html {
 
 code[class*="language-"],
 pre[class*="language-"] {
-  @apply text-electric-800 dark:text-electric-100;
+  @apply text-mauve-12 dark:text-mauveDark-12;
 }
 
 pre::-webkit-scrollbar {
@@ -215,5 +219,5 @@ pre {
 }
 
 .highlight-line {
-  @apply block px-4 -mx-4 bg-electric-100 border-l-4 border-blue-500 dark:bg-electric-800;
+  @apply block px-4 -mx-4 bg-mauve-2 border-l-4 border-blue-500 dark:bg-mauveDark-10;
 }

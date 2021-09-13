@@ -36,14 +36,14 @@ class MyDocument extends Document {
                         href="/favicons/safari-pinned-tab.svg"
                         rel="mask-icon"
                     />
-                    <meta content="#ffffff" name="theme-color" />
+                    <meta content="#FDFCFD" name="theme-color" />
                     <meta content="#603cba" name="msapplication-TileColor" />
                     <meta
                         content="/favicons/browserconfig.xml"
                         name="msapplication-config"
                     />
                 </Head>
-                <body className="bg-white dark:bg-mauveDark-0 text-electric-400 dark:text-mauveDark-11">
+                <body className="bg-mauve-1 text-mauve-11 dark:bg-mauveDark-0 dark:text-mauveDark-11">
                     <Main />
                     <NextScript />
                 </body>

@@ -4,6 +4,7 @@ import Page from '../../layouts/Page';
 import PageHeader from "../../components/PageHeader";
 import HeroPost from '../../components/HeroPost';
 import MoreArticles from '../../components/MoreArticles';
+import Newsletter from '../../components/sections/Newsletter';
 
 export default function ArticlesPage({ allPosts }) {
     const heroPost = allPosts[0];
@@ -41,7 +42,7 @@ export default function ArticlesPage({ allPosts }) {
                 title="Articles"
                 description="I write about development, design, React, CSS, animations and more!"
             />
-            <section>
+            <section className="pb-32">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
                     {heroPost && (
                         <HeroPost
@@ -56,6 +57,7 @@ export default function ArticlesPage({ allPosts }) {
                     {morePosts.length > 0 && <MoreArticles posts={morePosts} />}
                 </div>
             </section>
+            <Newsletter />
         </Page>
     )
 }

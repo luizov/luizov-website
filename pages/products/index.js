@@ -34,7 +34,7 @@ export default function ProductsPage() {
 
             <PageHeader
                 title="Products"
-                description="Things I Have Made in the Past"
+                description="Creations I Have Made in the Past"
             />
         </Page>
     )
