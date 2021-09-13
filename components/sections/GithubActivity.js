@@ -4,7 +4,7 @@ import Image from 'next/image';
 const RepoList = ({ repos, title, url }) => {
     return (
         <div>
-            <h3 className="mt-1 text-2xl font-headings tracking-tight text-mauve-11 dark:text-mauveDark-11">
+            <h3 className="mt-1 mb-8 text-2xl font-headings tracking-tight text-mauve-11 dark:text-mauveDark-11">
                 {title}
             </h3>
             <ul>
@@ -31,7 +31,7 @@ const RepoList = ({ repos, title, url }) => {
                                     {name}
                                 </span>
                             </div>
-                            <div className="text-electric-400 dark:text-mauveDark-11">      {description}
+                            <div className="text-mauve-11 dark:text-mauveDark-11">      {description}
                             </div>
                         </a>
                     </li>
@@ -56,7 +56,7 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
-        <section className="relative py-16 pb-56 bg-white dark:bg-mauveDark-1 overflow-hidden">
+        <section className="relative py-20 pb-56 bg-white dark:bg-mauveDark-1 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight">
                     GitHub Activity

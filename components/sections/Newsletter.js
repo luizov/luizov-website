@@ -44,8 +44,8 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="relative py-16 pb-36 bg-electric-100 dark:bg-mauveDark-1 border-t border-electric-150 dark:border-electric-800">
-            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-electric-150 dark:from-violetDark-4">
+        <section className="relative py-20 pb-36 bg-mauve-2 dark:bg-mauveDark-1 border-t border-mauve-6 dark:border-mauveDark-6">
+            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-mauve-4 dark:from-violetDark-4">
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
@@ -82,10 +82,10 @@ export default function Newsletter() {
 
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                            <h3 className="h2 text-electric-800 dark:text-mauveDark-12 mb-2">
+                            <h3 className="h2 text-mauve-12 dark:text-mauveDark-12 mb-2">
                                 Subscribe to my newsletter
                             </h3>
-                            <p className="text-electric-400 dark:text-mauveDark-11 text-lg mb-6">
+                            <p className="text-mauve-11 dark:text-mauveDark-11 text-lg mb-6">
                                 Get emails from me about web development, tech, and early access to new articles.
                             </p>
 

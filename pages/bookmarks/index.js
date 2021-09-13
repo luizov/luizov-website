@@ -39,11 +39,11 @@ export default function BookmarksPage({ posts }) {
                 description="This page contains a collection of my favourite articles/resources/websites that I've stumbled upon."
             />
 
-            <section className="relative py-16 bg-mauve-2 border-t border-mauve-6 overflow-hidden">
+            <section className="relative py-20 bg-mauve-2 border-t border-mauve-6 overflow-hidden dark:bg-mauveDark-2 dark:border-mauveDark-6">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-8">
                     <div className="hidden lg:block lg:col-span-3">
                         <div aria-label="Sidebar" className="sticky top-6 divide-y divide-gray-300">
-                            <h2 className="text-2xl text-electric-800 font-bold tracking-tight">
+                            <h2 className="text-2xl text-mauve-12 font-bold tracking-tight dark:text-mauveDark-12">
                                 Categories
                             </h2>
                         </div>

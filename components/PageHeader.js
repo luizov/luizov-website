@@ -1,6 +1,6 @@
 export default function PageHeader({ title, description, children }) {
     return (
-        <section className="relative py-16 overflow-hidden">
+        <section className="relative py-20 overflow-hidden">
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="flex flex-col">
                     <h1 className="text-6xl text-mauve-12 dark:text-mauveDark-12 font-headings font-bold tracking-tight leading-tight">

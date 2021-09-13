@@ -53,7 +53,7 @@ export default function Article({ post }) {
                     cardType: 'summary_large_image',
                 }}
             />
-            <article className="max-w-6xl mx-auto py-16 px-4 sm:px-6">
+            <article className="max-w-6xl mx-auto py-20 px-4 sm:px-6">
                 <PostHeader
                     title={post.title}
                     coverImage={post.coverImage}

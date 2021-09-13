@@ -134,7 +134,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
     return (
-        <section id="products" className="relative py-16 bg-mauve-2 border-t border-mauve-6 dark:bg-mauveDark-2 dark:border-mauveDark-6 overflow-hidden">
+        <section id="products" className="relative py-20 bg-mauve-2 border-t border-mauve-6 dark:bg-mauveDark-2 dark:border-mauveDark-6 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight">
                     Products
