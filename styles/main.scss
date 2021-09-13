@@ -22,12 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.focus:focus {
-  @apply border-spiro-500 outline-none;
-
-  /* box-shadow: 0 0 0 3px rgba(103, 222, 255, 1); */
-}
-
 .container {
   @apply max-w-screen-lg;
 }

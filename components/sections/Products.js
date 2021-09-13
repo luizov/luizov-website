@@ -134,13 +134,13 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
     return (
-        <section id="products" className="relative py-16 bg-electric-100 dark:bg-electric-900 overflow-hidden">
+        <section id="products" className="relative py-16 bg-mauve-2 dark:bg-mauveDark-2 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
+                <h2 className="text-4xl text-electric-800 dark:text-violetDark-12 font-headings font-semibold tracking-tight">
                     Products
                 </h2>
-                <div className="mt-1 text-2xl font-headings tracking-tight text-electric-400">
-                    Things I Have Made in the Past
+                <div className="mt-1 text-2xl font-headings tracking-tight">
+                    Creations I Have Made in the Past
                 </div>
                 <div className="mt-12 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6">
                     {PRODUCT_LIST.map((entry) => (

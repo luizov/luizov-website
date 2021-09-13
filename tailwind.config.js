@@ -85,6 +85,35 @@ module.exports = {
           11: '#9E8CFC',
           12: '#F1EEFE'
         },
+        mauve: {
+          1: '#FDFCFD',
+          2: '#F9F8F9',
+          3: '#F4F2F4',
+          4: '#EEEDEF',
+          5: '#E9E8EA',
+          6: '#E4E2E4',
+          7: '#DCDBDD',
+          8: '#C8C7CB',
+          9: '#908E96',
+          10: '#86848D',
+          11: '#6F6E77',
+          12: '#1A1523'
+        },
+        mauveDark: {
+          0: '#0F0F10',
+          1: '#161618',
+          2: '#1C1C1F',
+          3: '#232326',
+          4: '#28282C',
+          5: '#2E2E32',
+          6: '#34343A',
+          7: '#3E3E44',
+          8: '#504F57',
+          9: '#706F78',
+          10: '#7E7D86',
+          11: '#A09FA6',
+          12: '#EDEDEF'
+        }
       },
       animation: {
         enter: "enter 200ms ease-out",
@@ -188,9 +217,9 @@ module.exports = {
           css: {
             color: theme('colors.electric.300'),
             a: {
-              color: theme('colors.spiro.500'),
+              color: theme('colors.violetDark.11'),
               '&:hover': {
-                color: theme('colors.spiro.600')
+                color: theme('colors.violetDark.12')
               },
               code: { color: theme('colors.blue.400') }
             },

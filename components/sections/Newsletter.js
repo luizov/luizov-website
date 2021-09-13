@@ -44,12 +44,12 @@ export default function Newsletter() {
     };
 
     return (
-        <section className="relative py-16 pb-32 bg-electric-100 dark:bg-electric-900 border-t border-electric-150 dark:border-electric-800">
-            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-electric-150 dark:from-spiro-900">
+        <section className="relative py-16 pb-36 bg-electric-100 dark:bg-mauveDark-1 border-t border-electric-150 dark:border-electric-800">
+            <div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-electric-150 dark:from-violetDark-4">
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
-                <div className="relative bg-white dark:bg-electric-900 border border-electric-150 dark:border-electric-800 shadow-lg rounded-lg -mt-48 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+                <div className="relative bg-white dark:bg-mauveDark-1 border border-mauve-7 dark:border-mauveDark-7 shadow-lg rounded-lg -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
                     {/* Background illustration */}
                     <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">
@@ -82,10 +82,10 @@ export default function Newsletter() {
 
                         {/* CTA content */}
                         <div className="text-center lg:text-left lg:max-w-xl">
-                            <h3 className="h2 text-electric-800 dark:text-blue-100 mb-2">
+                            <h3 className="h2 text-electric-800 dark:text-mauveDark-12 mb-2">
                                 Subscribe to my newsletter
                             </h3>
-                            <p className="text-electric-400 dark:text-blue-150 text-lg mb-6">
+                            <p className="text-electric-400 dark:text-mauveDark-11 text-lg mb-6">
                                 Get emails from me about web development, tech, and early access to new articles.
                             </p>
 
@@ -95,7 +95,7 @@ export default function Newsletter() {
                                     <input
                                         ref={inputEl}
                                         type="email"
-                                        className="w-full appearance-none bg-blue-150 dark:bg-electric-700 border border-blue-250 dark:border-electric-600 focus:border-blue-400 dark:focus:border-electric-500 rounded px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-electric-800 dark:text-white placeholder-electric-300"
+                                        className="w-full appearance-none bg-blue-150 dark:bg-mauveDark-3 border border-blue-250 dark:border-mauveDark-7 focus:border-blue-400 dark:focus:border-electric-500 rounded px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-electric-800 dark:text-white placeholder-electric-300 dark:placeholder-mauveDark-10"
                                         placeholder="tim@apple.com"
                                         aria-label="Email for newsletter"
                                         autoComplete="email"
@@ -115,7 +115,7 @@ export default function Newsletter() {
                             ) : form.state === 'success' ? (
                                 <SuccessMessage>{form.message}</SuccessMessage>
                             ) : (
-                                <p className="text-sm text-electric-300 mt-3">
+                                <p className="text-sm text-electric-300 dark:text-mauveDark-10 mt-3">
                                     <span> {`${subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
                                         } subscribers – `}
                                     </span>

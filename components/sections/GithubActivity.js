@@ -3,7 +3,7 @@ import { config } from '../../config';
 const RepoList = ({ repos, title, url }) => {
     return (
         <div>
-            <h3 className="mt-1 text-2xl font-headings tracking-tight text-electric-400">
+            <h3 className="mt-1 text-2xl font-headings tracking-tight text-electric-400 dark:text-mauveDark-11">
                 {title}
             </h3>
             <ul>
@@ -11,21 +11,21 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 -mx-4 border border-transparent hover:border-electric-150 dark:hover:border-electric-800 hover:shadow rounded-md transition duration-150"
+                            className="block my-4 p-4 -mx-4 border border-transparent hover:bg-white hover:border-mauve-8 dark:hover:border-mauveDark-8 dark:hover:bg-mauveDark-4 hover:shadow-sm rounded-md transition duration-200"
                         >
                             <div className="font-headings">
-                                <span className="text-blue-500 dark:text-spiro-700">
+                                <span className="text-blue-500 dark:text-violetDark-11">
                                     {owner.login}/
                                 </span>
-                                <span className="text-blue-500 dark:text-blue-200">{name}</span>
+                                <span className="text-blue-500 dark:text-violetDark-12">{name}</span>
                             </div>
-                            <div className="text-electric-400 dark:text-electric-400">      {description}
+                            <div className="text-electric-400 dark:text-mauveDark-11">      {description}
                             </div>
                         </a>
                     </li>
                 ))}
             </ul>
-            <a href={url} className="flex items-center space-x-1 text-blue-500 dark:text-spiro-700 text-sm">
+            <a href={url} className="flex items-center space-x-1 text-blue-500 dark:text-violetDark-11 text-sm">
                 <span>View more on</span>
                 <span className="font-medium">GitHub</span>
                 <svg
@@ -44,9 +44,9 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
     return (
-        <section className="relative py-16 pb-52 dark:bg-electric-900 overflow-hidden">
+        <section className="relative py-16 pb-56 bg-mauve-2 dark:bg-mauveDark-1 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                <h2 className="text-4xl text-electric-800 dark:text-blue-150 font-headings font-semibold tracking-tight">
+                <h2 className="text-4xl text-electric-800 dark:text-mauveDark-12 font-headings font-semibold tracking-tight">
                     GitHub Activity
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-24 md:gap-32">

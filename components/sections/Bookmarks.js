@@ -35,10 +35,10 @@ export const BookmarkCard = ({ title, description, alt, href}) => {
 
 export const Bookmarks = () => {
     return (
-        <section className="relative py-16 bg-electric-100 border-t border-b border-electric-150 overflow-hidden">
+        <section className="relative py-16 bg-mauve-2 border-t border-b border-mauve-6 overflow-hidden dark:bg-mauveDark-2 dark:border-mauveDark-6">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <div className="relative rounded border border-gray-300 bg-white px-6 py-8 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                    <div className="relative rounded border border-gray-300 bg-white px-6 py-8 shadow-sm flex items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500 dark:bg-mauveDark-3 dark:border-mauveDark-7 dark:hover:border-mauveDark-8">
                         <div className="flex-shrink-0">
                             <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
                         </div>
