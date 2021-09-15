@@ -164,51 +164,51 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.electric.500'),
+            color: theme('colors.mauve.11'),
             a: {
               color: theme('colors.blue.500'),
               '&:hover': {
                 color: theme('colors.blue.700')
               },
-              code: { color: theme('colors.blue.400') }
+              code: { color: theme('colors.violet.11') }
             },
             h1: {
-              color: theme('colors.electric.800'),
+              color: theme('colors.mauve.12'),
               lineHeight: '1.23',
               letterSpacing: '-.52px'
             },
             h2: {
-              color: theme('colors.electric.800'),
+              color: theme('colors.mauve.12'),
               lineHeight: '1.3',
               letterSpacing: '-.4px'
             },
             h3: {
-              color: theme('colors.electric.800'),
+              color: theme('colors.mauve.12'),
               lineHeight: '1.38',
               letterSpacing: '-.32px'
             },
             h4: {
-              color: theme('colors.electric.800'),
+              color: theme('colors.mauve.12'),
               lineHeight: '1.42',
               letterSpacing: '-.12px'
             },
             strong: {
-              color: theme('colors.electric.800'),
+              color: theme('colors.mauve.12'),
             },
             thead: {
-              color: theme('colors.electric.900'),
+              color: theme('colors.mauve.12'),
               fontWeight: '500',
               borderBottomWidth: '1px',
-              borderBottomColor: theme('colors.electric.200'),
+              borderBottomColor: theme('colors.mauve.6'),
             },
             'tbody tr': {
               borderBottomWidth: '1px',
-              borderBottomColor: theme('colors.electric.200'),
+              borderBottomColor: theme('colors.mauve.6'),
             },
             'ul > li::before': {
               content: '""',
               position: 'absolute',
-              backgroundColor: theme('colors.electric.800'),
+              backgroundColor: theme('colors.mauve.12'),
               borderRadius: '50%',
             },
           },
@@ -221,7 +221,7 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.violetDark.12')
               },
-              code: { color: theme('colors.blue.400') }
+              code: { color: theme('colors.violetDark.11') }
             },
             blockquote: {
               borderLeftColor: theme('colors.mauveDark.6'),

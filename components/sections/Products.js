@@ -17,8 +17,8 @@ const PRODUCT_LIST = [
         imageSrc: '/products/2.jpg',
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: 'https://lograpid.com',
-        color: 'text-white',
-        background: 'bg-electric-250',
+        color: 'text-mauve-11',
+        background: 'bg-mauve-4',
     },
     {
         name: 'Tipsterwise',
@@ -26,8 +26,8 @@ const PRODUCT_LIST = [
         imageSrc: '/products/3.jpg',
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: 'https://tipsterwise.com',
-        color: 'text-white',
-        background: 'bg-electric-950',
+        color: 'text-mauve-3',
+        background: 'bg-mauve-12',
     },
 ];
 

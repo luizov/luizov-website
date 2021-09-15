@@ -11,7 +11,7 @@ export default function Page404() {
             <div className="relative flex items-center py-10 overflow-hidden min-h-screen">
                 <div className="container">
                     <div className="flex items-center justify-center space-x-3">
-                        <div className="flex border-r border-electric-200 pr-6 select-none">
+                        <div className="flex border-r border-mauve-6 dark:border-mauveDark-6 pr-6 select-none">
                             <Image
                                 src="/utility/404.svg"
                                 alt="404"
@@ -20,7 +20,7 @@ export default function Page404() {
                             />
                         </div>
                         <div className="flex">
-                            <h2 className="tracking-tight text-mauve-12">
+                            <h2 className="tracking-tight text-mauve-12 dark:text-mauveDark-12">
                                 This page could not be found.
                             </h2>
                         </div>

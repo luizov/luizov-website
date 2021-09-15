@@ -82,7 +82,7 @@ html {
 }
 
 .btn-secondary {
-  @apply bg-electric-700 hover:bg-electric-800 active:bg-electric-900 text-blue-150;
+  @apply bg-violet-3 hover:bg-violet-4 active:bg-violet-5 text-violet-10;
 }
 
 .btn-primary-shadow {
@@ -96,7 +96,7 @@ html {
 .form-select,
 .form-checkbox,
 .form-radio {
-  @apply bg-white border border-electric-300 focus:border-electric-500;
+  @apply bg-white border border-mauve-7 focus:border-mauve-7;
 }
 
 .form-input,
@@ -116,7 +116,7 @@ html {
 
 .form-input,
 .form-textarea {
-  @apply placeholder-electric-500;
+  @apply placeholder-mauve-10;
 }
 
 .form-select {

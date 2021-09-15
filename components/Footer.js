@@ -4,7 +4,7 @@ import Image from 'next/image';
 const FooterLink = ({ href, children }) => {
     return (
         <Link href={href}>
-            <a className="flex items-center text-mauve-10 hover:text-mauve-11 hover:bg-electric-200 hover:bg-opacity-10 dark:text-mauveDark-11 dark:hover:text-mauveDark-12 dark:hover:bg-mauveDark-4 rounded px-3 py-2 transition ease-linear duration-150">
+            <a className="flex items-center text-mauve-10 hover:text-mauve-11 hover:bg-mauve-4 hover:bg-opacity-10 dark:text-mauveDark-11 dark:hover:text-mauveDark-12 dark:hover:bg-mauveDark-4 rounded px-3 py-2 transition ease-linear duration-150">
                 {children}
             </a>
         </Link>
@@ -14,7 +14,7 @@ const FooterLink = ({ href, children }) => {
 const ExternalLink = ({ href, children }) => {
     return (
         <a
-            className="flex items-center text-mauve-10 hover:text-mauve-11 hover:bg-electric-200 hover:bg-opacity-10 dark:text-mauveDark-11 dark:hover:text-mauveDark-12 dark:hover:bg-mauveDark-4 rounded px-3 py-2 transition ease-linear duration-150"
+            className="flex items-center text-mauve-10 hover:text-mauve-11 hover:bg-mauveDark-4 hover:bg-opacity-10 dark:text-mauveDark-11 dark:hover:text-mauveDark-12 dark:hover:bg-mauveDark-4 rounded px-3 py-2 transition ease-linear duration-150"
             target="_blank"
             rel="noopener noreferrer"
             href={href}
