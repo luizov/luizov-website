@@ -95,7 +95,7 @@ export default function Newsletter() {
                                     <input
                                         ref={inputEl}
                                         type="email"
-                                        className="w-full appearance-none bg-blue-150 dark:bg-mauveDark-3 border border-blue-250 dark:border-mauveDark-7 focus:border-blue-400 dark:focus:border-electric-500 rounded px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-electric-800 dark:text-white placeholder-electric-300 dark:placeholder-mauveDark-10"
+                                        className="w-full appearance-none bg-mauve-3 dark:bg-mauveDark-3 border border-mauve-7 dark:border-mauveDark-7 focus:border-mauve-7 dark:focus:border-mauveDark-7 rounded px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-mauve-12 dark:text-mauveDark-12 placeholder-mauve-10 dark:placeholder-mauveDark-10"
                                         placeholder="tim@apple.com"
                                         aria-label="Email for newsletter"
                                         autoComplete="email"
@@ -115,7 +115,7 @@ export default function Newsletter() {
                             ) : form.state === 'success' ? (
                                 <SuccessMessage>{form.message}</SuccessMessage>
                             ) : (
-                                <p className="text-sm text-electric-300 dark:text-mauveDark-10 mt-3">
+                                <p className="text-sm text-mauve-10 dark:text-mauveDark-10 mt-3">
                                     <span> {`${subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
                                         } subscribers – `}
                                     </span>

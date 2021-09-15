@@ -44,13 +44,13 @@ export const Product = ({ title, image, alt, href, description }) => {
                             className="w-full h-full object-center object-cover"
                         />
                     </div>
-                    <h3 className="mt-6 text-3xl font-medium text-electric-900">
+                    <h3 className="mt-6 text-3xl font-medium text-mauve-12">
                         <a href="##">
                             <span className="absolute inset-0" />
                             {title}
                         </a>
                     </h3>
-                    <p className="text-base text-electric-400">
+                    <p className="text-base">
                         {description}
                     </p>
                 </div>
@@ -68,7 +68,7 @@ export const Product = ({ title, image, alt, href, description }) => {
                     className="w-full h-full object-center object-cover"
                 />
             </div>
-            <h3 className="mt-6 text-3xl font-medium text-electric-900">
+            <h3 className="mt-6 text-3xl font-medium text-mauve-12">
                 <a href={href} className="flex items-center">
                     <span className="absolute inset-0" />
                     {title}
@@ -82,7 +82,7 @@ export const Product = ({ title, image, alt, href, description }) => {
                     </svg>
                 </a>
             </h3>
-            <p className="text-base text-electric-400">
+            <p className="text-base">
                 {description}
             </p>
         </div>

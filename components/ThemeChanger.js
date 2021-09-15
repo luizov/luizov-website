@@ -16,7 +16,7 @@ const ThemeChangerButton = () => {
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     stroke="currentColor"
-                    className="w-4 h-4 text-electric-700 dark:text-gray-200"
+                    className="w-4 h-4 text-mauve-11 dark:text-mauveDark-11"
                 >
                     {theme === 'dark' ? (
                         <path

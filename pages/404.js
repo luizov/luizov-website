@@ -20,7 +20,7 @@ export default function Page404() {
                             />
                         </div>
                         <div className="flex">
-                            <h2 className="tracking-tight text-electric-900">
+                            <h2 className="tracking-tight text-mauve-12">
                                 This page could not be found.
                             </h2>
                         </div>
