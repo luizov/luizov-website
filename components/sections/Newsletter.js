@@ -49,7 +49,7 @@ export default function Newsletter() {
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
-                <div className="relative bg-white dark:bg-mauveDark-1 border border-mauve-7 dark:border-mauveDark-7 shadow-lg rounded-lg -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+                <div className="relative bg-white dark:bg-mauveDark-1 border border-mauve-7 dark:border-mauveDark-7 shadow-sm rounded-lg -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
                     {/* Background illustration */}
                     <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">

@@ -1,6 +1,6 @@
 ---
 title: "How to get rid of CSS linting errors when using Tailwind"
-excerpt: "A quick guide on removing linting errors and adding stylelint support for Tailwind projects that works both for css and scss validation."
+excerpt: "A quick guide on removing linting errors and adding stylelint support for Tailwind projects."
 coverImage: "/articles/tailwind-linting/cover.jpg"
 date: "2021-09-02T05:35:07.322Z"
 author:

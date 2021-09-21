@@ -52,6 +52,7 @@ export default function ArticlesPage({ allPosts }) {
                             author={heroPost.author}
                             slug={heroPost.slug}
                             excerpt={heroPost.excerpt}
+                            length={heroPost.content}
                         />
                     )}
                     {morePosts.length > 0 && <MoreArticles posts={morePosts} />}
@@ -68,6 +69,7 @@ export async function getStaticProps() {
         'date',
         'slug',
         'author',
+        'content',
         'coverImage',
         'excerpt',
     ])
