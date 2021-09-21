@@ -5,7 +5,7 @@ import Page from '../../layouts/Page';
 import PageHeader from '../../components/PageHeader';
 import { BookmarkCard } from '../../components/sections/Bookmarks';
 
-export default function BookmarksPage({ posts }) {
+export default function BookmarksPage({ posts, content }) {
     const seoTitle = "Bookmarks · Luizov";
     const seoDesc = "A collection of my favourite articles/resources/websites that I've stumbled upon.";
 
@@ -52,6 +52,7 @@ export default function BookmarksPage({ posts }) {
                     <div className="lg:col-span-9">
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                             {console.log(posts)}
+                            {console.log(content)}
                             {posts.map((entry) => (
                                 <BookmarkCard
                                     key={entry.id}
@@ -74,7 +75,6 @@ export const getStaticProps = async () => {
         posts
     ] = await Promise.all([
         getDatabase(config.notionDatabaseId)
-
     ]);
 
     return {

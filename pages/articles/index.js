@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo";
 import { getAllPosts } from '../../lib/api';
 import Page from '../../layouts/Page';
 import PageHeader from "../../components/PageHeader";
-import HeroPost from '../../components/HeroPost';
+import HeroPost, { HeroPostAlt } from '../../components/HeroPost';
 import MoreArticles from '../../components/MoreArticles';
 import Newsletter from '../../components/sections/Newsletter';
 
@@ -45,7 +45,7 @@ export default function ArticlesPage({ allPosts }) {
             <section className="pb-32">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
                     {heroPost && (
-                        <HeroPost
+                        <HeroPostAlt
                             title={heroPost.title}
                             coverImage={heroPost.coverImage}
                             date={heroPost.date}

@@ -79,6 +79,10 @@ html {
 
 .btn-primary {
   @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white dark:bg-violetDark-4 dark:hover:bg-violetDark-5 dark:active:bg-violetDark-6 dark:text-violetDark-11;
+
+  &.btn-shadow {
+    @apply shadow-primary hover:shadow-primary-sm active:shadow-primary-sm;
+  }
 }
 
 .btn-secondary {

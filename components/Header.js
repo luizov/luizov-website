@@ -25,15 +25,15 @@ export default function Header() {
           </span>
         </div>
 
-        {/*        <Progress />
+        {/*        <Progress /> */}
 
 
-        {/* 
-      <ul className="flex">
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/work">Projects</NavItem>
-        <NavItem href="/work">Playground</NavItem>
-      </ul> */}
+
+ {/*        <ul className="flex">
+          <NavItem href="/products">Products</NavItem>
+          <NavItem href="/articles">Articles</NavItem>
+          <NavItem href="/concepts">Concepts</NavItem>
+        </ul> */}
         <NavMenu />
 
 

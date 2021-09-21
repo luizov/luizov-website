@@ -12,7 +12,7 @@ export default function PostPreview({
     slug,
 }) {
     return (
-        <div>
+        <div className="group md:p-8 md:hover:bg-mauve-3 md:dark:hover:bg-mauveDark-3 rounded-md transition">
             <div className="mb-5">
                 <CoverImage
                     slug={slug}
@@ -22,9 +22,9 @@ export default function PostPreview({
                     width={556}
                 />
             </div>
-            <h3 className="text-3xl text-mauve-12 dark:text-mauveDark-12 mb-3 leading-snug">
+            <h3 className="text-3xl text-mauve-12 dark:text-mauveDark-12 mb-3 leading-tight">
                 <Link as={`/articles/${slug}`} href="/articles/[slug]">
-                    <a className="hover:underline">{title}</a>
+                    <a>{title}</a>
                 </Link>
             </h3>
             <div className="text-lg mb-4">

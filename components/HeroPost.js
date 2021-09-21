@@ -3,6 +3,9 @@ import DateFormatter from '../components/base/DateFormatter';
 import CoverImage from '../components/CoverImage';
 import Link from 'next/link';
 
+/**
+ * Default Hero Post/Article
+ */
 export default function HeroPost({
     title,
     coverImage,
@@ -26,7 +29,7 @@ export default function HeroPost({
                 <div>
                     <h3 className="mb-4 text-4xl lg:text-5xl text-mauve-12 dark:text-mauveDark-12 leading-tight tracking-tight">
                         <Link as={`/articles/${slug}`} href="/articles/[slug]">
-                            <a className="hover:underline">{title}</a>
+                            <a>{title}</a>
                         </Link>
                     </h3>
                     <div className="mb-4 md:mb-0 text-lg">
@@ -36,6 +39,50 @@ export default function HeroPost({
                 <div>
                     <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
                     <Avatar name={author.name} picture={author.picture} />
+                </div>
+            </div>
+        </section>
+    )
+}
+
+/** 
+ * Alternative Styling for the Hero Post/Article
+ */
+export function HeroPostAlt({
+    title,
+    coverImage,
+    date,
+    excerpt,
+    author,
+    slug,
+}) {
+    return (
+        <section className="pb-20">
+            <div className="group md:p-8 md:-mx-8 md:hover:bg-mauve-3 rounded-md transition">
+                <div className="mb-8 md:mb-16">
+                    <CoverImage
+                        title={title}
+                        src={coverImage}
+                        slug={slug}
+                        height={620}
+                        width={1240}
+                    />
+                </div>
+                <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
+                    <div>
+                        <h3 className="mb-4 text-4xl lg:text-5xl text-mauve-12 dark:text-mauveDark-12 leading-tight tracking-tight">
+                            <Link as={`/articles/${slug}`} href="/articles/[slug]">
+                                <a>{title}</a>
+                            </Link>
+                        </h3>
+                        <div className="mb-4 md:mb-0 text-lg">
+                            <DateFormatter dateString={date} />
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+                        <Avatar name={author.name} picture={author.picture} />
+                    </div>
                 </div>
             </div>
         </section>

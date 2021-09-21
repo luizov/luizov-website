@@ -67,7 +67,7 @@ const ThemeChanger = () => {
                         viewBox="0 0 24 24"
                         fill="currentColor"
                         stroke="currentColor"
-                        className="w-4 h-4 text-blue-150 dark:text-gray-200 transition ease-in-out duration-200"
+                        className="w-4 h-4 text-blue-150 dark:text-violetDark-12 transition ease-in-out duration-200"
                     >
                         {theme === 'dark' ? (
                             <path

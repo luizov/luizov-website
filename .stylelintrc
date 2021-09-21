@@ -10,13 +10,13 @@
           "apply",
           "variants",
           "responsive",
-          "screen",
+          "screen"
         ]
       }
     ],
     "block-no-empty": null,
-    "unit-allowed-list": ["em", "rem", "s"],
+    "unit-allowed-list": ["px","em", "rem", "s"],
     "declaration-block-trailing-semicolon": null,
-    "no-descending-specificity": null,
+    "no-descending-specificity": null
   }
 }
