@@ -1,11 +1,12 @@
 import { NextSeo } from 'next-seo';
 import { getDatabase } from '../../lib/notion';
+import { getOpenGraphImage } from '../../lib/openGraphScraper';
 import { config } from '../../config';
 import Page from '../../layouts/Page';
 import PageHeader from '../../components/PageHeader';
 import { BookmarkCard } from '../../components/sections/Bookmarks';
 
-export default function BookmarksPage({ posts, content }) {
+export default function BookmarksPage({ bookmarks }) {
     const seoTitle = "Bookmarks · Luizov";
     const seoDesc = "A collection of my favourite articles/resources/websites that I've stumbled upon.";
 
@@ -51,11 +52,11 @@ export default function BookmarksPage({ posts, content }) {
 
                     <div className="lg:col-span-9">
                         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            {console.log(posts)}
-                            {console.log(content)}
-                            {posts.map((entry) => (
+                            {console.log(bookmarks)}
+                            {bookmarks.map((entry) => (
                                 <BookmarkCard
                                     key={entry.id}
+                                    image={entry.image}
                                     title={entry.properties.Bookmark.title[0].plain_text}
                                     href={entry.properties.Url.url}
                                     description={entry.properties.Description.rich_text[0].plain_text}
@@ -71,15 +72,28 @@ export default function BookmarksPage({ posts, content }) {
 
 export const getStaticProps = async () => {
 
-    const [
-        posts
-    ] = await Promise.all([
-        getDatabase(config.notionDatabaseId)
-    ]);
+    const bookmarks = await getDatabase(config.notionDatabaseId);
+
+    // const bookmarkBlocks = await Promise.all(
+    //     bookmarks.data
+    //         .map(async (bookmark) => {
+    //             return {
+    //                 id: bookmark.id,
+    //                 children: await getBlocks(bookmark.id),
+    //             }
+    //         })
+    // );
+
+    const bookmarkImages = await Promise.all(
+        bookmarks.data.map(async (entry) => ({
+            ...entry,
+            image: await getOpenGraphImage(entry.properties.Url.url)
+        }))
+    );
 
     return {
         props: {
-            posts: posts.data
+            bookmarks: bookmarkImages
         },
         revalidate: 60 * 60 // 1 hour
     };

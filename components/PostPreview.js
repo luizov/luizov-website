@@ -1,5 +1,3 @@
-import Avatar from '../components/base/Avatar';
-import DateFormatter from '../components/base/DateFormatter';
 import CoverImage from './CoverImage';
 import PostMeta from '../components/PostMeta';
 import Link from 'next/link'
@@ -14,7 +12,7 @@ export default function PostPreview({
     length
 }) {
     return (
-        <div className="group md:p-4 md:hover:bg-mauve-3 md:dark:hover:bg-mauveDark-3 rounded-md transition">
+        <div className="group md:p-5 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 rounded-md transition duration-200 ease-in">
             <div className="mb-5">
                 <CoverImage
                     slug={slug}

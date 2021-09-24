@@ -2,9 +2,7 @@ import Avatar from '../components/base/Avatar';
 import DateFormatter from '../components/base/DateFormatter';
 import CoverImage from '../components/CoverImage';
 import PostMeta from '../components/PostMeta';
-import Image from 'next/image';
 import Link from 'next/link';
-import readingTime from 'reading-time';
 
 /**
  * Default Hero Post/Article
@@ -60,11 +58,9 @@ export function HeroPostAlt({
     slug,
     length
 }) {
-    const stats = readingTime(length);
-
     return (
         <section className="pb-20">
-            <div className="group md:p-8 md:-mx-8 md:hover:bg-mauve-3 md:dark:hover:bg-mauveDark-3 rounded-md transition">
+            <div className="group md:p-8 md:-mx-8 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 rounded-md transition duration-200 ease-in">
                 <div className="md:grid md:grid-cols-3 md:gap-x-8 lg:gap-x-6">
                     <div className="col-span-2">
                         <div className="mb-8 md:mb-0">
