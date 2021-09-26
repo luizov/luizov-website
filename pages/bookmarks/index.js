@@ -4,7 +4,7 @@ import { getOpenGraphImage } from '../../lib/openGraphScraper';
 import { config } from '../../config';
 import Page from '../../layouts/Page';
 import PageHeader from '../../components/PageHeader';
-import { BookmarkCard } from '../../components/sections/Bookmarks';
+import BookmarkCard from '../../components/Bookmarks/BookmarkCard';
 
 export default function BookmarksPage({ bookmarks }) {
     const seoTitle = "Bookmarks · Luizov";
@@ -40,29 +40,20 @@ export default function BookmarksPage({ bookmarks }) {
                 description="This page contains a collection of my favourite articles/resources/websites that I've stumbled upon."
             />
 
-            <section className="relative py-20 bg-mauve-2 border-t border-mauve-6 overflow-hidden dark:bg-mauveDark-2 dark:border-mauveDark-6">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:grid lg:grid-cols-12 lg:gap-8">
-                    <div className="hidden lg:block lg:col-span-3">
-                        <div aria-label="Sidebar" className="sticky top-6 divide-y divide-gray-300">
-                            <h2 className="text-2xl text-mauve-12 font-bold tracking-tight dark:text-mauveDark-12">
-                                Categories
-                            </h2>
-                        </div>
-                    </div>
-
-                    <div className="lg:col-span-9">
-                        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                            {console.log(bookmarks)}
-                            {bookmarks.map((entry) => (
-                                <BookmarkCard
-                                    key={entry.id}
-                                    image={entry.image}
-                                    title={entry.properties.Bookmark.title[0].plain_text}
-                                    href={entry.properties.Url.url}
-                                    description={entry.properties.Description.rich_text[0].plain_text}
-                                />
-                            ))}
-                        </div>
+            <section className="relative py-20 bg-mauve-1 border-t border-mauve-6 overflow-hidden dark:bg-mauveDark-2 dark:border-mauveDark-6">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                    <div className="md:masonry-2-col lg:masonry-3-col box-border gap-x-0 mx-auto before:box-inherit after:box-inherit">
+                        {bookmarks.map((entry) => (
+                            <BookmarkCard
+                                key={entry.id}
+                                image={entry.image}
+                                title={entry.properties.Bookmark.title[0].plain_text}
+                                href={entry.properties.Url.url}
+                                description={entry.properties.Description.rich_text[0].plain_text}
+                                url={entry.properties.FriendlyUrl.url}
+                                date={entry.created_time}
+                            />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -73,16 +64,6 @@ export default function BookmarksPage({ bookmarks }) {
 export const getStaticProps = async () => {
 
     const bookmarks = await getDatabase(config.notionDatabaseId);
-
-    // const bookmarkBlocks = await Promise.all(
-    //     bookmarks.data
-    //         .map(async (bookmark) => {
-    //             return {
-    //                 id: bookmark.id,
-    //                 children: await getBlocks(bookmark.id),
-    //             }
-    //         })
-    // );
 
     const bookmarkImages = await Promise.all(
         bookmarks.data.map(async (entry) => ({

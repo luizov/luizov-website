@@ -1,41 +1,8 @@
-import Link from 'next/link';
-import Image from 'next/image';
-/* import { dateFormatter } from "../../core/utils"; */
-
-export const BookmarkCard = ({ title, description, image, alt, href}) => {
-    // return (
-    //     <div className={`group relative flex flex-row justify-between rounded-md overflow-hidden shadow-inset transition duration-500 ease-in-out`}>
-
-    //         {/* Left Side */}
-    //         <div className="flex flex-col max-w-sm p-8">
-    //             <h3 className={`text-3xl font-bold`}>
-    //                 <a href={href} className="flex items-center">
-    //                     <span className="absolute inset-0" />
-    //                     {title}
-    //                     <svg
-    //                         aria-hidden="true"
-    //                         focusable="false"
-    //                         className="inline-flex ml-2 fill-current w-7 h-7"
-    //                         viewBox="0 0 24 24"
-    //                         fill="none"
-    //                         xmlns="http://www.w3.org/2000/svg"
-    //                     >
-    //                         <path d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z" />
-    //                     </svg>
-    //                 </a>
-    //             </h3>
-    //             <p className={`text-opacity-60 text-xl`}>
-    //                 {description}
-    //             </p>
-    //         </div>
-
-    //     </div>
-    // )
-
+export const BookmarkCard = ({ title, description, image, alt, href }) => {
     return (
         <div className="group relative bg-white border border-gray-200 rounded-lg flex flex-col overflow-hidden">
             <div className="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
-                <img src={image} alt={alt} className="w-full h-full object-center object-cover sm:w-full sm:h-full"/>
+                <img src={image} alt={alt} className="w-full h-full object-center object-cover sm:w-full sm:h-full" />
             </div>
             <div className="flex-1 p-4 space-y-2 flex flex-col">
                 <h3 className="text-sm font-medium text-gray-900">

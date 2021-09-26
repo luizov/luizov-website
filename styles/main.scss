@@ -14,6 +14,22 @@
   }
 }
 
+@layer utilities {
+  @variants responsive {
+    .masonry-3-col {
+      column-count: 3;
+    }
+
+    .masonry-2-col {
+      column-count: 2;
+    }
+
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
 ::selection {
   @apply bg-violet-5 text-violet-12 dark:bg-violetDark-5 dark:text-violetDark-12;
 }
