@@ -8,30 +8,7 @@ import Page from '../layouts/Page';
 import HomeHeader from '../components/HomeHeader';
 import Products from '../components/sections/Products';
 import Newsletter from '../components/sections/Newsletter';
-import { Bookmarks } from '../components/sections/Bookmarks';
 import { GithubActivity } from '../components/sections/GithubActivity';
-
-export const getStaticProps = async () => {
-
-  const [
-    posts,
-    { contributedRepos, starredRepos }
-  ] = await Promise.all([
-    getDatabase(config.notionDatabaseId),
-    fetchRepos(config.githubUsername, config.githubToken),
-  ]);
-
-  return {
-    props: {
-      posts: posts.data,
-      repos: {
-        starredRepos,
-        contributedRepos,
-      }
-    },
-    revalidate: 10
-  };
-};
 
 export default function HomePage({ posts, repos }) {
   const seoTitle = "Luizov · Frontend Designer and Developer";
@@ -68,10 +45,31 @@ export default function HomePage({ posts, repos }) {
       />
 
       <Products />
-      <Bookmarks posts={posts} />
 
       <GithubActivity {...repos} />
       <Newsletter />
     </Page>
   )
+};
+
+export const getStaticProps = async () => {
+
+  const [
+    posts,
+    { contributedRepos, starredRepos }
+  ] = await Promise.all([
+    getDatabase(config.notionDatabaseId),
+    fetchRepos(config.githubUsername, config.githubToken),
+  ]);
+
+  return {
+    props: {
+      posts: posts.data,
+      repos: {
+        starredRepos,
+        contributedRepos,
+      }
+    },
+    revalidate: 10
+  };
 };
