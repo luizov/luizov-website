@@ -2,9 +2,9 @@ import DateFormatter from "../base/DateFormatter";
 
 export default function BookmarkCard({ title, description, image, alt, href, url, date }) {
     return (
-        <article className="group relative break-inside p-4 sm:p-6 border-r border-b border-mauve-7 dark:border-mauveDark-7 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 transition ease-in">
+        <article className="group relative break-inside p-4 sm:p-6 md:border-r border-b border-mauve-7 dark:border-mauveDark-7 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 transition ease-in">
 
-            <div className="rounded-md overflow-hidden aspect-w-6 aspect-h-4 bg-gray-200 sm:aspect-none">
+            <div className="rounded-md overflow-hidden aspect-w-6 aspect-h-4 bg-mauve-7 dark:bg-mauveDark-7 sm:aspect-none">
                 <img src={image} alt={alt} className="w-full h-full object-center object-cover" />
             </div>
 

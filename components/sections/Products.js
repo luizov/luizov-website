@@ -4,17 +4,17 @@ import Image from 'next/image';
 const PRODUCT_LIST = [
     {
         name: 'Octatheme',
-        description: 'Coming soon',
-        imageSrc: '/products/1.jpg',
+        description: 'Description coming soon',
+        imageSrc: '/products/coming-soon-2.jpg',
         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         href: '/octatheme',
-        color: 'text-violet-11',
-        background: 'bg-green-400',
+        color: 'text-white',
+        background: 'bg-mauve-5',
     },
     {
         name: 'Lograpid',
         description: 'Coming soon',
-        imageSrc: '/products/2.jpg',
+        imageSrc: '/products/coming-soon-2.jpg',
         imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
         href: 'https://lograpid.com',
         color: 'text-mauve-11',
@@ -31,41 +31,107 @@ const PRODUCT_LIST = [
     },
 ];
 
-export const Product = ({ title, image, alt, href, description }) => {
+export const Product = ({ title, image, alt, href, description, color, background }) => {
     if (href.startsWith('/')) {
         return (
-            <Link href={href} passHref>
-                <div className="group relative">
-                    <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-90 group-hover:scale-95 sm:aspect-w-16 sm:aspect-h-9 transition duration-500 ease-in-out">
-                        <Image
-                            src={image}
-                            alt={alt}
-                            layout="fill"
-                            className="w-full h-full object-center object-cover"
-                        />
-                    </div>
-                    <h3 className="mt-6 text-3xl font-medium text-mauve-12">
-                        <a href="##">
-                            <span className="absolute inset-0" />
-                            {title}
-                        </a>
-                    </h3>
-                    <p className="text-base">
-                        {description}
-                    </p>
+            <div className="group relative sm:p-6 rounded-md sm:hover:bg-mauve-4 transition duration-300 ease-in-out">
+                <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+                    <Image
+                        src={image}
+                        alt={alt}
+                        layout="fill"
+                        className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+                    />
                 </div>
-            </Link>
+                <h3 className="mt-6 text-3xl font-medium text-mauve-12">
+                    <a href={href} className="flex items-center">
+                        <span className="absolute inset-0" />
+                        {title}
+                    </a>
+                </h3>
+                <p className="text-base">
+                    {description}
+                </p>
+            </div>
         )
     }
 
     return (
-        <div className="group relative">
-            <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-90 group-hover:scale-95 sm:aspect-w-16 sm:aspect-h-9 transition duration-500 ease-in-out">
+        <div className="group relative sm:p-6 rounded-md sm:hover:bg-mauve-4 transition duration-300 ease-in-out">
+            <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
                 <Image
                     src={image}
                     alt={alt}
                     layout="fill"
-                    className="w-full h-full object-center object-cover"
+                    className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+                />
+            </div>
+            <h3 className="mt-6 text-3xl font-medium text-mauve-12">
+                <a href={href} className="flex items-center">
+                    <span className="absolute inset-0" />
+                    {title}
+                    <svg
+                        className="inline-flex ml-2 fill-current w-7 h-7"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z" />
+                    </svg>
+                </a>
+            </h3>
+            <p className="text-base">
+                {description}
+            </p>
+        </div>
+    )
+}
+
+const ProductFull = ({ title, image, alt, href, description, color, background }) => {
+    if (href.startsWith('/')) {
+        return (
+            <div className="group aspect-w-1 aspect-h-1 sm:aspect-w-2 sm:aspect-h-1 rounded-md overflow-hidden hover:scale-95 transition duration-300 ease-in-out">
+
+                {/* image */}
+                <div className="bg-mauve-3 dark:bg-mauveDark-3 overflow-hidden">
+                    <Image
+                        src={image}
+                        alt={alt}
+                        layout="fill"
+                        className="w-full h-full object-center object-cover"
+                        quality="100"
+                    />
+                </div>
+                {/* overlay */}
+                <div aria-hidden="true" className={`${background} opacity-10`}></div>
+
+                <div className="p-4 sm:py-6 sm:px-12 flex items-end">
+                    <div>
+                        <h3 className={`${color} text-3xl font-medium tracking-tight filter drop-shadow-md`}>
+                            <Link href={href} passHref>
+                                <a>
+                                    <span className="absolute inset-0"></span>
+                                    {title}
+                                </a>
+                            </Link>
+                        </h3>
+                        <p aria-hidden="true" className={`mt-1 text-base ${color} opacity-70 filter drop-shadow-sm`}>
+                            {description}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
+    return (
+        <div className="group relative sm:p-6 rounded-md sm:hover:bg-mauve-4 transition duration-300 ease-in-out">
+            <div className="relative w-full h-80 bg-mauve-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 sm:aspect-w-16 sm:aspect-h-6 transition duration-300 ease-in-out">
+                <Image
+                    src={image}
+                    alt={alt}
+                    layout="fill"
+                    className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
                 />
             </div>
             <h3 className="mt-6 text-3xl font-medium text-mauve-12">
@@ -144,7 +210,7 @@ export default function Products() {
                 </div>
                 <div className="mt-12 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6">
                     {PRODUCT_LIST.map((entry) => (
-                        <ProductCard
+                        <Product
                             key={entry.name}
                             title={entry.name}
                             image={entry.imageSrc}

@@ -12,7 +12,7 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 border bg-mauve-2 border-mauve-7 hover:bg-mauve-4 hover:border-mauve-8 dark:bg-violetDark-2 dark:border-violetDark-6 dark:hover:border-violetDark-7 dark:hover:bg-violetDark-3 hover:shadow-sm rounded transition duration-200"
+                            className="block my-4 p-4 hover:bg-mauve-4 dark:hover:bg-mauveDark-4 rounded transition duration-200"
                         >
                             <div className="flex items-center mb-3">
                                 <div className="w-10 h-10 mr-3 relative">
@@ -24,7 +24,7 @@ const RepoList = ({ repos, title, url }) => {
                                         objectFit="cover"
                                     />
                                 </div>
-                                <span className="text-blue-500 dark:text-violetDark-11">
+                                <span className="text-mauve-12 dark:text-violetDark-11">
                                     {owner.login}/
                                 </span>
                                 <span className="text-blue-500 dark:text-mauveDark-12">
@@ -61,7 +61,7 @@ export const GithubActivity = ({ starredRepos, contributedRepos }) => {
                 <h2 className="text-4xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight">
                     GitHub Activity
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-2">
                     <RepoList
                         title="Repos I Contributed to"
                         url={`https://github.com/${config.githubUsername}`}
