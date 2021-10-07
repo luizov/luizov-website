@@ -34,8 +34,8 @@ const PRODUCT_LIST = [
 export const Product = ({ title, image, alt, href, description, color, background }) => {
     if (href.startsWith('/')) {
         return (
-            <div className="group relative sm:p-6 rounded-md sm:hover:bg-mauve-4 transition duration-300 ease-in-out">
-                <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+            <div className="group relative sm:p-6 rounded-md sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
+                <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
                     <Image
                         src={image}
                         alt={alt}
@@ -43,13 +43,13 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
                         className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
                     />
                 </div>
-                <h3 className="mt-6 text-3xl font-medium text-mauve-12">
+                <h3 className="mt-6 text-3xl font-medium text-mauve-12 dark:text-mauveDark-12">
                     <a href={href} className="flex items-center">
                         <span className="absolute inset-0" />
                         {title}
                     </a>
                 </h3>
-                <p className="text-base">
+                <p className="text-base text-mauve-11 dark:text-mauveDark-11">
                     {description}
                 </p>
             </div>
@@ -57,8 +57,8 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
     }
 
     return (
-        <div className="group relative sm:p-6 rounded-md sm:hover:bg-mauve-4 transition duration-300 ease-in-out">
-            <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+        <div className="group relative sm:p-6 rounded-md sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
+            <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
                 <Image
                     src={image}
                     alt={alt}
@@ -66,7 +66,7 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
                     className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
                 />
             </div>
-            <h3 className="mt-6 text-3xl font-medium text-mauve-12">
+            <h3 className="mt-6 text-3xl font-medium text-mauve-12 dark:text-mauveDark-12">
                 <a href={href} className="flex items-center">
                     <span className="absolute inset-0" />
                     {title}
@@ -80,7 +80,7 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
                     </svg>
                 </a>
             </h3>
-            <p className="text-base">
+            <p className="text-base text-mauve-11 dark:text-mauveDark-11">
                 {description}
             </p>
         </div>
@@ -200,7 +200,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
     return (
-        <section id="products" className="relative py-20 bg-mauve-2 border-t border-mauve-6 dark:bg-mauveDark-2 dark:border-mauveDark-6 overflow-hidden">
+        <section id="products" className="relative py-20 bg-mauve-1 border-t border-b border-mauve-6 dark:bg-mauveDark-1 dark:border-mauveDark-6 overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 <h2 className="text-4xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight">
                     Products
