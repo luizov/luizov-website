@@ -97,16 +97,12 @@ html {
   @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white dark:bg-violetDark-4 dark:hover:bg-violetDark-5 dark:active:bg-violetDark-6 dark:text-violetDark-11;
 
   &.btn-shadow {
-    @apply shadow-primary hover:shadow-primary-sm active:shadow-primary-sm;
+    @apply shadow-primary hover:shadow-primary-sm active:shadow-none dark:shadow-none dark:hover:shadow-none;
   }
 }
 
 .btn-secondary {
   @apply bg-violet-3 hover:bg-violet-4 active:bg-violet-5 text-violet-10;
-}
-
-.btn-primary-shadow {
-  @apply shadow-primary hover:shadow-primary-sm active:shadow-primary-sm;
 }
 
 // Forms

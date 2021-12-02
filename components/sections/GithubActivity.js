@@ -12,7 +12,7 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 sm:p-6 sm:border border-mauve-6 dark:border-mauveDark-6 hover:bg-mauve-4 dark:hover:bg-mauveDark-4 rounded transition duration-200"
+                            className="block my-4 p-4 sm:p-6 sm:border border-mauve-7 dark:border-mauveDark-7 hover:bg-mauve-4 dark:hover:bg-mauveDark-4 rounded transition duration-200"
                         >
                             <div className="flex items-center mb-3">
                                 <div className="w-10 h-10 mr-3 relative">

@@ -103,7 +103,7 @@ export default function Newsletter() {
                                     />
                                     <button
                                         type="submit"
-                                        className="btn btn-primary"
+                                        className="btn btn-primary btn-shadow"
                                     >
                                         {form.state === 'loading' ? <LoadingSpinner /> : 'Subscribe'}
                                     </button>
