@@ -23,12 +23,12 @@ export default function HomeHeader({ title, description, children }) {
                             </svg>
                             See my products
                         </a>
-                        <Link href="/concepts" passHref>
+                        {/*               <Link href="/concepts" passHref>
                             <a
                                 className="btn btn-xl text-blue-500 hover:text-blue-600 dark:text-violetDark-10 dark:hover:text-violetDark-11">
                                 Or design concepts
                             </a>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

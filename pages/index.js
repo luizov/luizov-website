@@ -41,7 +41,7 @@ export default function HomePage({ posts, repos }) {
 
       <HomeHeader
         title="Product Design &amp; Development"
-        description="A freelance front-end engineer with a strong focus on interfaces working remotely from Bulgaria."
+        description={<>A freelance designer and fullstack developer working remotely from Bulgaria. Founder of <a href="https://temattic.com" target="_blank" rel="noreferrer" className="underline text-mauve-11 hover:text-mauve-12 dark:text-mauveDark-11 dark:hover:text-mauveDark-12 transition ease-in">Temattic</a> and other ventures.</>}
       />
 
       <Products />
