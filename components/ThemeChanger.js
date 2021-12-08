@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Switch } from '@headlessui/react'
+import { Switch } from '@headlessui/react';
 import { useTheme } from 'next-themes';
 
 const ThemeChanger = () => {
@@ -9,7 +9,7 @@ const ThemeChanger = () => {
     // When mounted on client, now we can show the UI
     useEffect(() => setMounted(true), []);
 
-    if (!mounted) return null
+    if (!mounted) return null;
 
     return (
         <Switch

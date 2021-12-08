@@ -12,7 +12,7 @@ export default function PostPreview({
     length
 }) {
     return (
-        <div className="group md:p-5 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 rounded-md transition duration-200 ease-in">
+        <div className="group md:p-5 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 rounded-3xl transition duration-200 ease-in">
             <div className="mb-5">
                 <CoverImage
                     slug={slug}

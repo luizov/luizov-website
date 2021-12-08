@@ -49,7 +49,7 @@ export default function Newsletter() {
             </div>
             <div className="max-w-6xl mx-auto px-4 sm:px-6">
                 {/* CTA box */}
-                <div className="relative bg-white dark:bg-mauveDark-1 border border-mauve-7 dark:border-mauveDark-7 shadow-sm rounded-lg -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+                <div className="relative bg-white dark:bg-mauveDark-1 border border-mauve-7 dark:border-mauveDark-7 shadow-sm rounded-3xl -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
                     {/* Background illustration */}
                     <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">
@@ -95,7 +95,7 @@ export default function Newsletter() {
                                     <input
                                         ref={inputEl}
                                         type="email"
-                                        className="w-full appearance-none bg-mauve-3 dark:bg-mauveDark-3 border border-mauve-7 dark:border-mauveDark-7 focus:border-mauve-7 dark:focus:border-mauveDark-7 rounded px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-mauve-12 dark:text-mauveDark-12 placeholder-mauve-10 dark:placeholder-mauveDark-10"
+                                        className="w-full appearance-none bg-mauve-3 dark:bg-mauveDark-3 border border-mauve-7 dark:border-mauveDark-7 focus:border-mauve-7 dark:focus:border-mauveDark-7 rounded-lg px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-mauve-12 dark:text-mauveDark-12 placeholder-mauve-10 dark:placeholder-mauveDark-10"
                                         placeholder="tim@apple.com"
                                         aria-label="Email for newsletter"
                                         autoComplete="email"

@@ -4,8 +4,8 @@
 
 @layer base {
   @font-face {
-    font-family: "SpaceGrotesk";
-    src: url("../public/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2")
+    font-family: "Outfit";
+    src: url("../public/fonts/Manrope/Manrope-VariableFont_wght.woff2")
       format("woff2");
     font-style: normal;
     font-weight: 100 800;
@@ -42,19 +42,19 @@ html {
 
 // Typography
 .h1 {
-  @apply text-4xl font-bold leading-tight tracking-tight;
+  @apply text-4xl font-semibold leading-tight tracking-tight;
 }
 
 .h2 {
-  @apply text-3xl font-bold leading-tight tracking-tight;
+  @apply text-3xl font-semibold leading-tight tracking-tight;
 }
 
 .h3 {
-  @apply text-3xl font-bold leading-tight;
+  @apply text-3xl font-semibold leading-tight;
 }
 
 .h4 {
-  @apply text-2xl font-bold leading-snug tracking-tight;
+  @apply text-2xl font-semibold leading-snug tracking-tight;
 }
 
 @screen md {
@@ -72,7 +72,7 @@ html {
 .btn-sm,
 .btn-lg,
 .btn-xl {
-  @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
+  @apply font-medium inline-flex items-center justify-center border border-transparent rounded-lg leading-snug transition duration-150 ease-in-out;
 }
 
 .btn {
@@ -88,7 +88,7 @@ html {
 }
 
 .btn-xl {
-  @apply px-9 py-5 text-lg leading-snug;
+  @apply px-9 py-5 text-lg leading-snug rounded-xl;
 }
 
 .btn-primary {
@@ -118,7 +118,7 @@ html {
 .form-multiselect,
 .form-select,
 .form-checkbox {
-  @apply rounded;
+  @apply rounded-lg;
 }
 
 .form-input,
@@ -230,10 +230,6 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-.highlight-line {
-  @apply block px-4 -mx-4 bg-mauve-2 border-l-4 border-blue-500 dark:bg-mauveDark-10;
 }
 
 // Custom Styles

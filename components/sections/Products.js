@@ -34,8 +34,8 @@ const PRODUCT_LIST = [
 export const Product = ({ title, image, alt, href, description, color, background }) => {
     if (href.startsWith('/')) {
         return (
-            <div className="group relative sm:p-6 rounded-md sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
-                <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+            <div className="group relative sm:p-6 rounded-3xl sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
+                <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-2xl overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
                     <Image
                         src={image}
                         alt={alt}
@@ -57,8 +57,8 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
     }
 
     return (
-        <div className="group relative sm:p-6 rounded-md sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
-            <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-md overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+        <div className="group relative sm:p-6 rounded-3xl sm:border border-mauve-7 dark:border-mauveDark-7 sm:hover:bg-mauve-4 sm:dark:hover:bg-mauveDark-4 transition duration-300 ease-in-out">
+            <div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-mauve-3 dark:bg-mauveDark-3 rounded-2xl overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
                 <Image
                     src={image}
                     alt={alt}
@@ -161,7 +161,7 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
             {/* Left Side */}
             <div className="flex flex-col max-w-sm p-8">
-                <h3 className={`${color} text-3xl font-bold`}>
+                <h3 className={`${color} text-3xl font-semibold`}>
                     <a href={href} className="flex items-center">
                         <span className="absolute inset-0" />
                         {title}
@@ -205,7 +205,7 @@ export default function Products() {
                 <h2 className="text-4xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight">
                     Products
                 </h2>
-                <div className="mt-1 text-2xl font-headings tracking-tight">
+                <div className="mt-1 text-2xl tracking-tight">
                     Creations I Have Made in the Past
                 </div>
                 <div className="mt-12 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6">

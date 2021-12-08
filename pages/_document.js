@@ -7,7 +7,7 @@ class MyDocument extends Document {
                 <Head>
                     <link
                         rel="preload"
-                        href="/fonts/SpaceGrotesk/SpaceGrotesk-var.woff2"
+                        href="/fonts/Manrope/Manrope-VariableFont_wght.woff2"
                         as="font"
                         crossOrigin="anonymous"
                         type="font/woff2"

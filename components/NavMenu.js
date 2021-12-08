@@ -42,7 +42,7 @@ export default function NavMenu() {
                         <div className="flex justify-center items-center">
                             {/*   text link here */}
                             <div className={`${open && 'translate-x-6 ease-out'} transition duration-300`}>
-                                <div className={`${open && 'opacity-0'} font-headings font-medium text-lg text-mauve-11 dark:text-mauveDark-10 group-hover:translate-x-3 transition duration-300 ease-out`}>
+                                <div className={`${open && 'opacity-0'} font-medium text-lg text-mauve-11 dark:text-mauveDark-10 group-hover:translate-x-3 transition duration-300 ease-out`}>
                                     Menu
                                 </div>
                             </div>
@@ -65,11 +65,11 @@ export default function NavMenu() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 -translate-y-10"
                     >
-                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 text-blue-150 shadow-primary-lg divide-y divide-black divide-opacity-10 rounded focus:outline-none overflow-hidden dark:bg-violetDark-4 dark:text-violetDark-11 dark:shadow-none">
+                        <Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 text-blue-150 shadow-primary-lg divide-y divide-black divide-opacity-10 rounded-2xl focus:outline-none overflow-hidden dark:bg-violetDark-4 dark:text-violetDark-11 dark:shadow-none">
                             <div className="py-4">
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/products" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/products" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl transition duration-200 ease-in`}
                                         >
                                             <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
                                                 Products
@@ -80,7 +80,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/articles" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/articles" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl transition duration-200 ease-in`}
                                         >
                                             <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
                                                 Articles
@@ -91,7 +91,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/concepts" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/concepts" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl transition duration-200 ease-in`}
                                         >
                                             <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
                                                 Concepts
@@ -102,7 +102,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/bookmarks" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/bookmarks" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl transition duration-200 ease-in`}
                                         >
                                             <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
                                                 Bookmarks
@@ -113,7 +113,7 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/instagram" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl font-headings transition duration-200 ease-in`}
+                                        <NextLink href="/instagram" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 text-xl transition duration-200 ease-in`}
                                         >
                                             <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
                                                 Instagram

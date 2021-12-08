@@ -124,8 +124,8 @@ module.exports = {
         center: true,
       },
       fontFamily: {
-        sans: ['SpaceGrotesk', ...fontFamily.sans],
-        headings: ['SpaceGrotesk'],
+        sans: ['Manrope', ...fontFamily.sans],
+        headings: ['Manrope'],
       },
       typography: (theme) => ({
         DEFAULT: {

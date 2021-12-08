@@ -7,7 +7,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
         <Image
             src={src}
             alt={`Cover Image for ${title}`}
-            className={cn('rounded shadow-sm', {
+            className={cn('rounded-2xl shadow-sm', {
                 'hover:shadow-md transition-shadow duration-200': slug,
             })}
             layout="responsive"
@@ -16,7 +16,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
         />
     )
     return (
-        <div className="sm:mx-0 bg-mauve-3 dark:bg-mauveDark-3 rounded border border-mauve-6 dark:border-mauveDark-6 overflow-hidden">
+        <div className="sm:mx-0 bg-mauve-3 dark:bg-mauveDark-3 rounded-2xl border border-mauve-6 dark:border-mauveDark-6 overflow-hidden">
             {slug ? (
                 <Link as={`/articles/${slug}`} href="/articles/[slug]">
                     <a

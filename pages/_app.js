@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
       initial={false}
       onExitComplete={() => window.scrollTo(0, 0)}
     >
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" disableTransitionOnChange>
         <Component {...pageProps} />
       </ThemeProvider>
     </AnimatePresence>

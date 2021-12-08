@@ -4,7 +4,7 @@ import Image from 'next/image';
 const RepoList = ({ repos, title, url }) => {
     return (
         <div>
-            <h3 className="mt-1 mb-8 text-2xl font-headings tracking-tight text-mauve-11 dark:text-mauveDark-11">
+            <h3 className="mt-1 mb-8 text-2xl tracking-tight text-mauve-11 dark:text-mauveDark-11">
                 {title}
             </h3>
             <ul>
@@ -12,14 +12,14 @@ const RepoList = ({ repos, title, url }) => {
                     <li key={id}>
                         <a
                             href={url}
-                            className="block my-4 p-4 sm:p-6 sm:border border-mauve-7 dark:border-mauveDark-7 hover:bg-mauve-4 dark:hover:bg-mauveDark-4 rounded transition duration-200"
+                            className="block my-4 p-4 sm:p-6 sm:border border-mauve-7 dark:border-mauveDark-7 hover:bg-mauve-4 dark:hover:bg-mauveDark-4 rounded-xl transition duration-200"
                         >
                             <div className="flex items-center mb-3">
                                 <div className="w-10 h-10 mr-3 relative">
                                     <Image
                                         src={owner.avatarUrl}
                                         alt={`${owner.login} avatar`}
-                                        className="rounded-md"
+                                        className="rounded-lg"
                                         layout="fill"
                                         objectFit="cover"
                                     />

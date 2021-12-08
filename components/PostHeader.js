@@ -7,7 +7,7 @@ export default function PostHeader({ title, coverImage, date, author, length }) 
     const stats = readingTime(length);
     return (
         <>
-            <h1 className="text-5xl sm:text-6xl text-mauve-12 dark:text-mauveDark-12 font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
+            <h1 className="text-5xl sm:text-6xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
                 {title}
             </h1>
             <p className="hidden md:block mb-6 text-lg">

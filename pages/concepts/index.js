@@ -87,7 +87,7 @@ const toBase64 = (str) =>
 
 export const PlaygroundImage = ({ src, alt }) => {
     return (
-        <div className="relative w-full h-80 bg-mauve-4 dark:bg-mauveDark-4 rounded-lg overflow-hidden sm:aspect-w-16 sm:aspect-h-12 transition">
+        <div className="relative w-full h-80 bg-mauve-4 dark:bg-mauveDark-4 rounded-3xl overflow-hidden sm:aspect-w-16 sm:aspect-h-12 transition">
             <Image
                 src={src}
                 alt={alt}
