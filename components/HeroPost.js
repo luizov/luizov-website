@@ -61,8 +61,8 @@ export function HeroPostAlt({
     return (
         <section className="pb-20">
             <div className="group md:p-8 md:-mx-8 md:hover:bg-mauve-4 md:dark:hover:bg-mauveDark-4 rounded-md transition duration-200 ease-in">
-                <div className="md:grid md:grid-cols-3 md:gap-x-8 lg:gap-x-6">
-                    <div className="col-span-2">
+                <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6">
+                    <div className="col-span-1 lg:col-span-2">
                         <div className="mb-8 md:mb-0">
                             <CoverImage
                                 title={title}
