@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './layouts/**/*.{js,ts,jsx,tsx}'
@@ -199,14 +199,6 @@ module.exports = {
           }
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      backgroundColor: ['active'],
-      boxShadow: ['active'],
-      translate: ['active'],
-      transitionProperty: ['hover', 'focus', 'active'],
     },
   },
   plugins: [
