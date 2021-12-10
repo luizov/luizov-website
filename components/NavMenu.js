@@ -69,9 +69,9 @@ export default function NavMenu() {
                             <div className="p-3">
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/products" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-200 ease-in`}
+                                        <NextLink href="/products" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-150 ease-in`}
                                         >
-                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                            <div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
                                                 Products
                                             </div>
 
@@ -80,9 +80,9 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/articles" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-200 ease-in`}
+                                        <NextLink href="/articles" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-150 ease-in`}
                                         >
-                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                            <div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
                                                 Articles
                                             </div>
 
@@ -91,9 +91,9 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/concepts" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-200 ease-in`}
+                                        <NextLink href="/concepts" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-150 ease-in`}
                                         >
-                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                            <div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
                                                 Concepts
                                             </div>
 
@@ -102,9 +102,9 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/bookmarks" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-200 ease-in`}
+                                        <NextLink href="/bookmarks" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-150 ease-in`}
                                         >
-                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                            <div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
                                                 Bookmarks
                                             </div>
 
@@ -113,9 +113,9 @@ export default function NavMenu() {
                                 </Menu.Item>
                                 <Menu.Item>
                                     {({ active }) => (
-                                        <NextLink href="/instagram" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-200 ease-in`}
+                                        <NextLink href="/instagram" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-violetDark-5 dark:text-white'} group flex items-center w-full px-8 py-2 rounded-xl text-xl transition duration-150 ease-in`}
                                         >
-                                            <div className={`${active && 'translate-x-2'} transition duration-200 ease-in`}>
+                                            <div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
                                                 Instagram
                                             </div>
 

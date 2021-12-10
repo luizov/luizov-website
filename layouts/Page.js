@@ -1,27 +1,19 @@
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const variants = {
     initial: {
         opacity: 0,
-        y: 32,
+        y: 64,
     },
     enter: {
         opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.4,
-            ease: [0.61, 1, 0.88, 1],
-        },
+        y: 0
     },
     exit: {
         opacity: 0,
-        y: -32,
-        transition: {
-            duration: 0.4,
-            ease: [0.61, 1, 0.88, 1],
-        },
+        y: -64
     },
 }
 
@@ -29,16 +21,17 @@ export default function Layout({ children }) {
     return (
         <div className="flex flex-col h-screen overflow-x-hidden">
             <Header />
-            <motion.main
+            <m.main
                 className="flex-grow"
                 initial="initial"
                 animate="enter"
                 exit="exit"
                 variants={variants}
+                transition={{ type: 'linear' }}
                 role="main"
             >
                 {children}
-            </motion.main>
+            </m.main>
             <Footer />
         </div>
     )

@@ -3,7 +3,7 @@ import { config } from "../config";
 import { fetchRepos } from "../lib/github";
 import { getDatabase } from "../lib/notion";
 
-import Page from '../layouts/Page';
+import Layout from '../layouts/Page';
 
 import HomeHeader from '../components/HomeHeader';
 import Products from '../components/sections/Products';
@@ -15,7 +15,7 @@ export default function HomePage({ posts, repos }) {
   const seoDesc = "A freelance front-end engineer with a strong focus on interfaces working remotely from Bulgaria.";
 
   return (
-    <Page>
+    <Layout>
       <NextSeo
         title={seoTitle}
         description={seoDesc}
@@ -48,7 +48,7 @@ export default function HomePage({ posts, repos }) {
 
       <GithubActivity {...repos} />
       <Newsletter />
-    </Page>
+    </Layout>
   )
 };
 
