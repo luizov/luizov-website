@@ -4,7 +4,7 @@
 
 @layer base {
   @font-face {
-    font-family: "Outfit";
+    font-family: "Manrope";
     src: url("../public/fonts/Manrope/Manrope-VariableFont_wght.woff2")
       format("woff2");
     font-style: normal;
@@ -13,18 +13,16 @@
 }
 
 @layer utilities {
-  @variants responsive {
-    .masonry-3-col {
-      column-count: 3;
-    }
+  .masonry-3-col {
+    column-count: 3;
+  }
 
-    .masonry-2-col {
-      column-count: 2;
-    }
+  .masonry-2-col {
+    column-count: 2;
+  }
 
-    .break-inside {
-      break-inside: avoid;
-    }
+  .break-inside {
+    break-inside: avoid;
   }
 }
 
