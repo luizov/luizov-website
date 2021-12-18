@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: "Manrope";
-    src: url("../public/fonts/Manrope/Manrope-VariableFont_wght.woff2")
-      format("woff2");
-    font-style: normal;
-    font-weight: 100 800;
-  }
-}
-
 @layer utilities {
   .masonry-3-col {
     column-count: 3;
@@ -32,6 +22,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans font-medium;
 }
 
 .container {

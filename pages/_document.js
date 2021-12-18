@@ -5,13 +5,7 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <link
-                        rel="preload"
-                        href="/fonts/Manrope/Manrope-VariableFont_wght.woff2"
-                        as="font"
-                        crossOrigin="anonymous"
-                        type="font/woff2"
-                    />
+                    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
                     <link href="/favicons/site.webmanifest" rel="manifest" />
                     <link rel="shortcut icon" href="/favicons/favicon.ico" />
                     <link
