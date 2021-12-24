@@ -31,6 +31,7 @@ export default function Progress() {
                     width={48}
                     height={48}
                     priority="true"
+                    quality={100}
                 />
             </a>
         </Link>

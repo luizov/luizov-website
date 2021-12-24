@@ -36,6 +36,7 @@ export default function Footer() {
                                 alt="Luizov logo"
                                 width={48}
                                 height={48}
+                                quality={100}
                             />
                         </a>
                     </Link>
