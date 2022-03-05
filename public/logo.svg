@@ -1,26 +1,3 @@
-<svg width="352" height="353" viewBox="0 0 352 353" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="352" height="353">
-<path d="M352 176.75C352 79.5479 273.202 0.75 176 0.75C78.7979 0.75 0 79.5479 0 176.75C0 273.952 78.7979 352.75 176 352.75C273.202 352.75 352 273.952 352 176.75Z" fill="white"/>
-</mask>
-<g mask="url(#mask0)">
-<path d="M343.2 0.75H8.8C3.93989 0.75 0 4.68989 0 9.55V343.95C0 348.81 3.93989 352.75 8.8 352.75H343.2C348.06 352.75 352 348.81 352 343.95V9.55C352 4.68989 348.06 0.75 343.2 0.75Z" fill="#3D91FF"/>
-<g filter="url(#filter0_f)">
-<path d="M59.4022 249.541L63.6286 361.088L128.951 457.931L439.74 248.301L325.264 78.5838L243.162 87.9288L180.891 251.302L59.4022 249.541Z" fill="#C27DF2"/>
-</g>
-<g style="mix-blend-mode:overlay" filter="url(#filter1_f)">
-<path d="M231.146 123.523L123.945 -5.69048L-84.0594 47.3479L-125.208 382.231L187.755 398.767L179.075 279.048L65.9172 336.025L-65.0489 198.292L231.147 123.518L231.146 123.523Z" fill="#F8F8F2"/>
-</g>
-</g>
-<defs>
-<filter id="filter0_f" x="-80.7862" y="-26.9754" width="594.446" height="558.827" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="36.96" result="effect1_foregroundBlur"/>
-</filter>
-<filter id="filter1_f" x="-199.129" y="-101.273" width="516.456" height="591.642" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="36.96" result="effect1_foregroundBlur"/>
-</filter>
-</defs>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75 0C18.75 0 0 18.75 0 75C0 131.25 18.75 150 75 150C131.25 150 150 131.25 150 75C150 18.75 131.25 0 75 0ZM75 10C26.25 10 10 26.25 10 75C10 123.75 26.25 140 75 140C123.75 140 140 123.75 140 75C140 26.25 123.75 10 75 10Z" fill="#0A6BFF"/>
 </svg>

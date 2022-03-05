@@ -3,7 +3,7 @@ export default function PageHeader({ title, description, children }) {
         <section className="relative py-20 overflow-hidden">
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
                 <div className="flex flex-col">
-                    <h1 className="text-6xl text-mauve-12 dark:text-mauveDark-12 font-semibold tracking-tight leading-tight">
+                    <h1 className="h1 text-mauve-12 dark:text-mauveDark-12">
                         {title}
                     </h1>
                     {description &&

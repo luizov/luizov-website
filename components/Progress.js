@@ -21,15 +21,15 @@ export default function Progress() {
     return (
         <Link href="/">
             <a className="relative flex items-center z-10">
-                <div className={`${loading && `opacity-100`} absolute -inset-x-1 rounded-full w-14 h-14 border-r-2 border-blue-400 border-opacity-40 animate-spin-slow z-0 opacity-0`}>
+                <div className={`${loading && `opacity-100`} absolute -inset-x-1 rounded-full w-7 h-7 border-r-2 border-blue-400 border-opacity-40 animate-spin-slow z-0 opacity-0`}>
                 </div>
-                <div className={`${loading && `opacity-100`} absolute -inset-x-1 rounded-full w-14 h-14 border-r-2 border-blue-500 animate-spin z-0 opacity-0`}>
+                <div className={`${loading && `opacity-100`} absolute -inset-x-1 rounded-full w-7 h-7 border-r-2 border-blue-500 animate-spin z-0 opacity-0`}>
                 </div>
                 <Image
                     src="/logo.svg"
-                    alt="Luizov logo"
-                    width={48}
-                    height={48}
+                    alt="Luizov logomark"
+                    width={24}
+                    height={24}
                     priority="true"
                     quality={100}
                 />

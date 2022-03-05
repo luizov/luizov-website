@@ -2,7 +2,146 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  ::selection {
+    @apply bg-violet-5 text-violet-12 dark:bg-violetDark-5 dark:text-violetDark-12;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans font-normal;
+  }
+  abbr[title] {
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  // Buttons
+  .btn,
+  .btn-sm,
+  .btn-lg,
+  .btn-xl {
+    @apply font-medium inline-flex items-center justify-center border border-transparent rounded-md leading-snug transition duration-150 ease-in-out;
+  }
+
+  .btn {
+    @apply px-4 py-3;
+  }
+
+  .btn-sm {
+    @apply px-2.5 py-2;
+  }
+
+  .btn-lg {
+    @apply px-6 py-4 text-lg leading-snug;
+  }
+
+  .btn-xl {
+    @apply px-9 py-5 text-lg leading-snug rounded-lg;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white dark:bg-violetDark-4 dark:hover:bg-violetDark-5 dark:active:bg-violetDark-6 dark:text-violetDark-11;
+
+    &.btn-shadow {
+      @apply shadow-primary hover:shadow-primary-sm active:shadow-none dark:shadow-none dark:hover:shadow-none;
+    }
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-white active:bg-violet-5 text-mauve-12;
+  }
+
+  .btn-dark {
+    @apply bg-mauve-9 hover:bg-mauve-8 active:bg-mauve-7 text-mauve-12;
+  }
+
+  // Forms
+  .form-input,
+  .form-textarea,
+  .form-multiselect,
+  .form-select,
+  .form-checkbox,
+  .form-radio {
+    @apply bg-white border border-mauve-7 focus:border-mauve-7;
+  }
+
+  .form-input,
+  .form-textarea,
+  .form-multiselect,
+  .form-select,
+  .form-checkbox {
+    @apply rounded-lg;
+  }
+
+  .form-input,
+  .form-textarea,
+  .form-multiselect,
+  .form-select {
+    @apply py-3 px-4;
+  }
+
+  .form-input,
+  .form-textarea {
+    @apply placeholder-mauve-10;
+  }
+
+  .form-select {
+    @apply pr-10;
+  }
+
+  .form-checkbox,
+  .form-radio {
+    @apply text-mauve-12 rounded-sm;
+  }
+}
+
 @layer utilities {
+  // Typography
+  .display-4 {
+    @apply text-4xl font-headings font-semibold leading-tight tracking-tight;
+  }
+
+  .h1 {
+    @apply text-4xl font-bold leading-tight tracking-tight;
+  }
+
+  .h2 {
+    @apply text-3xl font-bold leading-tight tracking-tight;
+  }
+
+  .h3 {
+    @apply text-3xl font-semibold leading-tight;
+  }
+
+  .h4 {
+    @apply text-2xl font-semibold leading-snug tracking-tight;
+  }
+
+  @screen sm {
+    .display-4 {
+      @apply text-6xl;
+    }
+  }
+
+  @screen md {
+    .h1 {
+      @apply text-5xl;
+    }
+
+    .h2 {
+      @apply text-4xl;
+    }
+  }
+
+  .container {
+    @apply max-w-screen-lg;
+  }
+
   .masonry-3-col {
     column-count: 3;
   }
@@ -14,124 +153,6 @@
   .break-inside {
     break-inside: avoid;
   }
-}
-
-::selection {
-  @apply bg-violet-5 text-violet-12 dark:bg-violetDark-5 dark:text-violetDark-12;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  @apply font-sans font-medium;
-}
-
-.container {
-  @apply max-w-screen-lg;
-}
-
-// Typography
-.h1 {
-  @apply text-4xl font-semibold leading-tight tracking-tight;
-}
-
-.h2 {
-  @apply text-3xl font-semibold leading-tight tracking-tight;
-}
-
-.h3 {
-  @apply text-3xl font-semibold leading-tight;
-}
-
-.h4 {
-  @apply text-2xl font-semibold leading-snug tracking-tight;
-}
-
-@screen md {
-  .h1 {
-    @apply text-5xl;
-  }
-
-  .h2 {
-    @apply text-4xl;
-  }
-}
-
-// Buttons
-.btn,
-.btn-sm,
-.btn-lg,
-.btn-xl {
-  @apply font-medium inline-flex items-center justify-center border border-transparent rounded-lg leading-snug transition duration-150 ease-in-out;
-}
-
-.btn {
-  @apply px-4 py-3;
-}
-
-.btn-sm {
-  @apply px-2.5 py-2;
-}
-
-.btn-lg {
-  @apply px-6 py-4 text-lg leading-snug;
-}
-
-.btn-xl {
-  @apply px-9 py-5 text-lg leading-snug rounded-xl;
-}
-
-.btn-primary {
-  @apply bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white dark:bg-violetDark-4 dark:hover:bg-violetDark-5 dark:active:bg-violetDark-6 dark:text-violetDark-11;
-
-  &.btn-shadow {
-    @apply shadow-primary hover:shadow-primary-sm active:shadow-none dark:shadow-none dark:hover:shadow-none;
-  }
-}
-
-.btn-secondary {
-  @apply bg-violet-3 hover:bg-violet-4 active:bg-violet-5 text-violet-10;
-}
-
-// Forms
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select,
-.form-checkbox,
-.form-radio {
-  @apply bg-white border border-mauve-7 focus:border-mauve-7;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select,
-.form-checkbox {
-  @apply rounded-lg;
-}
-
-.form-input,
-.form-textarea,
-.form-multiselect,
-.form-select {
-  @apply py-3 px-4;
-}
-
-.form-input,
-.form-textarea {
-  @apply placeholder-mauve-10;
-}
-
-.form-select {
-  @apply pr-10;
-}
-
-.form-checkbox,
-.form-radio {
-  @apply text-mauve-12 rounded-sm;
 }
 
 /* Prose Specific */
@@ -222,12 +243,4 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-}
-
-// Custom Styles
-.highlight-shadow {
-  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 5%),
-    inset 0 1px 0 0 rgb(255 255 255 / 20%),
-    inset 0 -1px 0 0 rgb(255 255 255 / 10%), 0 1px 3px rgb(0 0 0 / 5%),
-    0 1px 2px rgb(0 0 0 / 10%);
 }

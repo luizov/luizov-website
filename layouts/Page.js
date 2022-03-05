@@ -3,18 +3,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const variants = {
-    initial: {
-        opacity: 0,
-        y: 64,
-    },
-    enter: {
-        opacity: 1,
-        y: 0
-    },
-    exit: {
-        opacity: 0,
-        y: -64
-    },
+    initial: { opacity: 0, y: 64 },
+    enter: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -64 },
 }
 
 export default function Layout({ children }) {
