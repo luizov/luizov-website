@@ -1,4 +1,8 @@
+import { useKBar } from 'kbar';
+
 export default function HomeHeader({ title, description, children }) {
+	const { query } = useKBar();
+
 	return (
 		<section className="relative py-20 pb-24 overflow-hidden">
 			{/* 			<div aria-hidden="true" className="absolute inset-0">
@@ -26,7 +30,7 @@ export default function HomeHeader({ title, description, children }) {
 							</svg>
 							See my products
 						</a>
-						<button className="hidden sm:flex w-full sm:w-96 items-center text-left space-x-3 btn btn-xl btn-form shadow">
+						<button className="hidden sm:flex w-full sm:w-96 items-center text-left space-x-3 btn btn-xl btn-form shadow" onClick={query.toggle}>
 							<svg className="-ml-2 mr-2 h-6 w-6 flex-none" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
 								<path d="m19 19-3.5-3.5"></path>
 								<circle cx="11" cy="11" r="6"></circle>

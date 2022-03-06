@@ -6,6 +6,7 @@ import { useTheme } from 'next-themes';
 
 export default function Logo() {
 	const [loading, setLoading] = useState(false);
+	const [mounted, setMounted] = useState(false);
 	const { theme } = useTheme();
 
 	let logoMark;
@@ -21,9 +22,11 @@ export default function Logo() {
 			logoType = '/logotype-dark.svg';
 			break;
 		default:
-			logoMark = '/logo.svg';
-			logoType = '/logotype.svg';
+			logoMark = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+			logoType = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 	}
+
+	useEffect(() => setMounted(true), [])
 
 	useEffect(() => {
 		const updateLoadingStatus = () => setLoading(!loading);
@@ -36,6 +39,8 @@ export default function Logo() {
 			Router.events.off("routeChangeComplete", updateLoadingStatus);
 		};
 	}, [loading])
+
+	if (!mounted) return null;
 
 	return (
 		<div className="flex items-center space-x-2">
