@@ -1,31 +1,31 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import Progress from './Progress';
-import Logotype from './Logotype';
+import Logo from './Logo';
 import NavItem from './NavItem';
 import NavMenu from './NavMenu';
 
 export default function Header() {
-    return (
-        <header>
-            <nav className="flex justify-between items-center py-4 max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 border-b border-mauve-6 dark:border-mauveDark-6">
-                <div className="flex items-center space-x-2">
-                    <Progress />
-                    <Logotype />
-                </div>
+	return (
+		<header>
+			<div className="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-2 flex justify-between items-center border-b border-slate-6 dark:border-slateDark-6">
 
+				{/* <!-- Logo --> */}
+				<Logo />
 
+				{/* <!-- Mobile Menu --> */}
+				<div className="md:hidden">
+					<NavMenu />
+				</div>
 
-                {/*               <ul className="flex">
-                    <NavItem href="/products">Products</NavItem>
-                    <NavItem href="/articles">Articles</NavItem>
-                    <NavItem href="/concepts">Concepts</NavItem>
-                </ul> */}
-                <NavMenu />
+				{/* <!-- Desktop Nav --> */}
+				<nav className="hidden md:flex items-center">
+					<ul className="flex">
+						<NavItem href="/products">Products</NavItem>
+						<NavItem href="/articles">Articles</NavItem>
+						<NavItem href="/concepts">Concepts</NavItem>
+					</ul>
+					{/* <NavMenu /> */}
+				</nav>
+			</div>
+		</header>
 
-
-            </nav>
-        </header>
-
-    )
+	)
 }
