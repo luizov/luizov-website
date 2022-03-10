@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const PRODUCT_LIST = [
 	{
-		name: 'Octatheme',
-		description: 'Description coming soon',
-		imageSrc: '/products/coming-soon-2.jpg',
+		name: 'Temattic',
+		description: 'Modern themes and templates for your next web project.',
+		imageSrc: '/products/cover-temattic.jpg',
 		imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-		href: '/octatheme',
+		href: '/temattic',
 		color: 'text-white',
 		background: 'bg-slate-5',
 	},
@@ -34,16 +34,16 @@ const PRODUCT_LIST = [
 export const Product = ({ title, image, alt, href, description, color, background }) => {
 	if (href.startsWith('/')) {
 		return (
-			<div className="group relative sm:p-6 rounded-3xl sm:border border-slate-7 dark:border-slateDark-7 sm:hover:bg-slate-4 sm:dark:hover:bg-slateDark-4 transition duration-300 ease-in-out">
-				<div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-slate-3 dark:bg-slateDark-3 rounded-2xl overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+			<div className="group relative sm:p-6 rounded-2xl sm:border border-slate-7 dark:border-slateDark-7 sm:hover:border-blue-9 sm:dark:hover:border-blueDark-9 dark:bg-slateDark-3 dark:hover:bg-slateDark-4 dark:active:bg-slateDark-5 sm:shadow-sm transition duration-300 ease-in-out">
+				<div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-8 bg-slate-3 dark:bg-slateDark-3 rounded-xl overflow-hidden group-hover:scale-[0.98] transition duration-300 ease-in-out">
 					<Image
 						src={image}
 						alt={alt}
 						layout="fill"
-						className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+						className="w-full h-full object-center object-cover group-hover:scale-110 transition duration-300 ease-in-out"
 					/>
 				</div>
-				<h3 className="mt-6 text-3xl font-medium text-slate-12 dark:text-slateDark-12">
+				<h3 className="mt-6 h4 font-headings text-slate-12 dark:text-slateDark-12">
 					<a href={href} className="flex items-center">
 						<span className="absolute inset-0" />
 						{title}
@@ -57,16 +57,16 @@ export const Product = ({ title, image, alt, href, description, color, backgroun
 	}
 
 	return (
-		<div className="group relative sm:p-6 rounded-3xl sm:border border-slate-7 dark:border-slateDark-7 sm:hover:bg-slate-4 sm:dark:hover:bg-slateDark-4 transition duration-300 ease-in-out">
-			<div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-6 bg-slate-3 dark:bg-slateDark-3 rounded-2xl overflow-hidden group-hover:opacity-90 group-hover:scale-95 transition duration-300 ease-in-out">
+		<div className="group relative sm:p-6 rounded-2xl sm:border border-slate-7 dark:border-slateDark-7 sm:hover:border-blue-9 sm:dark:hover:border-blueDark-9 dark:bg-slateDark-4 dark:hover:bg-slateDark-5 dark:active:bg-slateDark-6 sm:shadow-sm transition duration-300 ease-in-out">
+			<div className="relative aspect-w-1 aspect-h-1 sm:aspect-w-16 sm:aspect-h-8 bg-slate-3 dark:bg-slateDark-3 rounded-xl overflow-hidden group-hover:scale-[0.98] transition duration-300 ease-in-out">
 				<Image
 					src={image}
 					alt={alt}
 					layout="fill"
-					className="w-full h-full object-center object-cover group-hover:scale-105 transition duration-300 ease-in-out"
+					className="w-full h-full object-center object-cover group-hover:scale-110 transition duration-300 ease-in-out"
 				/>
 			</div>
-			<h3 className="mt-6 text-3xl font-medium text-slate-12 dark:text-slateDark-12">
+			<h3 className="mt-6 h4 font-headings text-slate-12 dark:text-slateDark-12">
 				<a href={href} className="flex items-center">
 					<span className="absolute inset-0" />
 					{title}
@@ -200,15 +200,15 @@ const ProductCard = ({ title, image, alt, href, description, color, background }
 
 export default function Products() {
 	return (
-		<section id="products" className="relative py-20 bg-slate-1 border-t border-b border-slate-6 dark:bg-slateDark-1 dark:border-slateDark-6 overflow-hidden">
+		<section id="products" className="relative py-20 bg-slate-2 border-t border-b border-slate-6 dark:bg-slateDark-1 dark:border-slateDark-6 overflow-hidden">
 			<div className="max-w-6xl mx-auto px-4 sm:px-6">
-				<h2 className="text-4xl text-slate-12 dark:text-slateDark-12 font-semibold tracking-tight">
+				<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
 					Products
 				</h2>
 				<div className="mt-1 text-2xl tracking-tight">
 					Creations I Have Made in the Past
 				</div>
-				<div className="mt-12 space-y-12 lg:grid lg:grid-cols-1 lg:gap-x-6">
+				<div className="mt-12 grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6">
 					{PRODUCT_LIST.map((entry) => (
 						<Product
 							key={entry.name}

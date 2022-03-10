@@ -5,7 +5,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,800;1,800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+					<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,800;1,800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
 					<link href="/favicons/site.webmanifest" rel="manifest" />
 					<link rel="shortcut icon" href="/favicons/favicon.ico" />
 					<link

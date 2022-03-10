@@ -2,7 +2,6 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	mode: 'jit',
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
 		'./components/**/*.{js,ts,jsx,tsx}',
@@ -43,32 +42,19 @@ module.exports = {
 					11: 'hsl(206, 6.0%, 63.0%)',
 					12: 'hsl(210, 6.0%, 93.0%)',
 				},
-				cyanDark: {
-					1: 'hsl(192, 60.0%, 7.2%)',
-					2: 'hsl(192, 71.4%, 8.2%)',
-					3: 'hsl(192, 75.9%, 10.8%)',
-					4: 'hsl(192, 79.3%, 12.8%)',
-					5: 'hsl(192, 82.5%, 14.6%)',
-					6: 'hsl(192, 86.6%, 16.9%)',
-					7: 'hsl(192, 92.6%, 20.1%)',
-					8: 'hsl(192, 100%, 24.5%)',
-					9: 'hsl(190, 95.0%, 39.0%)',
-					10: 'hsl(188, 100%, 40.0%)',
-					11: 'hsl(186, 100%, 42.2%)',
-					12: 'hsl(185, 73.0%, 93.2%)',
-				},
 				blue: {
-					100: '#F9FBFE',
-					150: '#EAF2FE',
-					200: '#D9E8FE',
-					250: '#BDD7FF',
-					300: '#93BEFF',
-					400: '#5A9BFF',
-					500: '#0A6BFF',
-					600: '#065DD8',
-					700: '#044DB0',
-					800: '#013C88',
-					900: '#002C61'
+					1: 'hsl(210, 100%, 99.2%)',
+					2: 'hsl(216, 100%, 98.0%)',
+					3: 'hsl(212, 100%, 96.5%)',
+					4: 'hsl(214, 98.8%, 94.0%)',
+					5: 'hsl(212, 95.0%, 90.1%)',
+					6: 'hsl(214, 81.2%, 84.5%)',
+					7: 'hsl(212, 77.5%, 76.9%)',
+					8: 'hsl(212, 81.9%, 65.3%)',
+					9: 'hsl(216, 100%, 52.0%)',
+					10: 'hsl(212, 100%, 47.3%)',
+					11: 'hsl(214, 100%, 43.2%)',
+					12: 'hsl(213, 100%, 14.0%)',
 				},
 				blueDark: {
 					1: 'hsl(212, 35.0%, 9.2%)',
@@ -112,35 +98,6 @@ module.exports = {
 					11: '#9E8CFC',
 					12: '#F1EEFE'
 				},
-				mauve: {
-					1: '#FDFCFD',
-					2: '#F9F8F9',
-					3: '#F4F2F4',
-					4: '#EEEDEF',
-					5: '#E9E8EA',
-					6: '#E4E2E4',
-					7: '#DCDBDD',
-					8: '#C8C7CB',
-					9: '#908E96',
-					10: '#86848D',
-					11: '#6F6E77',
-					12: '#1A1523'
-				},
-				mauveDark: {
-					0: '#0F0F10',
-					1: '#161618',
-					2: '#1C1C1F',
-					3: '#232326',
-					4: '#28282C',
-					5: '#2E2E32',
-					6: '#34343A',
-					7: '#3E3E44',
-					8: '#504F57',
-					9: '#706F78',
-					10: '#7E7D86',
-					11: '#A09FA6',
-					12: '#EDEDEF'
-				}
 			},
 			animation: {
 				enter: "enter 200ms ease-out",
@@ -183,11 +140,12 @@ module.exports = {
 			fontFamily: {
 				sans: ['Inter', ...fontFamily.sans],
 				headings: ['Epilogue', ...fontFamily.sans],
+				mono: ['JetBrains Mono', ...fontFamily.mono]
 			},
 			typography: (theme) => ({
 				DEFAULT: {
 					css: {
-						color: theme('colors.mauve.11'),
+						color: theme('colors.slate.11'),
 						a: {
 							color: theme('colors.blue.500'),
 							'&:hover': {

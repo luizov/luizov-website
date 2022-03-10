@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Menu, Transition } from '@headlessui/react';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment } from 'react';
 import ThemeChanger from './ThemeChanger';
 
 
@@ -47,7 +47,7 @@ export default function NavMenu() {
 								</div>
 							</div>
 							{/*  round button here */}
-							<div className={`flex relative w-11 h-10 rounded-xl justify-center items-center ml-3 bg-transparent border border-slate-7 dark:border-slateDark-7 group-hover:bg-blue-500 dark:group-hover:bg-blueDark-9 group-hover:scale-50 group-hover:border-transparent shadow-sm transition duration-300 ease-out`}>
+							<div className={`flex relative w-11 h-10 rounded-xl justify-center items-center ml-3 bg-transparent border border-slate-7 dark:border-slateDark-7 group-hover:bg-blue-9 dark:group-hover:bg-blueDark-9 group-hover:scale-50 group-hover:border-transparent shadow-sm transition duration-300 ease-out`}>
 
 								<svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-slate-11 dark:text-slateDark-11 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16" />
@@ -65,7 +65,7 @@ export default function NavMenu() {
 						leaveFrom="opacity-100 translate-y-0"
 						leaveTo="opacity-0 -translate-y-10"
 					>
-						<Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-500 dark:bg-blueDark-9 text-blue-150 dark:text-blueDark-12 shadow-primary-lg divide-y divide-black divide-opacity-10 rounded-lg focus:outline-none overflow-hidden dark:shadow-none">
+						<Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-9 dark:bg-blueDark-9 text-blue-3 dark:text-blueDark-12 shadow-primary-lg divide-y divide-black divide-opacity-10 rounded-lg focus:outline-none overflow-hidden dark:shadow-none">
 							<div className="p-3">
 								<Menu.Item>
 									{({ active }) => (

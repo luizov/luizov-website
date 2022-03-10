@@ -14,10 +14,10 @@ export default function Layout({ children }) {
 			<Header />
 			<m.main
 				className="flex-grow"
+				variants={variants}
 				initial="initial"
 				animate="enter"
 				exit="exit"
-				variants={variants}
 				transition={{ type: 'linear' }}
 				role="main"
 			>

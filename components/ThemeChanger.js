@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Switch } from '@headlessui/react';
 import { useTheme } from 'next-themes';
+import cn from 'classnames';
 
 const ThemeChanger = () => {
 	const [mounted, setMounted] = useState(false);
@@ -15,14 +16,22 @@ const ThemeChanger = () => {
 		<Switch
 			checked={theme}
 			onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-			className={`${theme === 'light' ? 'bg-black bg-opacity-20' : 'bg-black bg-opacity-25'}
-          relative inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+			className={cn(
+				theme === 'light'
+					? 'bg-black bg-opacity-10'
+					: 'bg-black bg-opacity-25',
+				'relative inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+			)}
 		>
 			<span className="sr-only">Enable Dark mode</span>
 			<span
 				aria-hidden="true"
-				className={`${theme === 'dark' ? 'translate-x-5 bg-blueDark-9' : 'translate-x-0 bg-blue-500'}
-            pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200`}
+				className={cn(
+					theme === 'dark'
+						? 'translate-x-5 bg-blueDark-9'
+						: 'translate-x-0 bg-blue-9',
+					'pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
+				)}
 			>
 				{mounted && (
 					<svg
@@ -30,7 +39,7 @@ const ThemeChanger = () => {
 						viewBox="0 0 24 24"
 						fill="currentColor"
 						stroke="currentColor"
-						className="w-4 h-4 text-blue-150 dark:text-blueDark-12 transition ease-in-out duration-200"
+						className="w-4 h-4 text-blue-3 dark:text-blueDark-12 transition ease-in-out duration-200"
 					>
 						{theme === 'dark' ? (
 							<path

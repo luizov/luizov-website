@@ -1,4 +1,5 @@
 import { useKBar } from 'kbar';
+import { IconDown, IconSearch } from './base/Icons';
 
 export default function HomeHeader({ title, description, children }) {
 	const { query } = useKBar();
@@ -25,16 +26,11 @@ export default function HomeHeader({ title, description, children }) {
 					{children}
 					<div className="sm:flex sm:justify-center lg:justify-start sm:space-x-6">
 						<a href="#products" className="w-full sm:w-auto btn btn-xl btn-primary btn-shadow">
-							<svg className="-ml-2 mr-2 h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M16.59 8.59L12 13.17L7.41 8.59L6 10L12 16L18 10L16.59 8.59Z" fill="currentColor" />
-							</svg>
+							<IconDown className="-ml-2 mr-2" aria-hidden="true" />
 							See my products
 						</a>
 						<button className="hidden sm:flex w-full sm:w-96 items-center text-left space-x-3 btn btn-xl btn-form shadow" onClick={query.toggle}>
-							<svg className="-ml-2 mr-2 h-6 w-6 flex-none" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-								<path d="m19 19-3.5-3.5"></path>
-								<circle cx="11" cy="11" r="6"></circle>
-							</svg>
+							<IconSearch className="flex-none" aria-hidden="true" />
 							<span className="flex-auto">
 								Quick search...
 							</span>

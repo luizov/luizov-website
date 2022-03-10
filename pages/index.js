@@ -41,7 +41,7 @@ export default function HomePage({ posts, repos }) {
 
 			<HomeHeader
 				title="Product Design and Development"
-				description={<>A freelance designer and fullstack developer working remotely from Bulgaria. Founder of <a href="https://temattic.com" target="_blank" rel="noreferrer" className="font-semibold underline decoration-blue-500 dark:decoration-blueDark-9 text-slate-12 dark:text-slateDark-12 transition ease-in">Temattic</a> and other ventures.</>}
+				description={<>A freelance designer and fullstack developer working remotely from Bulgaria. Founder of <a href="https://temattic.com" target="_blank" rel="noreferrer" className="font-semibold underline decoration-blue-9 dark:decoration-blueDark-9 text-slate-12 dark:text-slateDark-12 transition ease-in">Temattic</a> and other ventures.</>}
 			/>
 
 			<Products />

@@ -1,6 +1,9 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import Logo from './Logo';
 import NavItem from './NavItem';
 import NavMenu from './NavMenu';
+import NavMenuDesktop from './NavMenuDesktop';
 
 export default function Header() {
 	return (
@@ -10,6 +13,7 @@ export default function Header() {
 				{/* <!-- Logo --> */}
 				<Logo />
 
+
 				{/* <!-- Mobile Menu --> */}
 				<div className="md:hidden">
 					<NavMenu />
@@ -17,12 +21,11 @@ export default function Header() {
 
 				{/* <!-- Desktop Nav --> */}
 				<nav className="hidden md:flex items-center">
-					<ul className="flex">
+					<ul className="flex space-x-1">
 						<NavItem href="/products">Products</NavItem>
-						<NavItem href="/articles">Articles</NavItem>
 						<NavItem href="/concepts">Concepts</NavItem>
+						<NavMenuDesktop />
 					</ul>
-					{/* <NavMenu /> */}
 				</nav>
 			</div>
 		</header>

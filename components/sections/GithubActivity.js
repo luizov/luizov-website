@@ -10,37 +10,50 @@ const RepoList = ({ repos, title, url }) => {
 			<ul className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 mb-8">
 				{repos.map(({ id, name, url, description, owner }) => (
 					<li key={id}>
+
+						{/* <!-- Card --> */}
 						<a
 							href={url}
 							target="_blank"
 							rel="noreferrer"
-							className="block my-4 p-4 sm:p-6 h-full sm:border border-slate-7 dark:border-slateDark-7 hover:bg-slate-4 dark:hover:bg-slateDark-4 rounded-xl transition duration-200"
+							className="flex flex-col my-4 sm:p-6 h-full sm:border border-slate-6 dark:border-slateDark-7 hover:border-blue-9 dark:hover:border-blueDark-9 sm:shadow-sm sm:hover:shadow-md sm:hover:-translate-y-1 rounded-xl transition-all"
 						>
-							<div className="flex items-center mb-3">
-								<div className="w-10 h-10 mr-3 relative">
+
+							{/* <!-- Card header --> */}
+							<div className="flex mb-3">
+								<div className="relative w-6 h-6 mr-2 flex-shrink-0">
 									<Image
 										src={owner.avatarUrl}
 										alt={`${owner.login} avatar`}
-										className="rounded-lg"
+										className="rounded"
 										layout="fill"
 										objectFit="cover"
 									/>
 								</div>
-								<span className="text-slate-12 dark:text-violetDark-11">
-									{owner.login}/
+								<span className="text-blue-8 dark:text-blueDark-12">
+									{owner.login}&nbsp;/&nbsp;
 								</span>
-								<span className="text-blue-500 dark:text-slateDark-12 truncate">
+								<span className="font-medium text-blue-9 dark:text-blueDark-9 truncate">
 									{name}
 								</span>
 							</div>
+
+							{/* <!-- Card body --> */}
 							<div className="text-slate-11 dark:text-slateDark-11">
 								{description}
 							</div>
+
 						</a>
+
 					</li>
 				))}
 			</ul>
-			<a href={url} className="flex items-center space-x-1 text-blue-500 dark:text-violetDark-11 text-sm">
+			<a
+				href={url}
+				target="_blank"
+				rel="noreferrer"
+				className="flex items-center space-x-1 text-blue-9 dark:text-blueDark-11 text-sm"
+			>
 				<span>View more on</span>
 				<span className="font-medium">GitHub</span>
 				<svg
@@ -61,7 +74,7 @@ export const GithubActivity = ({ starredRepos, contributedRepos }) => {
 	return (
 		<section className="relative py-20 pb-56 overflow-hidden">
 			<div className="max-w-6xl mx-auto px-4 sm:px-6">
-				<h2 className="text-4xl text-slate-12 dark:text-slateDark-12 font-semibold tracking-tight">
+				<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
 					GitHub Activity
 				</h2>
 

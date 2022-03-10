@@ -44,12 +44,12 @@ export default function Newsletter() {
 	};
 
 	return (
-		<section className="relative py-20 pb-36 bg-slate-2 dark:bg-slateDark-1 border-t border-slate-6 dark:border-slateDark-6">
-			<div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-slate-4 dark:from-violetDark-4">
+		<section className="relative py-20 sm:pb-36 bg-blue-3 dark:bg-slateDark-1 border-t border-blue-6 dark:border-blueDark-6">
+			<div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-3 dark:from-violetDark-4">
 			</div>
 			<div className="max-w-6xl mx-auto px-4 sm:px-6">
 				{/* CTA box */}
-				<div className="relative bg-white dark:bg-slateDark-1 border border-slate-7 dark:border-slateDark-7 shadow-sm rounded-3xl -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+				<div className="relative bg-white dark:bg-slateDark-1 border border-slate-7 dark:border-slateDark-7 shadow-md shadow-blue-4/50 rounded-2xl -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
 					{/* Background illustration */}
 					<div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">

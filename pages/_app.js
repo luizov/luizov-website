@@ -1,23 +1,30 @@
 import '../styles/main.scss';
 import { ThemeProvider } from 'next-themes';
-import { AnimatePresence, LazyMotion, domAnimation } from 'framer-motion';
+import {
+	AnimatePresence,
+	LazyMotion,
+	domAnimation
+} from 'framer-motion';
 import CommandBar from '../components/CommandBar';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
 	return (
-		<CommandBar>
-			<ThemeProvider attribute="class" disableTransitionOnChange>
+		<ThemeProvider
+			attribute="class"
+			disableTransitionOnChange
+		>
+			<CommandBar>
 				<LazyMotion features={domAnimation}>
 					<AnimatePresence
 						exitBeforeEnter
 						initial={false}
 						onExitComplete={() => window.scrollTo(0, 0)}
 					>
-						<Component {...pageProps} />
+						<Component {...pageProps} key={router.route} />
 					</AnimatePresence>
 				</LazyMotion>
-			</ThemeProvider>
-		</CommandBar>
+			</CommandBar>
+		</ThemeProvider>
 	)
 }
 

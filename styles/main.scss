@@ -41,11 +41,11 @@
 	}
 
 	.btn-xl {
-		@apply px-9 py-5 leading-snug rounded-lg;
+		@apply px-7 py-5 leading-snug rounded-lg;
 	}
 
 	.btn-primary {
-		@apply bg-blue-500 dark:bg-blueDark-9 hover:bg-blue-600 dark:hover:bg-blueDark-10 active:bg-blue-700 dark:active:bg-blueDark-11 text-white dark:text-white;
+		@apply bg-blue-9 dark:bg-blueDark-9 hover:bg-blue-10 dark:hover:bg-blueDark-10 active:bg-blue-11 dark:active:bg-blueDark-11 text-white dark:text-white;
 
 		&.btn-shadow {
 			@apply shadow-primary hover:shadow-primary-sm active:shadow-none dark:shadow-none dark:hover:shadow-none;
@@ -204,15 +204,15 @@
 }
 
 .prose pre {
-	@apply bg-slate-2 rounded border border-slate-7 dark:bg-blueDark-2 dark:border-blueDark-6;
+	@apply bg-blue-2 rounded border border-blue-6 dark:bg-blueDark-2 dark:border-blueDark-6;
 }
 
 .prose code {
-	@apply px-1 py-0.5 rounded border border-slate-7 text-slate-12 bg-slate-2 dark:text-blueDark-12 dark:bg-blueDark-2 dark:border-blueDark-6;
+	@apply px-1 py-0.5 rounded-md border border-blue-6 dark:border-blueDark-6 font-mono font-normal text-blue-9 dark:text-blueDark-12 bg-blue-2 dark:bg-blueDark-2;
 }
 
 .prose pre code {
-	@apply text-slate-12 dark:text-slateDark-12 p-0;
+	@apply text-blue-9 dark:text-blueDark-12 p-0;
 	border: initial;
 }
 
@@ -257,7 +257,7 @@
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	@apply text-blue-500 dark:text-blueDark-9;
+	@apply text-blue-9 dark:text-blueDark-9;
 }
 
 .token.function,
