@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import DateFormatter from "../base/DateFormatter";
 
 export default function BookmarkCard({ title, description, image, alt, href, url, date }) {
@@ -5,7 +6,12 @@ export default function BookmarkCard({ title, description, image, alt, href, url
 		<article className="group relative break-inside p-4 sm:p-6 md:border-r border-b border-slate-7 dark:border-slateDark-7 md:hover:bg-slate-4 md:dark:hover:bg-slateDark-4 transition ease-in">
 
 			<div className="rounded-md overflow-hidden aspect-w-6 aspect-h-4 bg-slate-7 dark:bg-slateDark-7 sm:aspect-none">
-				<img src={image} alt={alt} className="w-full h-full object-center object-cover" />
+				<Image
+					src={image}
+					alt={alt}
+					className="w-full h-full object-center object-cover"
+					layout="fill"
+				/>
 			</div>
 
 			<div className="flex-1 py-4 space-y-2 flex flex-col">

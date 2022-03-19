@@ -5,7 +5,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,800;1,800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+					<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
 					<link href="/favicons/site.webmanifest" rel="manifest" />
 					<link rel="shortcut icon" href="/favicons/favicon.ico" />
 					<link
@@ -37,7 +37,7 @@ class MyDocument extends Document {
 						name="msapplication-config"
 					/>
 				</Head>
-				<body className="bg-slate-1 dark:bg-slateDark-1 text-slate-11 dark:text-slateDark-11">
+				<body className="bg-white dark:bg-slateDark-1 text-slate-11 dark:text-slateDark-11">
 					<Main />
 					<NextScript />
 				</body>

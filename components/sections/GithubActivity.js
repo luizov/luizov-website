@@ -7,7 +7,7 @@ const RepoList = ({ repos, title, url }) => {
 			<h3 className="mt-1 text-2xl tracking-tight text-slate-11 dark:text-slateDark-11">
 				{title}
 			</h3>
-			<ul className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-6 mb-8">
+			<ul className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-6 mb-8">
 				{repos.map(({ id, name, url, description, owner }) => (
 					<li key={id}>
 
@@ -16,7 +16,7 @@ const RepoList = ({ repos, title, url }) => {
 							href={url}
 							target="_blank"
 							rel="noreferrer"
-							className="flex flex-col my-4 sm:p-6 h-full sm:border border-slate-6 dark:border-slateDark-7 hover:border-blue-9 dark:hover:border-blueDark-9 sm:shadow-sm sm:hover:shadow-md sm:hover:-translate-y-1 rounded-xl transition-all"
+							className="flex flex-col my-4 sm:p-6 h-full sm:bg-white sm:dark:bg-slateDark-4 sm:hover:dark:bg-slateDark-5 sm:border border-slate-7 dark:border-slateDark-7 hover:border-slate-8 dark:hover:border-slateDark-8 sm:shadow-sm sm:hover:-translate-y-1 rounded-lg sm:transition-all"
 						>
 
 							{/* <!-- Card header --> */}
@@ -52,7 +52,7 @@ const RepoList = ({ repos, title, url }) => {
 				href={url}
 				target="_blank"
 				rel="noreferrer"
-				className="flex items-center space-x-1 text-blue-9 dark:text-blueDark-11 text-sm"
+				className="inline-flex items-center space-x-1 text-blue-9 dark:text-blueDark-11 text-sm"
 			>
 				<span>View more on</span>
 				<span className="font-medium">GitHub</span>
@@ -72,11 +72,13 @@ const RepoList = ({ repos, title, url }) => {
 
 export const GithubActivity = ({ starredRepos, contributedRepos }) => {
 	return (
-		<section className="relative py-20 pb-56 overflow-hidden">
-			<div className="max-w-6xl mx-auto px-4 sm:px-6">
-				<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
-					GitHub Activity
-				</h2>
+		<section className="section pb-56 overflow-hidden bg-slate-2 dark:bg-slateDark-2">
+			<div className="max-w-5xl mx-auto px-4 sm:px-6">
+				<header className="mb-12">
+					<h2 className="h3 font-headings text-slate-12 dark:text-slateDark-12">
+						GitHub Activity
+					</h2>
+				</header>
 
 				<RepoList
 					title="Repos I Contributed to"

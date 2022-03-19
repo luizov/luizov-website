@@ -139,15 +139,13 @@ export default function CommandBar({ children }) {
 	return (
 		<KBarProvider actions={actions}>
 			<KBarPortal>
-				<KBarPositioner className="bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80">
-					<KBarAnimator className="container w-full">
-						<div className="bg-slate-1 dark:bg-slateDark-2 rounded-lg shadow-lg border border-solid border-slate-6 dark:border-slateDark-6">
-							<KBarSearch
-								className="appearance-none rounded-t-lg w-full py-5	dark:bg-slateDark-3 px-4 text-slate-9 dark:text-slateDark-12 leading-tight focus:outline-none focus:shadow-outline placeholder-slate-9 dark:placeholder-slateDark-11"
-							/>
-							<div className="px-0 border-t boder-slate-6 dark:border-slateDark-6">
-								<RenderResults />
-							</div>
+				<KBarPositioner className="fixed inset-0 z-50 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80">
+					<KBarAnimator className="max-w-3xl w-full bg-slate-1 dark:bg-slateDark-2 rounded-lg shadow-lg border border-solid border-slate-6 dark:border-slateDark-6 overflow-hidden">
+						<KBarSearch
+							className="appearance-none rounded-t-lg w-full py-5	dark:bg-slateDark-3 px-4 text-slate-9 dark:text-slateDark-12 leading-tight focus:outline-none focus:shadow-outline placeholder-slate-9 dark:placeholder-slateDark-11"
+						/>
+						<div className="px-0 border-t boder-slate-6 dark:border-slateDark-6">
+							<RenderResults />
 						</div>
 					</KBarAnimator>
 				</KBarPositioner>
@@ -209,7 +207,7 @@ ResultItem.displayName = 'ResultItem';
 
 function Kbd({ children }) {
 	return (
-		<kbd className="px-2.5 py-1 inline-flex items-center justify-center select-none text-base font-mono font-medium rounded text-slate-11 bg-slate-3 dark:text-slateDark-11 dark:bg-slateDark-7">
+		<kbd className="px-2.5 py-1 inline-flex items-center justify-center select-none text-base font-mono font-medium rounded text-slate-11 bg-slate-2 dark:text-slateDark-11 dark:bg-slateDark-7 shadow">
 			{children}
 		</kbd>
 	);

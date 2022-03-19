@@ -55,8 +55,8 @@ export default function Footer() {
 	if (!mounted) return null;
 
 	return (
-		<footer className="relative py-20 border-t border-slate-6 dark:border-slateDark-6">
-			<div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">
+		<footer className="section border-t border-slate-6 dark:border-slateDark-6">
+			<div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">
 				<div className="flex items-center space-x-3">
 					<Link href="/">
 						<a className="flex items-center">
@@ -89,7 +89,7 @@ export default function Footer() {
 				<div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
 					<div className="grid grid-cols-2 gap-12 sm:gap-8">
 						<div className="flex flex-col space-y-1">
-							<h4 className="pl-3 mb-2 uppercase text-xs font-headings tracking-wider text-slate-10 dark:text-slateDark-11">
+							<h4 className="pl-3 mb-2 uppercase text-xs font-headings font-medium tracking-widest text-slate-10 dark:text-slateDark-11">
 								Menu
 							</h4>
 							<FooterLink href="/">
@@ -107,7 +107,7 @@ export default function Footer() {
 						</div>
 
 						<div className="flex flex-col space-y-1">
-							<h4 className="pl-3 mb-2 uppercase text-xs font-headings tracking-wider text-slate-10 dark:text-slateDark-11">Socials</h4>
+							<h4 className="pl-3 mb-2 uppercase text-xs font-headings font-medium tracking-widest text-slate-10 dark:text-slateDark-11">Socials</h4>
 							<ExternalLink href="https://github.com/luizov">
 								<IconGithub className="mr-2" />
 								GitHub

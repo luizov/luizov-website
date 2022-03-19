@@ -5,6 +5,7 @@ import fetcher from '../../lib/fetcher';
 import LoadingSpinner from '../../components/base/LoadingSpinner';
 import ErrorMessage from '../../components/base/ErrorMessage';
 import SuccessMessage from '../../components/base/SuccessMessage';
+import { NewsletterSVG } from '../../components/base/Backgrounds';
 
 export default function Newsletter() {
 	// 1. Create a reference to the input so we can fetch/clear it's value.
@@ -44,49 +45,27 @@ export default function Newsletter() {
 	};
 
 	return (
-		<section className="relative py-20 sm:pb-36 bg-blue-3 dark:bg-slateDark-1 border-t border-blue-6 dark:border-blueDark-6">
-			<div className="absolute z-0 top-0 inset-x-1 md:inset-x-8 block h-full bg-gradient-radial-to-t from-blue-3 dark:from-violetDark-4">
+		<section className="section bg-slate-2 dark:bg-slateDark-2">
+			<div className="absolute z-0 top-0 inset-x-0 md:inset-x-4 block h-full bg-gradient-radial-to-t from-blue-4 dark:from-blueDark-4">
 			</div>
-			<div className="max-w-6xl mx-auto px-4 sm:px-6">
+			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				{/* CTA box */}
-				<div className="relative bg-white dark:bg-slateDark-1 border border-slate-7 dark:border-slateDark-7 shadow-md shadow-blue-4/50 rounded-2xl -mt-52 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+				<div className="relative bg-white dark:bg-slateDark-2 border border-slate-6 dark:border-slateDark-7 shadow-xl shadow-sky-9/20 dark:shadow-none rounded-lg -mt-56 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
 					{/* Background illustration */}
-					<div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block dark:opacity-60" aria-hidden="true">
-						<svg width="438" height="328" xmlns="http://www.w3.org/2000/svg">
-							<defs>
-								<radialGradient cx="35.542%" cy="34.553%" fx="28.542%" fy="32.553%" r="94.0%" id="ni-a">
-									<stop stopColor="#76F8FF" offset="0%" />
-									<stop stopColor="#3D91FF" offset="44.317%" />
-									<stop stopColor="#C27DF2" offset="68.48%" />
-									<stop stopColor="#873EBA" offset="100%" />
-								</radialGradient>
-							</defs>
-							<g fill="none" fillRule="evenodd">
-								<g fill="#F8F8F8">
-									<ellipse fillOpacity=".04" cx="185" cy="15.576" rx="16" ry="15.576" />
-									<ellipse fillOpacity=".24" cx="100" cy="68.402" rx="24" ry="23.364" />
-									<ellipse fillOpacity=".12" cx="29" cy="251.231" rx="29" ry="28.231" />
-									<ellipse fillOpacity=".64" cx="29" cy="251.231" rx="8" ry="7.788" />
-									<ellipse fillOpacity=".12" cx="342" cy="31.303" rx="8" ry="7.788" />
-									<ellipse fillOpacity=".48" cx="62" cy="126.811" rx="2" ry="1.947" />
-									<ellipse fillOpacity=".12" cx="78" cy="7.072" rx="2" ry="1.947" />
-									<ellipse fillOpacity=".64" cx="185" cy="15.576" rx="6" ry="5.841" />
-								</g>
-								<circle fill="url(#ni-a)" cx="276" cy="237" r="200" />
-							</g>
-						</svg>
+					<div className="absolute -top-20 -right-24 pointer-events-none hidden lg:block dark:opacity-90" aria-hidden="true">
+						<NewsletterSVG />
 					</div>
 
 					<div className="relative flex flex-col lg:flex-row justify-between items-center">
 
 						{/* CTA content */}
-						<div className="text-center lg:text-left lg:max-w-xl">
+						<div className="text-center lg:text-left lg:max-w-lg">
 							<h3 className="h2 font-headings mb-2 text-slate-12 dark:text-slateDark-12">
 								Subscribe to my newsletter
 							</h3>
 							<p className="text-slate-11 dark:text-slateDark-11 text-lg mb-6">
-								Get emails from me about web development, tech, and early access to new articles.
+								Get access to free design assets, new articles about web development and tech.
 							</p>
 
 							{/* CTA form */}
@@ -95,8 +74,8 @@ export default function Newsletter() {
 									<input
 										ref={inputEl}
 										type="email"
-										className="w-full appearance-none bg-slate-3 dark:bg-slateDark-3 border border-slate-7 dark:border-slateDark-7 focus:border-slate-7 dark:focus:border-slateDark-7 rounded-lg px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-slate-12 dark:text-slateDark-12 placeholder-slate-10 dark:placeholder-slateDark-10"
-										placeholder="tim@apple.com"
+										className="w-full form-input mb-2 sm:mb-0 sm:mr-2"
+										placeholder="Enter your email to join"
 										aria-label="Email for newsletter"
 										autoComplete="email"
 										required

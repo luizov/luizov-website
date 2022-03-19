@@ -7,6 +7,7 @@ import Layout from '../layouts/Page';
 
 import HomeHeader from '../components/HomeHeader';
 import Products from '../components/sections/Products';
+import Concepts from '../components/sections/Concepts';
 import Newsletter from '../components/sections/Newsletter';
 import { GithubActivity } from '../components/sections/GithubActivity';
 
@@ -45,7 +46,7 @@ export default function HomePage({ posts, repos }) {
 			/>
 
 			<Products />
-
+			<Concepts />
 			<GithubActivity {...repos} />
 			<Newsletter />
 		</Layout>
@@ -70,6 +71,6 @@ export const getStaticProps = async () => {
 				contributedRepos,
 			}
 		},
-		revalidate: 10
+		revalidate: 60 * 60
 	};
 };
