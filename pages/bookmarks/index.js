@@ -4,7 +4,7 @@ import { getOpenGraphImage } from '../../lib/openGraphScraper';
 import { config } from '../../config';
 import Page from '../../layouts/Page';
 import PageHeader from '../../components/PageHeader';
-import Bookmarks from '../../components/bookmarks/Bookmarks';
+import Bookmarks from '../../components/Bookmarks/Bookmarks';
 
 export default function BookmarksPage({ bookmarks }) {
 	const seoTitle = "Bookmarks · Luizov";
