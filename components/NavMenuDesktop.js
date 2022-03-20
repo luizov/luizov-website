@@ -23,6 +23,12 @@ const resources = [
 		href: '/bookmarks',
 		icon: IconOne,
 	},
+	{
+		name: 'Snippets',
+		description: `A collection of useful code snippets that solve common problems from JS functions to CSS tricks.`,
+		href: '/snippets',
+		icon: IconOne,
+	},
 ];
 
 export default function NavMenuDesktop() {

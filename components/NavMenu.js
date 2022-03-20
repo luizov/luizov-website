@@ -118,6 +118,16 @@ export default function NavMenu() {
 								</Menu.Item>
 								<Menu.Item>
 									{({ active }) => (
+										<NextLink href="/snippets" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-white dark:bg-opacity-10 dark:text-white'} group flex items-center w-full px-6 py-2 rounded-lg text-xl transition duration-150 ease-in`}
+										>
+											<div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
+												Snippets
+											</div>
+										</NextLink>
+									)}
+								</Menu.Item>
+								<Menu.Item>
+									{({ active }) => (
 										<NextLink href="https://instagram.com/octa.theme" className={`${active && 'text-white bg-white bg-opacity-10 dark:bg-white dark:bg-opacity-10 dark:text-white'} group flex items-center w-full px-6 py-2 rounded-lg text-xl transition duration-150 ease-in`}
 										>
 											<div className={`${active && 'translate-x-2'} transition duration-150 ease-in`}>
