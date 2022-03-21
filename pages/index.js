@@ -1,4 +1,3 @@
-import { NextSeo } from 'next-seo';
 import { config } from "../config";
 import { fetchRepos } from "../lib/github";
 import { getDatabase } from "../lib/notion";
@@ -13,33 +12,10 @@ import { GithubActivity } from '../components/sections/GithubActivity';
 
 export default function HomePage({ posts, repos }) {
 	const seoTitle = "Luizov · Frontend Designer and Developer";
-	const seoDesc = "A freelance front-end engineer with a strong focus on interfaces working remotely from Bulgaria.";
+	const seoDesc = "A freelance designer and fullstack developer working remotely from Bulgaria.";
 
 	return (
 		<Layout>
-			<NextSeo
-				title={seoTitle}
-				description={seoDesc}
-				openGraph={{
-					type: 'website',
-					title: seoTitle,
-					description: seoDesc,
-					url: 'https://luizov.com',
-					images: [
-						{
-							url: `https://luizov.com/utility/og.png`,
-							width: 1200,
-							height: 630,
-							alt: 'Luizov.com',
-						}
-					]
-				}}
-				twitter={{
-					handle: "@dimitarluizov",
-					cardType: "summary_large_image",
-				}}
-			/>
-
 			<HomeHeader
 				title="Product Design and Development"
 				description={<>A freelance designer and fullstack developer working remotely from Bulgaria. Founder of <a href="https://temattic.com" target="_blank" rel="noreferrer" className="font-semibold underline decoration-blue-9 dark:decoration-blueDark-9 text-slate-12 dark:text-slateDark-12 transition ease-in">Temattic</a> and other ventures.</>}

@@ -6,7 +6,7 @@ import products from '../../data/products';
 
 export default function ProductsPage() {
 	const seoTitle = "Products · Luizov";
-	const seoDesc = "A short description goes here.";
+	const seoDesc = "A showcase of my most recent and interesting projects.";
 
 	return (
 		<Page>
@@ -23,7 +23,7 @@ export default function ProductsPage() {
 							url: `https://luizov.com/utility/og.png`,
 							width: 1200,
 							height: 630,
-							alt: 'Luizov.com',
+							alt: 'A showcase of my most recent and interesting projects',
 						}
 					]
 				}}

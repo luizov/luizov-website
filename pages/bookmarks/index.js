@@ -8,7 +8,7 @@ import Bookmarks from '../../components/Bookmarks/Bookmarks';
 
 export default function BookmarksPage({ bookmarks }) {
 	const seoTitle = "Bookmarks · Luizov";
-	const seoDesc = "A collection of my favourite articles/resources/websites that I've stumbled upon.";
+	const seoDesc = "A collection of favourite articles, resources and websites that I've stumbled upon.";
 
 	return (
 		<Page>
@@ -25,7 +25,7 @@ export default function BookmarksPage({ bookmarks }) {
 							url: `https://luizov.com/utility/og.png`,
 							width: 1200,
 							height: 630,
-							alt: 'Luizov.com',
+							alt: 'A collection of favourite articles, resources and websites.',
 						}
 					]
 				}}
@@ -37,7 +37,7 @@ export default function BookmarksPage({ bookmarks }) {
 
 			<PageHeader
 				title="Bookmarks"
-				description="This page contains a collection of favourite articles, resources, websites that I've stumbled upon."
+				description="This page contains a collection of favourite articles, resources and websites that I've stumbled upon."
 			/>
 
 			<Bookmarks bookmarks={bookmarks} />

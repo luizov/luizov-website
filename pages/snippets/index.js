@@ -24,7 +24,7 @@ export default function SnippetsPage({ allSnippets }) {
 							url: `https://luizov.com/utility/og.png`,
 							width: 1200,
 							height: 630,
-							alt: 'Luizov.com',
+							alt: 'A collection of useful code snippets that solve common problems.',
 						}
 					]
 				}}

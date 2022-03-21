@@ -58,7 +58,7 @@ export default function ArticlesPage({ allPosts }) {
 				</div>
 			</section>
 			{morePosts.length > 0 && <MoreArticles posts={morePosts} />}
-			<Newsletter />
+			{/* 	<Newsletter /> */}
 		</Page>
 	)
 }

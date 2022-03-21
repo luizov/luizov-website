@@ -6,6 +6,7 @@ import {
 	domAnimation
 } from 'framer-motion';
 import CommandBar from '../components/CommandBar';
+import SEO from '../components/Seo';
 
 function MyApp({ Component, pageProps, router }) {
 	return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps, router }) {
 			attribute="class"
 			disableTransitionOnChange
 		>
+			<SEO />
 			<CommandBar>
 				<LazyMotion features={domAnimation}>
 					<AnimatePresence
