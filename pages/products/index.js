@@ -1,7 +1,8 @@
 import { NextSeo } from 'next-seo';
-
 import Page from '../../layouts/Page';
 import PageHeader from '../../components/PageHeader';
+import { Product } from '../../components/sections/Products';
+import products from '../../data/products';
 
 export default function ProductsPage() {
 	const seoTitle = "Products · Luizov";
@@ -36,6 +37,24 @@ export default function ProductsPage() {
 				title="Products"
 				description="A showcase of my most recent and interesting projects"
 			/>
+			<section className="section pt-12">
+				<div className="max-w-5xl mx-auto px-4 sm:px-6">
+					<ul className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-6">
+						{products.map((entry) => (
+							<Product
+								key={entry.name}
+								name={entry.name}
+								href={entry.href}
+								description={entry.description}
+								tags={entry.tags}
+								imageSrc={entry.imageSrc}
+								imageAlt={entry.imageAlt}
+								backgroundSrc={entry.backgroundSrc}
+							/>
+						))}
+					</ul>
+				</div>
+			</section>
 		</Page>
 	)
 }
