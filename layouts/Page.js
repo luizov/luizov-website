@@ -10,10 +10,9 @@ const variants = {
 
 export default function Layout({ children }) {
 	return (
-		<div className="overflow-x-hidden">
+		<>
 			<Header />
 			<m.main
-				className="flex-grow"
 				variants={variants}
 				initial="initial"
 				animate="enter"
@@ -24,6 +23,6 @@ export default function Layout({ children }) {
 				{children}
 			</m.main>
 			<Footer />
-		</div>
+		</>
 	)
 }

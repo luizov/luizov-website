@@ -6,15 +6,20 @@ const mailchimpServer = process.env.MAILCHIMP_API_SERVER;
 const mailchimpAudienceId = process.env.MAILCHIMP_AUDIENCE_ID;
 
 /* if (!githubToken) {
-    throw new Error("Missing environment variable GITHUB_TOKEN.");
+		throw new Error("Missing environment variable GITHUB_TOKEN.");
 } */
 
+const bookmarksConfig = {
+	pageSize: 10
+};
+
 export const config = {
-    githubUsername: 'luizov',
-    githubToken,
-    notionToken,
-    notionDatabaseId,
-    mailchimpToken,
-    mailchimpServer,
-    mailchimpAudienceId
+	githubUsername: 'luizov',
+	githubToken,
+	notionToken,
+	notionDatabaseId,
+	mailchimpToken,
+	mailchimpServer,
+	mailchimpAudienceId,
+	bookmarksConfig
 };

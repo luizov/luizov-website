@@ -1,13 +1,13 @@
 import { NextSeo } from 'next-seo';
-import { getBookmarks } from '../../lib/notion';
-import { getOpenGraphImage } from '../../lib/openGraphScraper';
-import { config } from '../../config';
-import Page from '../../layouts/Page';
-import PageHeader from '../../components/PageHeader';
-import Bookmarks from '../../components/Bookmarks/Bookmarks';
-import BookmarksPagination from '../../components/Bookmarks/BookmarksPagination';
+import { getBookmarks } from '../../../lib/notion';
+import { getOpenGraphImage } from '../../../lib/openGraphScraper';
+import { config } from '../../../config';
+import Page from '../../../layouts/Page';
+import PageHeader from '../../../components/PageHeader';
+import Bookmarks from '../../../components/Bookmarks/Bookmarks';
+import BookmarksPagination from '../../../components/Bookmarks/BookmarksPagination';
 
-export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
+export default function BookmarksIndexPage({ currentBookmarks, totalPages, currentPage }) {
 	const seoTitle = "Bookmarks · Luizov";
 	const seoDesc = "A collection of favourite articles, resources and websites that I've stumbled upon.";
 
@@ -44,7 +44,7 @@ export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
 				description="This page contains a collection of favourite articles, resources and websites that I've stumbled upon."
 			/>
 
-			<Bookmarks bookmarks={bookmarks} />
+			<Bookmarks bookmarks={currentBookmarks} />
 
 			<BookmarksPagination
 				totalPages={totalPages}
@@ -56,7 +56,7 @@ export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
 	)
 }
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ params }) => {
 	let results = [];
 	let bookmarks = await getBookmarks(config.notionDatabaseId);
 
@@ -73,7 +73,7 @@ export const getStaticProps = async () => {
 
 	const totalBookomarks = results.length;
 	const totalPages = Math.ceil(totalBookomarks / config.bookmarksConfig.pageSize);
-	const currentPage = '1';
+	const currentPage = params.page;
 	const startIndex = (currentPage - 1) * config.bookmarksConfig.pageSize;
 	const endIndex = startIndex + config.bookmarksConfig.pageSize;
 	const currentResults = results.slice(startIndex, endIndex);
@@ -87,10 +87,45 @@ export const getStaticProps = async () => {
 
 	return {
 		props: {
-			bookmarks: bookmarkImages,
+			currentBookmarks: bookmarkImages,
 			totalPages,
 			currentPage
 		},
 		revalidate: 60 * 60 // 1 hour
 	};
+}
+
+export async function getStaticPaths() {
+	let results = [];
+
+	let bookmarks = await getBookmarks(config.notionDatabaseId);
+
+	results = [...bookmarks.data];
+
+	while (bookmarks.has_more) {
+		bookmarks = await getBookmarks(
+			config.notionDatabaseId,
+			bookmarks.next_cursor
+		);
+
+		results = [...results, ...bookmarks.data];
+	}
+
+	const totalBookomarks = results.length;
+	const totalPages = Math.ceil(totalBookomarks / config.bookmarksConfig.pageSize);
+
+	const paths = [];
+
+	/**
+	* Start from page 2, so we don't replicate /bookmarks
+	* which is page 1
+	*/
+	for (let page = 2; page <= totalPages; page++) {
+		paths.push({ params: { page: page.toString() } });
+	}
+
+	return {
+		paths,
+		fallback: false
+	}
 }
