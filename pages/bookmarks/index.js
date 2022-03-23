@@ -35,6 +35,7 @@ export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
 				}}
 				twitter={{
 					handle: "@dimitarluizov",
+					site: "@dimitarluizov",
 					cardType: "summary_large_image",
 				}}
 			/>

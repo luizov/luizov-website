@@ -34,6 +34,7 @@ export default function ArticlesPage({ allPosts }) {
 				}}
 				twitter={{
 					handle: "@dimitarluizov",
+					site: "@dimitarluizov",
 					cardType: "summary_large_image",
 				}}
 			/>

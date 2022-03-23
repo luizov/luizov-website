@@ -125,6 +125,7 @@ export default function ConceptsPage() {
 				}}
 				twitter={{
 					handle: "@dimitarluizov",
+					site: "@dimitarluizov",
 					cardType: "summary_large_image",
 				}}
 			/>

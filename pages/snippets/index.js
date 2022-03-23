@@ -30,6 +30,7 @@ export default function SnippetsPage({ allSnippets }) {
 				}}
 				twitter={{
 					handle: "@dimitarluizov",
+					site: "@dimitarluizov",
 					cardType: "summary_large_image",
 				}}
 			/>

@@ -29,6 +29,7 @@ export default function ProductsPage() {
 				}}
 				twitter={{
 					handle: "@dimitarluizov",
+					site: "@dimitarluizov",
 					cardType: "summary_large_image",
 				}}
 			/>
