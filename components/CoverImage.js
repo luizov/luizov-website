@@ -16,15 +16,20 @@ export default function CoverImage({ title, src, slug, height, width }) {
 		<div className="relative bg-slate-3 dark:bg-slateDark-3 rounded-lg border border-slate-7 dark:border-slateDark-7 overflow-hidden shadow">
 			{slug ? (
 				<Link as={`/articles/${slug}`} href="/articles/[slug]">
-					<a className="relative z-10" aria-label={title}>
+					<a className="relative" aria-label={title}>
 						<span aria-hidden="true" className="absolute inset-0" />
-						{image}
+						<div className="relative">
+							{image}
+							<div className="absolute inset-0 rounded-[.45rem] shadow-inset"></div>
+						</div>
 					</a>
 				</Link>
 			) : (
-				image
+				<div className="relative">
+					{image}
+					<div className="absolute inset-0 rounded-[.45rem] shadow-inset"></div>
+				</div>
 			)}
-			<div className="absolute inset-0 rounded-[.45rem] shadow-inset"></div>
 		</div>
 	)
 }
