@@ -1,33 +1,30 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import cn from 'classnames';
 
 export default function CoverImage({ title, src, slug, height, width }) {
 	const image = (
 		<Image
 			src={src}
 			alt={`Cover Image for ${title}`}
-			className={cn('rounded-lg shadow-sm', {
-				'hover:shadow-md transition-shadow duration-200': slug,
-			})}
 			layout="responsive"
 			width={width}
 			height={height}
 		/>
 	)
+
 	return (
-		<div className="sm:mx-0 bg-slate-3 dark:bg-slateDark-3 rounded-lg border border-slate-6 dark:border-slateDark-6 overflow-hidden">
+		<div className="relative bg-slate-3 dark:bg-slateDark-3 rounded-lg border border-slate-7 dark:border-slateDark-7 overflow-hidden shadow">
 			{slug ? (
 				<Link as={`/articles/${slug}`} href="/articles/[slug]">
-					<a
-						aria-label={title}
-						className="relative">
+					<a className="relative z-10" aria-label={title}>
+						<span aria-hidden="true" className="absolute inset-0" />
 						{image}
 					</a>
 				</Link>
 			) : (
 				image
 			)}
+			<div className="absolute inset-0 rounded-[.45rem] shadow-inset"></div>
 		</div>
 	)
 }

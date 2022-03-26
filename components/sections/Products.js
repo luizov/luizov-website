@@ -69,7 +69,7 @@ export function Product({
 						)}
 					</div>
 				</div>
-			</article >
+			</article>
 		)
 	}
 
@@ -127,7 +127,7 @@ export function Product({
 					)}
 				</div>
 			</div>
-		</article >
+		</article>
 	)
 }
 
