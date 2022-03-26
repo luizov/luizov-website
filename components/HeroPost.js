@@ -60,7 +60,7 @@ export function HeroPostAlt({
 }) {
 	return (
 		<section className="pb-20">
-			<div className="group md:p-8 md:-mx-8 md:hover:bg-slate-4 md:dark:hover:bg-slateDark-4 rounded-lg transition duration-200 ease-in">
+			<article className="group md:p-8 md:-mx-8 md:hover:bg-slate-4 md:dark:hover:bg-slateDark-4 rounded-lg transition duration-200 ease-in">
 				<div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6">
 					<div className="col-span-1 lg:col-span-2">
 						<div className="mb-8 md:mb-0">
@@ -90,7 +90,7 @@ export function HeroPostAlt({
 						/>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 	)
 }
