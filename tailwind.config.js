@@ -112,7 +112,7 @@ module.exports = {
 			},
 			boxShadow: {
 				'primary-lg': '0px 3px 6px rgba(0, 44, 97, 0.12), 0px 2px 10px rgba(1, 60, 136, 0.12), 0px 0px 2px rgba(1, 60, 136, 0.22), inset 0px -1px 3px rgba(1, 60, 136, 0.64)',
-				'inset': 'inset 0 0 0 1px rgba(255,255,255,0.2),inset 0 1px 0 0 rgba(255,255,255,0.3),inset 0 -1px 0 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.1)',
+				'inset': 'inset 0 0 0 1px rgba(255,255,255,0.15),inset 0 1px 0 0 rgba(255,255,255,0.2),inset 0 -1px 0 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.1)',
 				'xs': '0px 1px 0px rgba(12, 15, 18, 0.06)',
 				'sm': '0px 1px 2px rgba(12, 15, 18, 0.06)',
 				'DEFAULT': '0px 2px 1px rgba(12, 15, 18, 0.06), 0px 0px 1px rgba(12, 15, 18, 0.25)',
