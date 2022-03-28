@@ -66,7 +66,7 @@ export default function NavMenuDesktop() {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<Popover.Panel className="absolute z-10 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-lg shadow-lg shadow-blue-12/5 bg-white dark:bg-slateDark-2 border border-slate-7 dark:border-slateDark-7 overflow-hidden">
+							<Popover.Panel className="absolute z-30 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-lg shadow-lg shadow-blue-12/5 bg-white dark:bg-slateDark-2 border border-slate-7 dark:border-slateDark-7 overflow-hidden">
 								<div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-6">
 									{resources.map((item) => (
 										<Link

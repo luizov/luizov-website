@@ -64,7 +64,7 @@ export default function NavMenu() {
 						leaveFrom="opacity-100 translate-y-0"
 						leaveTo="opacity-0 -translate-y-10"
 					>
-						<Menu.Items className="absolute z-10 right-0 w-64 mt-6 origin-top-right bg-blue-9 dark:bg-blueDark-9 text-blue-3 dark:text-blueDark-12 shadow-lg shadow-blue-12/10 dark:shadow-none divide-y divide-black divide-opacity-10 rounded-lg focus:outline-none overflow-hidden">
+						<Menu.Items className="absolute z-30 right-0 w-64 mt-6 origin-top-right bg-blue-9 dark:bg-blueDark-9 text-blue-3 dark:text-blueDark-12 shadow-lg shadow-blue-12/10 dark:shadow-none divide-y divide-black divide-opacity-10 rounded-lg focus:outline-none overflow-hidden">
 							<div className="p-3">
 								<Menu.Item>
 									{({ active }) => (

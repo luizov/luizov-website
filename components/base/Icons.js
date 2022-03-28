@@ -81,6 +81,23 @@ export function IconDownSmall(props) {
 	)
 }
 
+export function IconArrowLeft(props) {
+	return (
+		<svg className={`inline-flex w-6 h-6 ${props.className}`} viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+			<path d="M1.5 7.5l4-4m-4 4l4 4m-4-4H14" stroke="currentColor"></path>
+		</svg>
+	)
+}
+
+export function IconArrowLeftSmall(props) {
+	return (
+		<svg className={`inline-flex w-6 h-6 ${props.className}`} viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+			<path d="M6.146 9.854l.354.353.707-.707-.353-.354-.708.708zM4.5 7.5l-.354-.354-.353.354.353.354L4.5 7.5zm2.354-1.646l.353-.354-.707-.707-.354.353.708.708zm0 3.292l-2-2-.708.708 2 2 .708-.708zm-2-1.292l2-2-.708-.708-2 2 .708.708zM4.5 8H11V7H4.5v1z" fill="currentColor">
+			</path>
+		</svg>
+	)
+}
+
 export function IconSearch(props) {
 	return (
 		<svg className={`inline-flex w-6 h-6 ${props.className}`} width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

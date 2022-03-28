@@ -1,12 +1,15 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
+import Link from 'next/link';
 import Page from '../../layouts/Page';
 import PostHeader from '../../components/PostHeader';
 import PostBody from '../../components/PostBody';
 import { getPostBySlug, getAllPosts } from '../../lib/api';
 import markdownToHtml from '../../lib/markdownToHtml';
 import readingTime from 'reading-time';
+
+import { IconArrowLeftSmall } from "../../components/base/Icons";
 
 export default function Article({ post }) {
 	const router = useRouter()
@@ -55,6 +58,16 @@ export default function Article({ post }) {
 					cardType: "summary_large_image",
 				}}
 			/>
+			<div className="sticky top-0 z-20 bg-white dark:bg-slateDark-1">
+				<div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 border-b border-6 dark:border-slateDark-6">
+					<Link href="/articles">
+						<a className="text-blue-9 hover:text-blue-11 dark:text-blueDark-11 dark:hover:text-blueDark-9">
+							<IconArrowLeftSmall className="mr-1" />
+							Back to all articles
+						</a>
+					</Link>
+				</div>
+			</div>
 			<article className="max-w-5xl mx-auto py-20 px-4 sm:px-6">
 				<PostHeader
 					title={post.title}
