@@ -80,7 +80,7 @@ export function ThemeChangerDesktop() {
 				theme === 'light'
 					? 'bg-black bg-opacity-[0.08]'
 					: 'bg-black bg-opacity-50',
-				'relative inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+				'relative group inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}
 		>
 			<span className="sr-only">Enable Dark mode</span>
@@ -88,8 +88,8 @@ export function ThemeChangerDesktop() {
 				aria-hidden="true"
 				className={cn(
 					theme === 'dark'
-						? 'translate-x-5 bg-blueDark-9'
-						: 'translate-x-0 bg-blue-9',
+						? 'translate-x-5 bg-slateDark-4'
+						: 'translate-x-0 bg-white',
 					'pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
 				)}
 			>
@@ -99,7 +99,7 @@ export function ThemeChangerDesktop() {
 						viewBox="0 0 24 24"
 						fill="currentColor"
 						stroke="currentColor"
-						className="w-4 h-4 text-blue-3 dark:text-blueDark-12 transition ease-in-out duration-200"
+						className="w-4 h-4 text-slate-11 dark:text-slateDark-11 transition ease-in-out duration-200"
 					>
 						{theme === 'dark' ? (
 							<path
@@ -108,6 +108,7 @@ export function ThemeChangerDesktop() {
 								strokeWidth={2}
 								d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
 							/>
+
 						) : (
 							<path
 								strokeLinecap="round"
