@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import { useTheme } from 'next-themes';
+import LogoFooter from './LogoFooter';
 import {
 	IconCopyright,
 	IconDribbble,
@@ -34,41 +32,11 @@ const ExternalLink = ({ href, children }) => {
 };
 
 export default function Footer() {
-	const [mounted, setMounted] = useState(false);
-	const { resolvedTheme } = useTheme();
-
-	let logoMark;
-
-	switch (resolvedTheme) {
-		case 'light':
-			logoMark = '/logo.svg';
-			break;
-		case 'dark':
-			logoMark = '/logo-dark.svg';
-			break;
-		default:
-			logoMark = '/logo.svg';
-	}
-
-	useEffect(() => setMounted(true), [])
-
-	if (!mounted) return null;
-
 	return (
 		<footer className="section border-t border-slate-6 dark:border-slateDark-6">
 			<div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:flex lg:items-center lg:justify-between">
 				<div className="flex items-center space-x-3">
-					<Link href="/">
-						<a className="flex items-center">
-							<Image
-								src={logoMark}
-								alt="Luizov logo"
-								width={36}
-								height={36}
-								quality={100}
-							/>
-						</a>
-					</Link>
+					<LogoFooter />
 					<div className="flex items-center space-x-1">
 						<IconCopyright />
 						<span>

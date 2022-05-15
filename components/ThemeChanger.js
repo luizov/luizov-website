@@ -7,6 +7,10 @@ export function ThemeChanger() {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
+	const toggleTheme = () => {
+		setTheme(theme === 'light' ? 'dark' : 'light');
+	}
+
 	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), []);
 
@@ -15,7 +19,7 @@ export function ThemeChanger() {
 	return (
 		<Switch
 			checked={theme}
-			onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
 					? 'bg-black bg-opacity-10'
@@ -67,6 +71,10 @@ export function ThemeChangerDesktop() {
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 
+	const toggleTheme = () => {
+		setTheme(theme === 'light' ? 'dark' : 'light');
+	}
+
 	// When mounted on client, now we can show the UI
 	useEffect(() => setMounted(true), []);
 
@@ -75,7 +83,7 @@ export function ThemeChangerDesktop() {
 	return (
 		<Switch
 			checked={theme}
-			onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
 					? 'bg-black bg-opacity-[0.08]'

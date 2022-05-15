@@ -1,5 +1,4 @@
 import { Fragment } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Popover, Transition } from '@headlessui/react';
 import cn from 'classnames';
@@ -76,9 +75,6 @@ export default function NavMenuDesktop() {
 											<a
 												className="-m-3 p-3 flex items-start rounded-lg hover:bg-slate-4 dark:hover:bg-slateDark-4"
 											>
-												{/* 						<div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white sm:h-12 sm:w-12">
-														<item.icon aria-hidden="true" />
-													</div> */}
 												<div className="ml-0">
 													<p className="text-base font-medium text-slate-12 dark:text-slateDark-12">{item.name}</p>
 													<p className="mt-1 text-sm text-slate-11 dark:text-slateDark-11">{item.description}</p>

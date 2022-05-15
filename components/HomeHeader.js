@@ -15,15 +15,6 @@ export default function HomeHeader({ title, description, children }) {
 
 	return (
 		<section className="section">
-			{/* 			<div aria-hidden="true" className="absolute inset-0">
-				<div className="absolute inset-0 overflow-hidden">
-					<img src="https://tailwindui.com/img/ecommerce-images/home-page-02-sale-full-width.jpg" alt="" className="w-full h-full object-center object-cover" />
-				</div>
-				<div className="absolute inset-0 bg-white bg-opacity-75"></div>
-				<div className="absolute inset-0 bg-gradient-to-b from-slate-2 via-white"></div>
-			</div> */}
-			{/* 	<div className="absolute z-0 top-0 inset-x-0 md:inset-x-2 block h-full bg-gradient-radial-to-t from-slate-2 dark:from-slateDark-2">
-			</div> */}
 			<div className="relative max-w-4xl mx-auto px-4 sm:px-6">
 				<div className="flex flex-col sm:items-center text-center gap-y-8">
 					<h1 className="display-4 text-slate-12 dark:text-slateDark-12 sm:max-w-3xl">
