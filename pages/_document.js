@@ -5,7 +5,41 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
-					<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+					<link
+						rel="preload"
+						href="/fonts/Barlow-Regular.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
+					<link
+						rel="preload"
+						href="/fonts/Barlow-Medium.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
+					<link
+						rel="preload"
+						href="/fonts/Barlow-SemiBold.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
+					<link
+						rel="preload"
+						href="/fonts/Barlow-Bold.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
+					<link
+						rel="preload"
+						href="/fonts/JetBrainsMono-Regular.woff2"
+						as="font"
+						type="font/woff2"
+						crossOrigin="anonymous"
+					/>
 					<link href="/favicons/site.webmanifest" rel="manifest" />
 					<link rel="shortcut icon" href="/favicons/favicon.ico" />
 					<link
