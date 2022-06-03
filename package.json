@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/barlow": "^4.5.7",
-    "@fontsource/jetbrains-mono": "^4.5.8",
     "@headlessui/react": "^1.6.1",
     "@mailchimp/mailchimp_marketing": "^3.0.75",
     "@notionhq/client": "^0.4.13",
