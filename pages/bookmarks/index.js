@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import { getBookmarks } from '../../lib/notion';
+import { getBookmarks, getPageProperties } from '../../lib/notion';
 import { getOpenGraphImage } from '../../lib/openGraphScraper';
 import { config } from '../../config';
 import Page from '../../layouts/Page';

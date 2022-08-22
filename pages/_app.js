@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps, router }) {
 			<CommandBar>
 				<LazyMotion features={domAnimation}>
 					<AnimatePresence
-						exitBeforeEnter
+						mode="wait"
 						initial={false}
 						onExitComplete={() => window.scrollTo(0, 0)}
 					>
