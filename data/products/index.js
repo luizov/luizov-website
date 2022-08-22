@@ -1,7 +1,7 @@
 const products = [
 	{
 		name: 'Temattic',
-		href: '/temattic',
+		href: 'https://temattic.com',
 		description: 'Modern themes and templates for your next web project.',
 		/* 		tags: ['Web Development', 'Branding', 'UX/UI Design'], */
 		imageSrc: '/products/temattic/background-temattic.png',
