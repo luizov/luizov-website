@@ -15,7 +15,7 @@ export default function Logo() {
 			{/* <!-- Logotype --> */}
 			<Link href="/">
 				<a className="relative flex items-center z-10">
-					<DynamicSvgLogotype className="h-auto" />
+					<DynamicSvgLogotype className="h-5" />
 				</a>
 			</Link>
 		</div>
