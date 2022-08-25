@@ -16,12 +16,12 @@ export default function HomeHeader({ title, description, children }) {
 	return (
 		<section className="section">
 			<div className="relative max-w-5xl mx-auto px-4 sm:px-6">
-				<div className="flex flex-col sm:items-center text-center gap-y-12">
+				<div className="flex flex-col sm:items-center sm:text-center gap-y-12">
 					<h1 className="display-4 text-slate-12 dark:text-whiteA-12 sm:max-w-3xl">
 						{title}
 					</h1>
 					{description &&
-						<p className="text-slate-11 dark:text-whiteA-11 text-2xl leading-relaxed sm:max-w-4xl lg:mx-0 tracking-normal">
+						<p className="text-slate-11 dark:text-whiteA-11 text-xl lg:text-2xl leading-relaxed sm:max-w-4xl lg:mx-0 tracking-normal">
 							{description}
 						</p>
 					}

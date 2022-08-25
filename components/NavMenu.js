@@ -41,14 +41,14 @@ export default function NavMenu() {
 						<div className="flex justify-center items-center">
 							{/*   text link here */}
 							<div className={`${open && 'translate-x-6 ease-out'} transition duration-300`}>
-								<div className={`${open && 'opacity-0'} font-semibold text-lg text-slate-12 dark:text-whiteA-12 group-hover:translate-x-3 transition duration-300 ease-out`}>
+								<div className={`${open && 'opacity-0'} font-medium text-base text-slate-12 dark:text-whiteA-12 group-hover:translate-x-3 transition duration-300 ease-out`}>
 									Menu
 								</div>
 							</div>
 							{/*  round button here */}
-							<div className={`flex relative w-11 h-10 rounded-md justify-center items-center ml-3 bg-transparent border border-slate-7 dark:border-whiteA-7 group-hover:bg-blue-9 dark:group-hover:bg-blueDark-9 group-hover:scale-50 group-hover:border-transparent shadow-xs transition duration-300 ease-out`}>
+							<div className={`flex relative w-11 h-10 rounded-md justify-center items-center ml-3 bg-transparent border border-slate-7 dark:border-whiteA-8 group-hover:bg-blue-9 dark:group-hover:bg-blueDark-9 group-hover:scale-50 group-hover:border-transparent transition duration-300 ease-out`}>
 
-								<svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-slate-11 dark:text-slateDark-11 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+								<svg xmlns="http://www.w3.org/2000/svg" className={`${open && 'rotate-90'} h-5 w-5 fill-current text-slate-11 dark:text-whiteA-12 group-hover:opacity-0 transition duration-150 ease-in`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 8h16M4 16h16" />
 								</svg>
 							</div>
