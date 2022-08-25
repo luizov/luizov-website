@@ -45,7 +45,7 @@ function DynamicSvgLogotype({ className, ...props }) {
 			viewBox="0 0 856 150"
 			fill="none"
 			className={cn(
-				'text-slate-12 dark:text-white',
+				'text-slate-12 dark:text-whiteA-12',
 				className
 			)}
 			{...props}
