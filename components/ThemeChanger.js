@@ -86,7 +86,7 @@ export function ThemeChangerDesktop() {
 			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
-					? 'bg-blue-6'
+					? 'bg-blue-5'
 					: 'bg-blackA-11',
 				'relative group inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}

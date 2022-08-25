@@ -12,8 +12,8 @@ export default function NavItem({ href, children }) {
 				<a
 					className={cn(
 						isActive
-							? 'text-slate-11 dark:text-whiteA-11'
-							: 'text-slate-11 dark:text-whiteA-11',
+							? 'text-slate-12 dark:text-whiteA-12'
+							: 'text-slate-12 dark:text-whiteA-12',
 						'inline-block px-4 py-2 rounded-md font-medium hover:bg-blue-4 hover:text-blue-9 dark:hover:bg-blueDark-4 dark:hover:text-blueDark-9 active:bg-blue-5 active:text-blue-11 dark:active:bg-blueDark-5 dark:active:text-blueDark-11'
 					)}
 				>

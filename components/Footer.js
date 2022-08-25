@@ -11,7 +11,7 @@ import {
 const FooterLink = ({ href, children }) => {
 	return (
 		<Link href={href}>
-			<a className="flex items-center font-base text-slate-11 dark:text-whiteA-11 hover:text-blue-9 dark:hover:text-blueDark-11 hover:bg-blue-4 dark:hover:bg-blueDark-4 rounded-md px-3 py-2 transition-all">
+			<a className="flex items-center font-base font-medium text-slate-11 dark:text-whiteA-11 hover:text-blue-9 dark:hover:text-blueDark-11 hover:bg-blue-4 dark:hover:bg-blueDark-4 rounded-md px-3 py-2 transition-all">
 				{children}
 			</a>
 		</Link>
@@ -21,7 +21,7 @@ const FooterLink = ({ href, children }) => {
 const ExternalLink = ({ href, children }) => {
 	return (
 		<a
-			className="flex items-center font-base text-slate-11 dark:text-whiteA-11 hover:text-blue-9 dark:hover:text-blueDark-11 hover:bg-blue-4 dark:hover:bg-blueDark-4 rounded-md px-3 py-2 transition-all"
+			className="flex items-center font-base font-medium text-slate-11 dark:text-whiteA-11 hover:text-blue-9 dark:hover:text-blueDark-11 hover:bg-blue-4 dark:hover:bg-blueDark-4 rounded-md px-3 py-2 transition-all"
 			target="_blank"
 			rel="noopener noreferrer"
 			href={href}
@@ -33,7 +33,7 @@ const ExternalLink = ({ href, children }) => {
 
 export default function Footer() {
 	return (
-		<footer className="section bg-white dark:bg-transparent border-t border-transparent dark:border-blueDark-6">
+		<footer className="section bg-white dark:bg-transparent border-t border-slate-7 dark:border-blueDark-7">
 			<div className="relative max-w-5xl mx-auto px-4 sm:px-6 md:flex md:items-center md:justify-between">
 				<div className="flex items-center space-x-3">
 					<LogoFooter />
@@ -43,7 +43,7 @@ export default function Footer() {
 							{new Date().getFullYear()}&nbsp;Dimitar Luizov
 							{' · '}
 							<a
-								className="text-sm font-medium uppercase underline underline-offset-4 decoration-2 hover:decoration-4 decoration-blue-9 dark:decoration-yellowDark-9 text-slate-12 dark:text-whiteA-12 transition-all"
+								className="text-xs font-medium uppercase underline underline-offset-4 decoration-2 hover:decoration-4 decoration-blue-9 dark:decoration-yellowDark-9 text-slate-12 dark:text-whiteA-12 transition-all"
 								href="https://github.com/luizov/luizov-website"
 								target="_blank"
 								rel="noreferrer"
@@ -57,7 +57,7 @@ export default function Footer() {
 				<div className="mt-24 flex md:mt-0 md:flex-shrink-0">
 					<div className="grid grid-cols-2 gap-12 sm:gap-8">
 						<div className="flex flex-col space-y-1">
-							<h4 className="pl-3 mb-2 uppercase font-headings font-medium text-slate-12 dark:text-whiteA-12">
+							<h4 className="pl-3 mb-2 uppercase text-sm font-headings font-medium tracking-wide text-slate-12 dark:text-whiteA-12">
 								Menu
 							</h4>
 							<FooterLink href="/">
@@ -75,7 +75,9 @@ export default function Footer() {
 						</div>
 
 						<div className="flex flex-col space-y-1">
-							<h4 className="pl-3 mb-2 uppercase font-headings font-medium text-slate-12 dark:text-whiteA-12">Socials</h4>
+							<h4 className="pl-3 mb-2 uppercase text-sm font-headings font-medium tracking-wide text-slate-12 dark:text-whiteA-12">
+								Socials
+							</h4>
 							<ExternalLink href="https://github.com/luizov">
 								<IconGithub className="mr-2" />
 								GitHub
