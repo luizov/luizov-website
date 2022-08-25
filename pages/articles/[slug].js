@@ -58,10 +58,10 @@ export default function Article({ post }) {
 					cardType: "summary_large_image",
 				}}
 			/>
-			<div className="sticky top-0 z-20 bg-white dark:bg-slateDark-1">
-				<div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 border-b border-6 dark:border-slateDark-6">
+			<div className="sticky top-0 z-20 bg-slate-2 dark:bg-blueDark-2">
+				<div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 border-b border-6 dark:border-blueDark-6">
 					<Link href="/articles">
-						<a className="text-blue-9 hover:text-blue-11 dark:text-blueDark-11 dark:hover:text-blueDark-9">
+						<a className="font-medium text-blue-9 hover:text-blue-11 dark:text-blueDark-11 dark:hover:text-blueDark-9">
 							<IconArrowLeftSmall className="mr-1" />
 							Back to all articles
 						</a>

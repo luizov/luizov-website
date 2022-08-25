@@ -39,18 +39,18 @@ export default function NavMenuDesktop() {
 						<Popover.Button
 							className={cn(
 								open
-									? 'text-slate-11 dark:text-slateDark-11 bg-slate-5 dark:bg-slateDark-5'
-									: 'text-slate-11 dark:text-slateDark-11',
-								'inline-block px-4 py-2 rounded-lg font-medium hover:bg-slate-4 dark:hover:bg-slateDark-4 transition-all'
+									? 'text-blue-9 dark:text-blueDark-9 bg-blue-4 dark:bg-blueDark-4'
+									: 'text-slate-11 dark:text-whiteA-11',
+								'inline-block px-4 py-2 rounded-md font-medium hover:bg-blue-4 hover:text-blue-9 dark:hover:bg-blueDark-4 dark:hover:text-blueDark-9 active:bg-blue-5 dark:active:bg-blueDark-5 dark:Active:text-blueDark-11 transition-all'
 							)}
 						>
 							<span>More</span>
 							<IconDownSmall
 								className={cn(
 									open
-										? 'text-slate-11'
+										? '-rotate-90'
 										: 'text-slate-11',
-									'ml-2 group-hover:text-slate-11 dark:group-hover:text-slateDark-11'
+									'-mt-0.5 ml-2 group-hover:text-blue-11 dark:group-hover:text-blueDark-11 transition-all'
 								)}
 								aria-hidden="true"
 							/>
@@ -65,7 +65,7 @@ export default function NavMenuDesktop() {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<Popover.Panel className="absolute z-30 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-lg shadow-lg shadow-blue-12/5 bg-white dark:bg-slateDark-2 border border-slate-7 dark:border-slateDark-7 overflow-hidden">
+							<Popover.Panel className="absolute z-30 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-md shadow-lg bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-blueDark-6 overflow-hidden">
 								<div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-6">
 									{resources.map((item) => (
 										<Link
@@ -73,20 +73,24 @@ export default function NavMenuDesktop() {
 											href={item.href}
 										>
 											<a
-												className="-m-3 p-3 flex items-start rounded-lg hover:bg-slate-4 dark:hover:bg-slateDark-4"
+												className="group -m-3 p-3 flex items-start rounded-md hover:bg-blue-4 dark:hover:bg-whiteA-4 active:bg-blue-5 dark:active:bg-whiteA-6"
 											>
 												<div className="ml-0">
-													<p className="text-base font-medium text-slate-12 dark:text-slateDark-12">{item.name}</p>
-													<p className="mt-1 text-sm text-slate-11 dark:text-slateDark-11">{item.description}</p>
+													<p className="text-base font-medium text-slate-12 dark:text-whiteA-12 group-hover:text-blue-11 dark:group-hover:text-blueDark-11">
+														{item.name}
+													</p>
+													<p className="mt-1 text-sm text-slate-11 dark:text-whiteA-11 group-hover:text-blue-11 dark:group-hover:text-blueDark-11">
+														{item.description}
+													</p>
 												</div>
 											</a>
 										</Link>
 									))}
 								</div>
 
-								<div className="bg-white dark:bg-slateDark-3 border-t-2 dark:border-t border-slate-3 dark:border-slateDark-6">
+								<div className="bg-white dark:bg-transparent border-t border-slate-6 dark:border-blueDark-6">
 									<div className="flex justify-between items-center pt-3 pb-4 px-6 pr-4">
-										<span className="font-medium text-slate-11 dark:text-slateDark-11 select-none">
+										<span className="font-medium text-slate-11 dark:text-slateDark-12 select-none">
 											Dark Mode
 										</span>
 										<ThemeChangerDesktop />

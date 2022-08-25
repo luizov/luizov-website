@@ -48,11 +48,11 @@ export default function SnippetsPage({ allSnippets }) {
 								{/* <!-- Card --> */}
 								<Link href={`/snippets/${snippet.slug}`}>
 									<a
-										className="flex flex-col p-4 sm:p-6 h-full bg-white dark:bg-slateDark-4 dark:hover:bg-slateDark-5 border border-slate-7 dark:border-slateDark-7 hover:border-slate-8 dark:hover:border-slateDark-8 sm:shadow-sm sm:hover:shadow rounded-lg"
+										className="flex flex-col p-4 sm:p-6 h-full bg-white dark:bg-blueDark-4 dark:hover:bg-blueDark-5 border border-slate-6 dark:border-blueDark-6 hover:border-slate-7 dark:hover:border-blueDark-7 sm:shadow-md sm:hover:shadow-lg rounded-md"
 									>
 
 										{/* <!-- Card header --> */}
-										<div className="flex flex-col space-y-6">
+										<div className="flex flex-col space-y-6 mb-4">
 											<div className="relative w-12 h-12">
 												<Image
 													src={`/logos/${snippet.logo}`}
@@ -62,13 +62,13 @@ export default function SnippetsPage({ allSnippets }) {
 													objectFit="cover"
 												/>
 											</div>
-											<h3 className="h4 font-headings text-slate-12 dark:text-slateDark-12">
+											<h3 className="h4 font-headings text-slate-12 dark:text-whiteA-12">
 												{snippet.title}
 											</h3>
 										</div>
 
 										{/* <!-- Card body --> */}
-										<div className="text-slate-11 dark:text-slateDark-11">
+										<div className="text-slate-11 dark:text-whiteA-11">
 											{snippet.description}
 										</div>
 									</a>

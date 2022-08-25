@@ -12,7 +12,7 @@ export default function PostPreview({
 	length
 }) {
 	return (
-		<article className="group flex flex-col md:p-5 md:hover:bg-slate-4 md:dark:hover:bg-slateDark-4 rounded-lg transition duration-200 ease-in">
+		<article className="group flex flex-col md:p-5 md:hover:bg-slate-4 md:dark:hover:bg-blueDark-4 rounded-md transition duration-200 ease-in">
 			<div className="mb-5">
 				<CoverImage
 					slug={slug}
@@ -22,7 +22,7 @@ export default function PostPreview({
 					width={556}
 				/>
 			</div>
-			<h3 className="h4 font-headings mb-3 text-slate-12 dark:text-slateDark-12">
+			<h3 className="h4 font-headings mb-4 text-slate-12 dark:text-whiteA-12">
 				<Link as={`/articles/${slug}`} href="/articles/[slug]">
 					<a>{title}</a>
 				</Link>

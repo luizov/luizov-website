@@ -6,12 +6,12 @@ logo: 'tailwind.png'
 
 ```html
 <div class="min-h-screen flex items-center justify-center bg-cyan-100">
-  <div class="relative p-2 border border-cyan-400 overflow-hidden rounded-lg shadow-sm">
+  <div class="relative p-2 border border-cyan-400 overflow-hidden rounded-md shadow-sm">
     <!-- Striped background layer -->
     <div class="absolute inset-0 bg-striped animate-slide"></div>
     <!-- Content layer -->
     <button
-      class="relative bg-teal-300 font-medium inline-flex items-center justify-center border border-transparent rounded-lg leading-snug transition duration-200 px-7 py-5 text-lg"
+      class="relative bg-teal-300 font-medium inline-flex items-center justify-center border border-transparent rounded-md leading-snug transition duration-200 px-7 py-5 text-lg"
     >
       Default button
     </button>

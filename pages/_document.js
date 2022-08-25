@@ -7,28 +7,28 @@ class MyDocument extends Document {
 				<Head>
 					<link
 						rel="preload"
-						href="/fonts/Barlow-Regular.woff2"
+						href="/fonts/Switzer-Regular.woff2"
 						as="font"
 						type="font/woff2"
 						crossOrigin="anonymous"
 					/>
 					<link
 						rel="preload"
-						href="/fonts/Barlow-Medium.woff2"
+						href="/fonts/Switzer-Medium.woff2"
 						as="font"
 						type="font/woff2"
 						crossOrigin="anonymous"
 					/>
 					<link
 						rel="preload"
-						href="/fonts/Barlow-SemiBold.woff2"
+						href="/fonts/Switzer-SemiBold.woff2"
 						as="font"
 						type="font/woff2"
 						crossOrigin="anonymous"
 					/>
 					<link
 						rel="preload"
-						href="/fonts/Barlow-Bold.woff2"
+						href="/fonts/Switzer-Bold.woff2"
 						as="font"
 						type="font/woff2"
 						crossOrigin="anonymous"

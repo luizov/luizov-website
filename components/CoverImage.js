@@ -13,7 +13,7 @@ export default function CoverImage({ title, src, slug, height, width }) {
 	)
 
 	return (
-		<div className="relative bg-slate-3 dark:bg-slateDark-3 rounded-lg border border-slate-7 dark:border-slateDark-7 overflow-hidden shadow">
+		<div className="relative bg-slate-3 dark:bg-slateDark-3 rounded-md border border-slate-6 dark:border-slateDark-6 overflow-hidden shadow-sm">
 			{slug ? (
 				<Link as={`/articles/${slug}`} href="/articles/[slug]">
 					<a className="relative" aria-label={title}>

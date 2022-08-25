@@ -80,10 +80,10 @@ export const PlaygroundImage = ({ src, alt }) => {
 
 export default function Concepts() {
 	return (
-		<section className="section border-t border-slate-6 dark:border-slateDark-6 overflow-hidden">
+		<section className="section overflow-hidden">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				<header className="mb-12">
-					<h2 className="h3 font-headings text-slate-12 dark:text-slateDark-12">
+					<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
 						Design Concepts
 					</h2>
 				</header>
@@ -96,7 +96,7 @@ export default function Concepts() {
 						/>
 					))}
 				</div>
-				<div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-slate-2 pt-80 pb-8 pointer-events-none dark:from-slateDark-2 absolute">
+				<div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-slate-2 pt-80 pb-8 pointer-events-none dark:from-skyDark-2 absolute">
 					<Link href="/concepts" passHref>
 						<a type="button" className="relative btn btn-xl btn-dark btn-shadow pointer-events-auto">
 							Show more designs

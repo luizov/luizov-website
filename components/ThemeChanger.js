@@ -22,8 +22,8 @@ export function ThemeChanger() {
 			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
-					? 'bg-black bg-opacity-10'
-					: 'bg-black bg-opacity-25',
+					? 'bg-blackA-3'
+					: 'bg-blackA-5',
 				'relative inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}
 		>
@@ -86,8 +86,8 @@ export function ThemeChangerDesktop() {
 			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
-					? 'bg-black bg-opacity-[0.08]'
-					: 'bg-black bg-opacity-50',
+					? 'bg-blue-6'
+					: 'bg-blackA-11',
 				'relative group inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}
 		>
@@ -96,7 +96,7 @@ export function ThemeChangerDesktop() {
 				aria-hidden="true"
 				className={cn(
 					theme === 'dark'
-						? 'translate-x-5 bg-slateDark-4'
+						? 'translate-x-5 bg-blueDark-5'
 						: 'translate-x-0 bg-white',
 					'pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
 				)}
@@ -107,7 +107,7 @@ export function ThemeChangerDesktop() {
 						viewBox="0 0 24 24"
 						fill="currentColor"
 						stroke="currentColor"
-						className="w-4 h-4 text-slate-11 dark:text-slateDark-11 transition ease-in-out duration-200"
+						className="w-4 h-4 text-blue-9 dark:text-blueDark-12 transition ease-in-out duration-200"
 					>
 						{theme === 'dark' ? (
 							<path

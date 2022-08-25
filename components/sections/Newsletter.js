@@ -45,15 +45,15 @@ export default function Newsletter() {
 	};
 
 	return (
-		<section className="section bg-slate-2 dark:bg-slateDark-2">
-			<div className="absolute z-0 top-0 inset-x-0 md:inset-x-4 block h-full bg-gradient-radial-to-t from-blue-4 dark:from-blueDark-4">
+		<section className="section bg-slate-2 dark:bg-skyDark-2">
+			<div className="absolute z-0 top-0 inset-x-0 block h-full bg-gradient-to-t from-slate-3 dark:from-skyDark-3">
 			</div>
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				{/* CTA box */}
-				<div className="relative bg-white dark:bg-slateDark-2 border border-slate-6 dark:border-slateDark-7 shadow-xl shadow-sky-9/20 dark:shadow-none rounded-lg -mt-56 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+				<div className="relative bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-blueDark-6 shadow-md dark:shadow-skyDark-1/20 rounded-md -mt-56 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
 					{/* Background illustration */}
-					<div className="absolute -top-20 -right-24 pointer-events-none hidden lg:block dark:opacity-90" aria-hidden="true">
+					<div className="absolute -top-20 -right-32 pointer-events-none hidden lg:block dark:opacity-90" aria-hidden="true">
 						<NewsletterSVG />
 					</div>
 
@@ -61,10 +61,10 @@ export default function Newsletter() {
 
 						{/* CTA content */}
 						<div className="text-center lg:text-left lg:max-w-lg">
-							<h3 className="h2 font-headings mb-2 text-slate-12 dark:text-slateDark-12">
+							<h3 className="h2 font-headings mb-6 text-slate-12 dark:text-slateDark-12">
 								Subscribe to my newsletter
 							</h3>
-							<p className="text-slate-11 dark:text-slateDark-11 text-lg mb-6">
+							<p className="text-slate-11 dark:text-whiteA-11 text-lg mb-6">
 								Get access to free design assets, new articles about web development and tech.
 							</p>
 
@@ -94,7 +94,7 @@ export default function Newsletter() {
 							) : form.state === 'success' ? (
 								<SuccessMessage>{form.message}</SuccessMessage>
 							) : (
-								<p className="text-sm text-slate-10 dark:text-slateDark-10 mt-3">
+								<p className="text-sm text-slate-10 dark:text-whiteA-9 mt-3">
 									<span> {`${subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
 										} subscribers – `}
 									</span>

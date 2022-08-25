@@ -28,7 +28,7 @@ export default function HeroPost({
 			</div>
 			<div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
 				<div>
-					<h3 className="mb-4 text-4xl lg:text-5xl text-slate-12 dark:text-slateDark-12 leading-tight tracking-tight">
+					<h3 className="mb-4 text-4xl lg:text-5xl text-slate-12 dark:text-whiteA-12 leading-tight tracking-tight">
 						<Link as={`/articles/${slug}`} href="/articles/[slug]">
 							<a>{title}</a>
 						</Link>
@@ -60,7 +60,7 @@ export function HeroPostAlt({
 }) {
 	return (
 		<section className="pb-20">
-			<article className="group md:p-8 md:-mx-8 md:hover:bg-slate-4 md:dark:hover:bg-slateDark-4 rounded-lg transition duration-200 ease-in">
+			<article className="group md:p-8 md:-mx-8 md:hover:bg-slate-4 md:dark:hover:bg-blueDark-4 rounded-md transition duration-200 ease-in">
 				<div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-4 lg:gap-x-6">
 					<div className="col-span-1 lg:col-span-2">
 						<div className="mb-8 md:mb-0">
@@ -74,13 +74,13 @@ export function HeroPostAlt({
 						</div>
 					</div>
 					<div>
-						<h3 className="h3 font-headings mb-4 text-slate-12 dark:text-slateDark-12">
+						<h3 className="h3 font-headings mb-4 text-slate-12 dark:text-whiteA-12">
 							<Link as={`/articles/${slug}`} href="/articles/[slug]">
 								<a>{title}</a>
 							</Link>
 						</h3>
 						<div className="mb-8 text-lg">
-							<p className="text-lg leading-relaxed">{excerpt}</p>
+							<p className="text-lg leading-relaxed dark:text-whiteA-11">{excerpt}</p>
 						</div>
 						<PostMeta
 							name={author.name}

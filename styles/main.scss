@@ -4,7 +4,7 @@
 
 @layer base {
   ::selection {
-    @apply bg-sky-5 text-sky-12 dark:bg-skyDark-5 dark:text-skyDark-12;
+    @apply bg-yellow-4 text-yellow-12 dark:bg-skyDark-5 dark:text-skyDark-12;
   }
 
   html {
@@ -12,7 +12,7 @@
   }
 
   body {
-    @apply font-sans font-normal bg-white dark:bg-slateDark-1 text-slate-11 dark:text-slateDark-11;
+    @apply font-sans font-normal bg-slate-1 dark:bg-blueDark-2 text-slate-11 dark:text-slateDark-11;
   }
 
   abbr[title] {
@@ -26,7 +26,7 @@
   }
 
   .section {
-    @apply relative py-20 lg:py-24;
+    @apply relative py-20 lg:py-24 xl:py-32;
   }
 
   /* Buttons */
@@ -50,13 +50,20 @@
   }
 
   .btn-xl {
-    @apply px-7 py-5 leading-snug rounded-lg;
+    @apply px-7 py-5 leading-snug;
   }
 
   .btn-primary {
     @apply bg-blue-9 dark:bg-blueDark-9 hover:bg-blue-10 dark:hover:bg-blueDark-10 active:bg-blue-11 dark:active:bg-blueDark-11 text-white dark:text-white;
     &.btn-shadow {
-      @apply shadow-md shadow-blue-12/10 hover:shadow-sm active:shadow-none dark:shadow-none;
+      @apply shadow-md hover:shadow-sm active:shadow-none dark:shadow-none;
+    }
+  }
+
+  .btn-cta {
+    @apply bg-yellow-9 dark:bg-yellowDark-9 hover:bg-yellow-10 dark:hover:bg-yellowDark-5 active:bg-blue-11 dark:active:bg-yellowDark-6 text-white dark:text-yellowDark-9;
+    &.btn-shadow {
+      @apply shadow-md hover:shadow-sm active:shadow-none dark:shadow-none;
     }
   }
 
@@ -65,14 +72,14 @@
   }
 
   .btn-form {
-    @apply bg-white dark:bg-slateDark-4 hover:bg-white dark:hover:bg-slateDark-5 active:bg-white dark:active:bg-slateDark-6 border-slate-7 dark:border-slateDark-7 hover:border-slate-8 dark:hover:border-slateDark-8 text-slate-9 dark:text-slateDark-11;
+    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-9 dark:text-whiteA-11;
     &.btn-shadow {
       @apply shadow-md shadow-blue-12/5 hover:shadow-sm active:shadow-none dark:shadow-none;
     }
   }
 
   .btn-dark {
-    @apply bg-white dark:bg-slateDark-4 hover:bg-white dark:hover:bg-slateDark-5 active:bg-white dark:active:bg-slateDark-6 border-slate-7 dark:border-slateDark-7 hover:border-slate-8 dark:hover:border-slateDark-8 text-slate-9 dark:text-slateDark-11;
+    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-9 dark:text-whiteA-12;
     &.btn-shadow {
       @apply shadow-md shadow-blue-12/5 hover:shadow-sm active:shadow-none dark:shadow-none;
     }
@@ -85,7 +92,7 @@
   .form-select,
   .form-checkbox,
   .form-radio {
-    @apply appearance-none bg-slate-3 dark:bg-slateDark-3 hover:bg-slate-4 dark:hover:bg-slateDark-4 border border-slate-7 dark:border-slateDark-7 hover:border-slate-8 dark:hover:border-slateDark-8 ring-0 focus:ring-blue-7 dark:focus:ring-blueDark-7 focus:border-slate-8 dark:focus:border-slateDark-8 text-slate-12 dark:text-slateDark-12;
+    @apply appearance-none bg-slate-3 dark:bg-blueDark-3 hover:bg-slate-4 dark:hover:bg-blueDark-4 border border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 ring-0 focus:ring-blue-7 dark:focus:ring-blueDark-7 focus:border-slate-8 dark:focus:border-blueDark-8 text-slate-12 dark:text-whiteA-12;
   }
 
   .form-input,
@@ -93,7 +100,7 @@
   .form-multiselect,
   .form-select,
   .form-checkbox {
-    @apply rounded-lg;
+    @apply rounded-md;
   }
 
   .form-input,
@@ -105,7 +112,7 @@
 
   .form-input,
   .form-textarea {
-    @apply placeholder-slate-10 dark:placeholder-slateDark-10;
+    @apply placeholder-slate-10 dark:placeholder-whiteA-10;
   }
 
   .form-select {
@@ -136,19 +143,23 @@
   }
 
   .h1 {
-    @apply text-4xl font-bold leading-tight tracking-tight;
+    @apply text-4xl font-semibold leading-tight;
   }
 
   .h2 {
-    @apply text-3xl font-bold leading-tight tracking-tight;
+    @apply text-3xl font-semibold leading-tight;
   }
 
   .h3 {
-    @apply text-3xl font-semibold leading-tight tracking-tight;
+    @apply text-3xl font-semibold leading-tight;
   }
 
   .h4 {
     @apply text-2xl font-semibold leading-snug tracking-normal;
+  }
+
+  .h5 {
+    @apply text-lg font-semibold leading-snug tracking-normal;
   }
 
   @screen sm {
@@ -219,7 +230,7 @@
 }
 
 .prose strong {
-  @apply text-slate-12 dark:text-slateDark-12;
+  @apply text-slate-12 dark:text-whiteA-12;
 }
 
 .prose pre {

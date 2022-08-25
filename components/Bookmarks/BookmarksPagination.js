@@ -12,10 +12,10 @@ export default function Pagination(props) {
 	const nextPageUrl = `/bookmarks/page/${parseInt(currentPage, 10) + 1}`;
 
 	return (
-		<section className="sticky inset-0 py-4 bg-slate-2 dark:bg-slateDark-2 border-t border:slate-7 dark:border-slateDark-7">
+		<section className="sticky inset-0 py-4 bg-slate-1 dark:bg-blueDark-2 border-t border-b border:slate-7 dark:border-blueDark-7">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				<div className="flex items-center justify-between">
-					<div>
+					<div className="text-slate-11 dark:text-whiteA-11">
 						Page {currentPage} of {totalPages}
 					</div>
 					<div className="space-x-2">
