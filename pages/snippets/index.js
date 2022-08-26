@@ -48,7 +48,7 @@ export default function SnippetsPage({ allSnippets }) {
 								{/* <!-- Card --> */}
 								<Link href={`/snippets/${snippet.slug}`}>
 									<a
-										className="flex flex-col p-4 sm:p-6 h-full bg-white dark:bg-blueDark-4 dark:hover:bg-blueDark-5 border border-slate-6 dark:border-blueDark-6 hover:border-slate-7 dark:hover:border-blueDark-7 sm:shadow-md sm:hover:shadow-lg rounded-md"
+										className="flex flex-col p-4 sm:p-6 h-full bg-white dark:bg-blueDark-4 dark:hover:bg-blueDark-5 border border-slate-6 dark:border-blueDark-6 hover:border-slate-7 dark:hover:border-blueDark-7 shadow-md sm:hover:shadow-lg rounded-md"
 									>
 
 										{/* <!-- Card header --> */}
