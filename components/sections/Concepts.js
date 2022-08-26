@@ -98,7 +98,7 @@ export default function Concepts() {
 				</div>
 				<div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-slate-2 pt-80 pb-8 pointer-events-none dark:from-skyDark-2 absolute">
 					<Link href="/concepts" passHref>
-						<a type="button" className="relative btn btn-xl btn-dark btn-shadow pointer-events-auto">
+						<a className="relative btn btn-xl btn-dark btn-shadow pointer-events-auto">
 							Show more designs
 						</a>
 					</Link>
