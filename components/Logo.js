@@ -3,22 +3,17 @@ import cn from 'classnames';
 
 export default function Logo() {
 	return (
-		<div className="flex items-center space-x-2">
+		<Link href="/">
+			<a className="group relative inline-flex sm:-ml-4 sm:px-4 sm:py-2 rounded-md items-center space-x-2 sm:hover:bg-blue-4 sm:active:bg-blue-5 sm:dark:hover:bg-blueDark-4 sm:dark:active:bg-blueDark-5">
 
-			{/* <!-- Logomark --> */}
-			<Link href="/">
-				<a className="relative flex items-center z-10">
-					<DynamicSvgLogomark className="w-6" />
-				</a>
-			</Link>
+				{/* <!-- Logomark --> */}
+				<DynamicSvgLogomark className="w-6" />
 
-			{/* <!-- Logotype --> */}
-			<Link href="/">
-				<a className="relative flex items-center z-10">
-					<DynamicSvgLogotype className="h-5" />
-				</a>
-			</Link>
-		</div>
+				{/* <!-- Logotype --> */}
+				<DynamicSvgLogotype className="h-5" />
+			</a>
+		</Link>
+
 	)
 }
 
@@ -42,7 +37,7 @@ function DynamicSvgLogotype({ className, ...props }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			viewBox="0 0 856 150"
+			viewBox="0 0 360 150"
 			fill="none"
 			className={cn(
 				'text-slate-12 dark:text-whiteA-12',
