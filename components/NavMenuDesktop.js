@@ -41,7 +41,7 @@ export default function NavMenuDesktop() {
 								open
 									? 'text-blue-9 dark:text-blueDark-9 bg-blue-4 dark:bg-blueDark-4'
 									: 'text-slate-12 dark:text-whiteA-12',
-								'inline-block px-4 py-2 rounded-md font-medium hover:bg-blue-4 hover:text-blue-9 dark:hover:bg-blueDark-4 dark:hover:text-blueDark-9 active:bg-blue-5 dark:active:bg-blueDark-5 dark:Active:text-blueDark-11 transition-all'
+								'inline-block px-4 py-2 rounded-md font-medium hover:bg-blue-4 hover:text-blue-9 dark:hover:bg-blueDark-4 dark:hover:text-blueDark-9 active:bg-blue-5 dark:active:bg-blueDark-5 dark:Active:text-blueDark-11 transition-all focus:outline-none'
 							)}
 						>
 							<span>More</span>
@@ -90,7 +90,7 @@ export default function NavMenuDesktop() {
 
 								<div className="bg-white dark:bg-transparent border-t border-slate-6 dark:border-blueDark-6">
 									<div className="flex justify-between items-center pt-3 pb-4 px-6 pr-4">
-										<span className="font-medium text-slate-11 dark:text-slateDark-12 select-none">
+										<span className="font-medium text-slate-11 dark:text-whiteA-12 select-none">
 											Dark Mode
 										</span>
 										<ThemeChangerDesktop />

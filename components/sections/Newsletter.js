@@ -61,7 +61,7 @@ export default function Newsletter() {
 
 						{/* CTA content */}
 						<div className="text-center lg:text-left lg:max-w-lg">
-							<h3 className="h2 font-headings mb-6 text-slate-12 dark:text-slateDark-12">
+							<h3 className="h2 font-headings mb-6 text-slate-12 dark:text-whiteA-12">
 								Subscribe to my newsletter
 							</h3>
 							<p className="text-slate-11 dark:text-whiteA-11 text-lg mb-6">

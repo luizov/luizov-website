@@ -83,7 +83,7 @@ export default function Concepts() {
 		<section className="section overflow-hidden">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				<header className="mb-12">
-					<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
+					<h2 className="h1 font-headings text-slate-12 dark:text-whiteA-12">
 						Design Concepts
 					</h2>
 				</header>

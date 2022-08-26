@@ -1,9 +1,9 @@
 import { config } from '../../config';
 import Image from 'next/image';
 
-const RepoList = ({ repos, title, url }) => {
+const RepoList = ({ repos, title, url, className = null }) => {
 	return (
-		<div className="mt-24">
+		<div className={className}>
 			<h3 className="text-xl font-medium text-slate-11 dark:text-whiteA-11 pb-4 border-b border-slate-6 dark:border-slateDark-6">
 				{title}
 			</h3>
@@ -66,9 +66,9 @@ export const GithubActivity = ({ starredRepos, contributedRepos }) => {
 	return (
 		<section className="section pb-56 overflow-hidden bg-slate-2 dark:bg-skyDark-2">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
-				<header className="mb-12">
-					<h2 className="h2 font-headings text-slate-12 dark:text-slateDark-12">
-						GitHub Activity
+				<header className="mb-8">
+					<h2 className="h1 font-headings text-slate-12 dark:text-whiteA-12">
+						Featured Repositories
 					</h2>
 				</header>
 
@@ -78,6 +78,7 @@ export const GithubActivity = ({ starredRepos, contributedRepos }) => {
 					repos={contributedRepos}
 				/>
 				<RepoList
+					className="mt-24"
 					title="Repos I Like"
 					repos={starredRepos}
 					url={`https://github.com/${config.githubUsername}?tab=stars`}
