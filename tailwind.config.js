@@ -1,5 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
+const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');
 
 module.exports = {
 	content: [
@@ -263,6 +265,7 @@ module.exports = {
 						},
 						'h1,h2,h3,h4,h5': {
 							color: theme('colors.slate.12'),
+							fontWeight: '600',
 						},
 						strong: {
 							color: theme('colors.slate.12'),
@@ -296,8 +299,8 @@ module.exports = {
 							code: { color: theme('colors.blueDark.9') }
 						},
 						blockquote: {
-							borderLeftColor: theme('colors.slateDark.6'),
-							color: theme('colors.slateDark.11')
+							borderLeftColor: theme('colors.yellowDark.9'),
+							color: theme('colors.whiteA.11')
 						},
 						'h1,h2,h3,h4': {
 							color: theme('colors.whiteA.12')
@@ -310,6 +313,14 @@ module.exports = {
 	plugins: [
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/forms'),
-		require('@tailwindcss/aspect-ratio')
+		require('@tailwindcss/aspect-ratio'),
+		plugin(function ({ matchUtilities, theme }) {
+			matchUtilities(
+				{
+					highlight: (value) => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
+				},
+				{ values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
+			)
+		})
 	],
 }
