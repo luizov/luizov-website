@@ -56,14 +56,7 @@
   .btn-primary {
     @apply bg-blue-9 dark:bg-blueDark-9 hover:bg-blue-10 dark:hover:bg-blueDark-10 active:bg-blue-11 dark:active:bg-blueDark-11 text-white dark:text-white;
     &.btn-shadow {
-      @apply shadow-md hover:shadow-sm active:shadow-none dark:shadow-none;
-    }
-  }
-
-  .btn-cta {
-    @apply bg-yellow-9 dark:bg-yellowDark-9 hover:bg-yellow-10 dark:hover:bg-yellowDark-5 active:bg-blue-11 dark:active:bg-yellowDark-6 text-white dark:text-yellowDark-9;
-    &.btn-shadow {
-      @apply shadow-md hover:shadow-sm active:shadow-none dark:shadow-none;
+      @apply shadow-md hover:shadow-lg active:shadow-sm dark:shadow-none;
     }
   }
 
@@ -74,7 +67,7 @@
   .btn-form {
     @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-9 dark:text-whiteA-11;
     &.btn-shadow {
-      @apply shadow-md shadow-blue-12/5 hover:shadow-sm active:shadow-none dark:shadow-none;
+      @apply shadow-md shadow-blue-12/5 hover:shadow-lg active:shadow-sm dark:shadow-none;
     }
   }
 
@@ -234,11 +227,11 @@
 }
 
 .prose pre {
-  @apply bg-blue-2 rounded border border-blue-6 dark:bg-blueDark-2 dark:border-blueDark-6;
+  @apply bg-blue-2 rounded border border-blue-9 dark:bg-blueDark-3 dark:border-blueDark-6;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-md border border-blue-6 dark:border-blueDark-6 font-mono font-normal text-blue-9 dark:text-blueDark-12 bg-blue-2 dark:bg-blueDark-2;
+  @apply px-1 py-0.5 rounded-md border border-blue-9 dark:border-blueDark-6 font-mono font-normal text-blue-9 dark:text-blueDark-12 bg-blue-2 dark:bg-blueDark-3;
 
   &::before,
   &::after {

@@ -14,7 +14,7 @@ export function Product({
 
 	if (href.startsWith('/')) {
 		return (
-			<article className="relative sm:h-full group bg-white dark:bg-slateDark-4 rounded-md overflow-hidden ring-2 ring-blue-9 ring-opacity-5 dark:ring-0 shadow-md hover:shadow-xl transition-all">
+			<article className="relative sm:h-full group bg-white dark:bg-slateDark-4 rounded-md overflow-hidden ring-2 ring-blue-9 ring-opacity-5 dark:ring-0 shadow-md hover:shadow-lg active:shadow-sm transition-all">
 
 				{/* Card Decorative background image and gradient */}
 				<div aria-hidden="true" className="absolute inset-0">
@@ -76,7 +76,7 @@ export function Product({
 	}
 
 	return (
-		<article className="relative sm:h-full group bg-white dark:bg-blueDark-4 rounded-md overflow-hidden ring-2 ring-blue-9 ring-opacity-5 dark:ring-0 shadow-md hover:shadow-xl transition-all">
+		<article className="relative sm:h-full group bg-white dark:bg-blueDark-4 rounded-md overflow-hidden ring-2 ring-blue-9 ring-opacity-5 dark:ring-0 shadow-md hover:shadow-lg active:shadow-sm transition-all">
 
 			{/* Card Decorative background image and gradient */}
 			<div aria-hidden="true" className="absolute inset-0">
