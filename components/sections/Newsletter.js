@@ -50,7 +50,7 @@ export default function Newsletter() {
 			</div>
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				{/* CTA box */}
-				<div className="relative bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-blueDark-6 shadow-md dark:shadow-skyDark-1/20 rounded-md -mt-56 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
+				<div className="relative bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-transparent shadow-md dark:shadow-inset-sm rounded-md -mt-56 py-10 px-8 md:py-16 md:px-12 overflow-hidden">
 
 					{/* Background illustration */}
 					<div className="absolute -top-20 -right-32 pointer-events-none hidden lg:block dark:opacity-90" aria-hidden="true">

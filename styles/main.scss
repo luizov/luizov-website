@@ -34,7 +34,7 @@
   .btn-sm,
   .btn-lg,
   .btn-xl {
-    @apply font-medium inline-flex items-center justify-center border border-transparent rounded-md leading-snug transition duration-150 ease-in-out;
+    @apply font-medium inline-flex items-center justify-center rounded-md leading-snug transition duration-150 ease-in-out;
   }
 
   .btn {
@@ -55,8 +55,21 @@
 
   .btn-primary {
     @apply bg-blue-9 dark:bg-blueDark-9 hover:bg-blue-10 dark:hover:bg-blueDark-10 active:bg-blue-11 dark:active:bg-blueDark-11 text-white dark:text-white;
-    &.btn-shadow {
-      @apply shadow-md hover:shadow-lg active:shadow-sm dark:shadow-none;
+  }
+
+  .btn-shadow {
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05), 0 4px 8px -2px rgba(16, 24, 40, 0.1),
+      0 2px 4px -2px rgba(16, 24, 40, 0.06);
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05), 0 12px 16px -4px rgba(16, 24, 40, 0.08),
+        0 4px 6px -2px rgba(16, 24, 40, 0.03);
+    }
+
+    &:active {
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px rgba(16, 24, 40, 0.1),
+        0 1px 2px rgba(16, 24, 40, 0.06);
     }
   }
 
@@ -65,17 +78,26 @@
   }
 
   .btn-form {
-    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-9 dark:text-whiteA-11;
+    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border border-slate-6 dark:border-transparent hover:border-slate-7 dark:hover:border-transparent text-slate-11 dark:text-whiteA-11;
     &.btn-shadow {
-      @apply shadow-md shadow-blue-12/5 hover:shadow-lg active:shadow-sm dark:shadow-none;
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05), 0 4px 8px -2px rgba(16, 24, 40, 0.1),
+        0 2px 4px -2px rgba(16, 24, 40, 0.06);
+
+      &:hover,
+      &:focus {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05),
+          0 12px 16px -4px rgba(16, 24, 40, 0.08), 0 4px 6px -2px rgba(16, 24, 40, 0.03);
+      }
+
+      &:active {
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05), inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px rgba(16, 24, 40, 0.1),
+          0 1px 2px rgba(16, 24, 40, 0.06);
+      }
     }
   }
 
   .btn-dark {
-    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-9 dark:text-whiteA-12;
-    &.btn-shadow {
-      @apply shadow-md shadow-blue-12/5 hover:shadow-sm active:shadow-none dark:shadow-none;
-    }
+    @apply bg-white dark:bg-blueDark-4 hover:bg-white dark:hover:bg-blueDark-5 active:bg-white dark:active:bg-blueDark-6 border-slate-7 dark:border-blueDark-7 hover:border-slate-8 dark:hover:border-blueDark-8 text-slate-11 dark:text-whiteA-12;
   }
 
   /* Forms */

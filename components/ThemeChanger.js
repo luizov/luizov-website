@@ -86,9 +86,9 @@ export function ThemeChangerDesktop() {
 			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
-					? 'bg-blue-5'
-					: 'bg-blackA-11',
-				'relative group inline-flex flex-shrink-0 h-[32px] w-[52px] border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+					? 'bg-white'
+					: 'bg-blackA-9',
+				'relative group inline-flex items-center flex-shrink-0 h-[32px] w-[52px] border border-slate-7 dark:border-blueDark-7 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}
 		>
 			<span className="sr-only">Enable Dark mode</span>
@@ -96,9 +96,9 @@ export function ThemeChangerDesktop() {
 				aria-hidden="true"
 				className={cn(
 					theme === 'dark'
-						? 'translate-x-5 bg-blueDark-5'
-						: 'translate-x-0 bg-white',
-					'pointer-events-none inline-flex h-[28px] w-[28px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
+						? 'translate-x-[22px] bg-blueDark-5'
+						: 'translate-x-[2px] bg-blue-9',
+					'pointer-events-none inline-flex h-[26px] w-[26px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
 				)}
 			>
 				{mounted && (
@@ -107,7 +107,7 @@ export function ThemeChangerDesktop() {
 						viewBox="0 0 24 24"
 						fill="currentColor"
 						stroke="currentColor"
-						className="w-4 h-4 text-blue-9 dark:text-blueDark-12 transition ease-in-out duration-200"
+						className="w-[13px] h-[13px] text-white dark:text-blueDark-12 transition ease-in-out duration-200"
 					>
 						{theme === 'dark' ? (
 							<path

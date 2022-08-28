@@ -38,10 +38,10 @@ export default function HomeHeader({ title, description, children }) {
 
 						<button className="hidden sm:flex w-full sm:w-96 items-center text-left space-x-3 btn btn-xl btn-form btn-shadow" onClick={query.toggle}>
 							<IconSearch className="flex-none" aria-hidden="true" />
-							<span className="flex-auto">
+							<span className="flex-auto dark:text-whiteA-12">
 								Quick search...
 							</span>
-							<kbd className="font-sans no-underline">
+							<kbd className="font-sans no-underline text-blackA-9 dark:text-whiteA-10">
 								<abbr title="Control" className="no-underline">Ctrl </abbr>
 								K
 							</kbd>

@@ -225,7 +225,7 @@ module.exports = {
 				'home': "url('/utility/home-bg.svg')",
 			},
 			boxShadow: {
-				'primary-lg': '0px 3px 6px rgba(0, 44, 97, 0.12), 0px 2px 10px rgba(1, 60, 136, 0.12), 0px 0px 2px rgba(1, 60, 136, 0.22), inset 0px -1px 3px rgba(1, 60, 136, 0.64)',
+				'inset-sm': 'rgba(16, 24, 40, 0.03) 0px 0.75px 2.2px 0px, rgba(16, 24, 40, 0.055) 0px 3.3px 10px 0px, rgba(16, 24, 40, 0.065) 0px 6px 17.8px 0px, rgba(16, 24, 40, 0.48) 0px 11.3px 33.4px 0px, rgba(255, 255, 255, 0.04) 0px 0px 0px 1px inset',
 				'inset': 'inset 0 0 0 1px rgba(255,255,255,0.15),inset 0 1px 0 0 rgba(255,255,255,0.2),inset 0 -1px 0 0 rgba(255,255,255,0.15),0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.1)',
 				'xs': '0px 1px 2px rgba(16, 24, 40, 0.05)',
 				'sm': '0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06)',

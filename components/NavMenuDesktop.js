@@ -65,7 +65,7 @@ export default function NavMenuDesktop() {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<Popover.Panel className="absolute z-30 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-md shadow-lg bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-blueDark-6 overflow-hidden">
+							<Popover.Panel className="absolute z-30 right-0 mt-6 px-2 w-screen max-w-sm sm:px-0 rounded-md shadow-lg bg-white dark:bg-blueDark-3 border border-slate-6 dark:border-transparent dark:shadow-inset-sm overflow-hidden">
 								<div className="relative grid gap-6 px-5 py-6 sm:gap-8 sm:p-6">
 									{resources.map((item) => (
 										<Link
@@ -90,7 +90,7 @@ export default function NavMenuDesktop() {
 
 								<div className="bg-white dark:bg-transparent border-t border-slate-6 dark:border-blueDark-6">
 									<div className="flex justify-between items-center pt-3 pb-4 px-6 pr-4">
-										<span className="font-medium text-slate-11 dark:text-whiteA-12 select-none">
+										<span className="font-medium text-slate-12 dark:text-whiteA-12 select-none">
 											Dark Mode
 										</span>
 										<ThemeChangerDesktop />
