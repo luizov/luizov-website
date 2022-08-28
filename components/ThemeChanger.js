@@ -86,9 +86,9 @@ export function ThemeChangerDesktop() {
 			onChange={toggleTheme}
 			className={cn(
 				theme === 'light'
-					? 'bg-white'
-					: 'bg-blackA-9',
-				'relative group inline-flex items-center flex-shrink-0 h-[32px] w-[52px] border border-slate-7 dark:border-blueDark-7 rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
+					? 'bg-blue-2'
+					: 'bg-blackA-8',
+				'relative group inline-flex items-center flex-shrink-0 h-[33px] w-[56px] border border-blue-7 dark:border-none dark:highlight-inner rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75'
 			)}
 		>
 			<span className="sr-only">Enable Dark mode</span>
@@ -96,37 +96,11 @@ export function ThemeChangerDesktop() {
 				aria-hidden="true"
 				className={cn(
 					theme === 'dark'
-						? 'translate-x-[22px] bg-blueDark-5'
-						: 'translate-x-[2px] bg-blue-9',
-					'pointer-events-none inline-flex h-[26px] w-[26px] justify-center items-center rounded-full shadow-lg transform ring-0 transition ease-in-out duration-200'
+						? 'translate-x-[26px] bg-blueDark-5'
+						: 'translate-x-[4px] bg-blue-9',
+					'pointer-events-none flex h-[25px] w-[25px] justify-center items-center rounded-full transform highlight-white/20 dark:highlight-white/10 ring-0 transition ease-in-out duration-200'
 				)}
 			>
-				{mounted && (
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						stroke="currentColor"
-						className="w-[13px] h-[13px] text-white dark:text-blueDark-12 transition ease-in-out duration-200"
-					>
-						{theme === 'dark' ? (
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth={2}
-								d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-							/>
-
-						) : (
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								strokeWidth={2}
-								d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-							/>
-						)}
-					</svg>
-				)}
 			</span>
 		</Switch>
 	)

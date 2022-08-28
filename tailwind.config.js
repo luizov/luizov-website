@@ -314,13 +314,20 @@ module.exports = {
 		require('@tailwindcss/typography'),
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/aspect-ratio'),
-		plugin(function ({ matchUtilities, theme }) {
+		function ({ matchUtilities, theme }) {
 			matchUtilities(
 				{
 					highlight: (value) => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
 				},
 				{ values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
 			)
-		})
+		},
+		function ({ addUtilities }) {
+			addUtilities({
+				'.highlight-inner': {
+					boxShadow: `inset 0px 1px 4px rgba(0, 0, 0, 0.15), inset 0 -0.8px 0 0 rgba(255, 255, 255, 0.2)`
+				}
+			})
+		}
 	],
 }
