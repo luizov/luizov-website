@@ -2,6 +2,37 @@ import Link from 'next/link';
 import Image from 'next/image';
 import products from '../../data/products';
 
+export function ProductCard({
+	name,
+	href,
+	description,
+	imageSrc,
+	imageAlt,
+}) {
+	return (
+		<article className="relative group overflow-hidden transition-all">
+
+			<div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-slate-2">
+				<Image
+					className="w-full h-full object-center object-cover group-hover:scale-105 duration-300 transition-transform"
+					layout="fill"
+					src={imageSrc}
+					alt={imageAlt}
+				/>
+			</div>
+			<div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+				<h3 className="h4 font-headings">
+					<a href={href} target="_blank" rel="noreferrer">
+						<span aria-hidden="true" className="absolute inset-0" />
+						{name}
+					</a>
+				</h3>
+			</div>
+			<p className="mt-1 text-lg">{description}</p>
+		</article>
+	)
+}
+
 export function Product({
 	name,
 	href,
@@ -139,25 +170,23 @@ export default function Products() {
 	return (
 		<section className="section bg-transparent dark:bg-transparent overflow-hidden">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
-				<header className="mb-8">
-					<h2 id="products" className="h1 font-headings text-slate-12 dark:text-whiteA-12 mb-4">
+				<header className="mb-8 pb-8 border-b border-slate-6">
+					<h2 id="products" className="h2 font-headings text-slate-12 dark:text-whiteA-12 mb-2">
 						Products
 					</h2>
 					<p className="text-2xl">
 						Recent projects that I loved working on
 					</p>
 				</header>
-				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-8">
+				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-6 lg:gap-y-8">
 					{products.map((entry) => (
-						<Product
+						<ProductCard
 							key={entry.name}
 							name={entry.name}
 							href={entry.href}
 							description={entry.description}
-							tags={entry.tags}
 							imageSrc={entry.imageSrc}
 							imageAlt={entry.imageAlt}
-							backgroundSrc={entry.backgroundSrc}
 						/>
 					))}
 				</div>
