@@ -20,7 +20,7 @@ export function ProductCard({
 					alt={imageAlt}
 				/>
 			</div>
-			<div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+			<div className="mt-4 flex items-center justify-between text-base font-medium text-slate-12 dark:text-whiteA-12 space-x-8">
 				<h3 className="h4 font-headings">
 					<a href={href} target="_blank" rel="noreferrer">
 						<span aria-hidden="true" className="absolute inset-0" />
@@ -28,7 +28,7 @@ export function ProductCard({
 					</a>
 				</h3>
 			</div>
-			<p className="mt-1 text-lg">{description}</p>
+			<p className="mt-1 text-lg dark:text-whiteA-11">{description}</p>
 		</article>
 	)
 }
@@ -170,7 +170,7 @@ export default function Products() {
 	return (
 		<section className="section bg-transparent dark:bg-transparent overflow-hidden">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
-				<header className="mb-8 pb-8 border-b border-slate-6">
+				<header className="mb-8 pb-8 border-b border-slate-6 dark:border-blueDark-6">
 					<h2 id="products" className="h2 font-headings text-slate-12 dark:text-whiteA-12 mb-2">
 						Products
 					</h2>
