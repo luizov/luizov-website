@@ -11,7 +11,7 @@ const products = [
 	{
 		name: 'Nano Admin',
 		href: 'https://nanoadmin.com',
-		description: 'The last Bootstrap Admin Template you\'ll ever need',
+		description: 'The last Admin Dashboard Template you\'ll ever need',
 		// tags: ['Web Development', 'Branding', 'UX/UI Design'],
 		imageSrc: '/products/nano/background-nano.jpg',
 		imageAlt: 'Nano Admin product presentation.',
