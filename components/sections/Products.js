@@ -28,7 +28,7 @@ export function ProductCard({
 					</a>
 				</h3>
 			</div>
-			<p className="mt-1 text-lg dark:text-whiteA-11">{description}</p>
+			<p className="mt-2 pr-16 text-xl lg:text-2xl dark:text-whiteA-11">{description}</p>
 		</article>
 	)
 }
@@ -174,11 +174,11 @@ export default function Products() {
 					<h2 id="products" className="h2 font-headings text-slate-12 dark:text-whiteA-12 mb-2">
 						Products
 					</h2>
-					<p className="text-2xl">
+					<p className="text-xl lg:text-2xl">
 						Recent projects that I loved working on
 					</p>
 				</header>
-				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-6 lg:gap-y-8">
+				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-6 lg:gap-y-14">
 					{products.map((entry) => (
 						<ProductCard
 							key={entry.name}

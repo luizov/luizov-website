@@ -21,7 +21,7 @@ export default function HomeHeader({ title, description, children }) {
 						{title}
 					</h1>
 					{description &&
-						<p className="text-slate-11 dark:text-whiteA-11 text-xl lg:text-2xl leading-relaxed sm:max-w-4xl lg:mx-0 tracking-normal">
+						<p className="text-slate-11 dark:text-whiteA-11 text-xl lg:text-2xl sm:max-w-4xl leading-8 lg:leading-9">
 							{description}
 						</p>
 					}

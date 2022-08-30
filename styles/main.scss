@@ -154,7 +154,7 @@
 @layer utilities {
   /* Typography utilities */
   .display-4 {
-    @apply text-5xl font-headings font-semibold leading-tight tracking-tight;
+    @apply text-5xl font-headings font-bold leading-tight tracking-tight;
   }
 
   .h1 {
