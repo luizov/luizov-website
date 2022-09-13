@@ -23,6 +23,7 @@ import {
 	IconInstagram
 } from './base/Icons';
 import cn from 'classnames';
+import KeyboardKey from '../components/KeyboardKey';
 
 export default function CommandBar({ children }) {
 	const router = useRouter();
@@ -195,7 +196,7 @@ const ResultItem = React.forwardRef(({ action, handlers, active }, ref) => {
 			{action.shortcut?.length > 0 && (
 				<span className="ml-auto space-x-2">
 					{action.shortcut.map(sc => (
-						<Kbd key={sc}>{sc}</Kbd>
+						<KeyboardKey key={sc}>{sc}</KeyboardKey>
 					))}
 				</span>
 			)}
@@ -205,10 +206,3 @@ const ResultItem = React.forwardRef(({ action, handlers, active }, ref) => {
 
 ResultItem.displayName = 'ResultItem';
 
-function Kbd({ children }) {
-	return (
-		<kbd className="px-2.5 py-1 inline-flex items-center justify-center select-none text-base font-mono font-medium rounded text-slate-11 bg-slate-2 dark:text-whiteA-11 dark:bg-skyDark-5 shadow">
-			{children}
-		</kbd>
-	);
-}
