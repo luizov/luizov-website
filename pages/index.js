@@ -10,7 +10,7 @@ import Concepts from '../components/sections/Concepts';
 import Newsletter from '../components/sections/Newsletter';
 import { GithubActivity } from '../components/sections/GithubActivity';
 
-export default function HomePage({ posts, repos }) {
+export default function HomePage({ repos }) {
 	const seoTitle = "Luizov · Frontend Designer and Developer";
 	const seoDesc = "A freelance designer and fullstack developer working remotely from Bulgaria.";
 
