@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Avatar from '@/components/base/Avatar';
 import DateFormatter from '@/components/base/DateFormatter';
 import CoverImage from '@/components/CoverImage';
-import PostMeta from '@/components/PostMeta';
+import PostMeta from '@/components/Post/PostMeta';
 
 /**
  * Default Hero Post/Article

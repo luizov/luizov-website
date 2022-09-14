@@ -2,7 +2,7 @@ import { NextSeo } from "next-seo";
 import { getAllPosts } from '@/lib/api';
 import Page from '@/layouts/Page';
 import PageHeader from "@/components/PageHeader";
-import { HeroPostAlt } from '@/components/HeroPost';
+import { HeroPostAlt } from '@/components/Post/HeroPost';
 import MoreArticles from '@/components/MoreArticles';
 import Newsletter from '@/sections/Newsletter';
 

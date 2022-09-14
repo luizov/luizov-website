@@ -1,4 +1,4 @@
-import BookmarkCard from '@/components/BookmarkCard';
+import BookmarkCard from '@/components/Bookmarks/BookmarkCard';
 
 export default function Bookmarks({ bookmarks }) {
 	if (!bookmarks) {

@@ -2,8 +2,8 @@ import { NextSeo } from "next-seo";
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Page from '@/layouts/Page';
-import SnippetHeader from "@/components/SnippetHeader";
-import SnippetBody from '@/components/SnippetBody';
+import SnippetHeader from "@/components/Snippet/SnippetHeader";
+import SnippetBody from '@/components/Snippet/SnippetBody';
 import { getSnippetBySlug, getAllSnippets } from '@/lib/api';
 import markdownToHtml from '@/lib/markdownToHtml';
 
