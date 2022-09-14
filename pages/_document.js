@@ -21,7 +21,7 @@ class MyDocument extends Document {
 					/>
 					<link
 						rel="preload"
-						href="/fonts/Switzer-SemiBold.woff2"
+						href="/fonts/Switzer-Semibold.woff2"
 						as="font"
 						type="font/woff2"
 						crossOrigin="anonymous"
