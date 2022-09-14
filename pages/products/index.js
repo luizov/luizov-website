@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import Page from '@/layouts/Page';
 import PageHeader from '@/components/PageHeader';
-import { Product } from '@/sections/Products';
+import { Product } from '@/components/sections/Products';
 import products from '@/data/products';
 
 export default function ProductsPage() {

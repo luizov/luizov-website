@@ -6,8 +6,8 @@ import {
 	LazyMotion,
 	domAnimation
 } from 'framer-motion';
-import CommandBar from '../components/CommandBar';
-import SEO from '../components/Seo';
+import CommandBar from '@/components/CommandBar';
+import SEO from '@/components/Seo';
 
 function MyApp({ Component, pageProps, router }) {
 	return (
