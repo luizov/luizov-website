@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import DateFormatter from '../components/base/DateFormatter';
 import readingTime from 'reading-time';
+import DateFormatter from '@/components/base/DateFormatter';
 
 export default function PostMeta({ name, picture, date, length }) {
 	const stats = readingTime(length);

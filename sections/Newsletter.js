@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 import useSWR from 'swr';
-import fetcher from '../../lib/fetcher';
-import LoadingSpinner from '../../components/base/LoadingSpinner';
-import ErrorMessage from '../../components/base/ErrorMessage';
-import SuccessMessage from '../../components/base/SuccessMessage';
-import { NewsletterSVG } from '../../components/base/Backgrounds';
+import fetcher from '@/lib/fetcher';
+import LoadingSpinner from '@/components/base/LoadingSpinner';
+import ErrorMessage from '@/components/base/ErrorMessage';
+import SuccessMessage from '@/components/base/SuccessMessage';
+import { NewsletterSVG } from '@/components/base/Backgrounds';
 
 export default function Newsletter() {
 	// 1. Create a reference to the input so we can fetch/clear it's value.

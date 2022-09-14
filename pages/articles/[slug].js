@@ -2,14 +2,14 @@ import { NextSeo } from "next-seo";
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Link from 'next/link';
-import Page from '../../layouts/Page';
-import PostHeader from '../../components/PostHeader';
-import PostBody from '../../components/PostBody';
-import { getPostBySlug, getAllPosts } from '../../lib/api';
-import markdownToHtml from '../../lib/markdownToHtml';
 import readingTime from 'reading-time';
+import Page from '@/layouts/Page';
+import PostHeader from '@/components/PostHeader';
+import PostBody from '@/components/PostBody';
+import { IconArrowLeftSmall } from "@/components/base/Icons";
+import { getPostBySlug, getAllPosts } from '@/lib/api';
+import markdownToHtml from '@/lib/markdownToHtml';
 
-import { IconArrowLeftSmall } from "../../components/base/Icons";
 
 export default function Article({ post }) {
 	const router = useRouter()

@@ -1,9 +1,9 @@
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Image from 'next/image';
-import { getAllSnippets } from '../../lib/api';
-import Page from '../../layouts/Page';
-import PageHeader from '../../components/PageHeader';
+import { getAllSnippets } from '@/lib/api';
+import Page from '@/layouts/Page';
+import PageHeader from '@/components/PageHeader';
 
 export default function SnippetsPage({ allSnippets }) {
 	const seoTitle = "Code Snippets · Luizov";

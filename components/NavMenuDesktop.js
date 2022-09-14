@@ -6,8 +6,8 @@ import {
 	IconDownSmall,
 	IconOne,
 	IconTwo
-} from '../components/base/Icons';
-import { ThemeChangerDesktop } from './ThemeChanger';
+} from '@/components/base/Icons';
+import { ThemeChangerDesktop } from '@/components/ThemeChanger';
 
 const resources = [
 	{

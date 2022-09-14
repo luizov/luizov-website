@@ -1,7 +1,7 @@
-import Logo from './Logo';
-import NavItem from './NavItem';
-import NavMenu from './NavMenu';
-import NavMenuDesktop from './NavMenuDesktop';
+import Logo from '@/components/Logo';
+import NavItem from '@/components/NavItem';
+import NavMenu from '@/components/NavMenu';
+import NavMenuDesktop from '@/components/NavMenuDesktop';
 
 export default function Header() {
 	return (

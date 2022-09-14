@@ -1,7 +1,7 @@
-import Avatar from '../components/base/Avatar';
-import DateFormatter from '../components/base/DateFormatter';
-import CoverImage from '../components/CoverImage';
 import readingTime from 'reading-time';
+import Avatar from '@/components/base/Avatar';
+import DateFormatter from '@/components/base/DateFormatter';
+import CoverImage from '@/components/CoverImage';
 
 export default function PostHeader({ title, coverImage, date, author, length }) {
 	const stats = readingTime(length);

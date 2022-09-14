@@ -1,4 +1,4 @@
-import { config } from '../../config';
+import { config } from 'config';
 import Image from 'next/image';
 
 const RepoList = ({ repos, title, url, className = null }) => {

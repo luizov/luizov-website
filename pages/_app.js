@@ -1,5 +1,5 @@
-import '../styles/fonts.scss';
-import '../styles/main.scss';
+import '@/styles/fonts.scss';
+import '@/styles/main.scss';
 import { ThemeProvider } from 'next-themes';
 import {
 	AnimatePresence,

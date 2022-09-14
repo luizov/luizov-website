@@ -1,6 +1,6 @@
 import { m } from 'framer-motion';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const variants = {
 	initial: { opacity: 0, y: 64 },

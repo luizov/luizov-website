@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
+import cn from 'classnames';
 import {
 	KBarAnimator,
 	KBarProvider,
@@ -21,9 +22,8 @@ import {
 	IconDribbble,
 	IconTwitter,
 	IconInstagram
-} from './base/Icons';
-import cn from 'classnames';
-import KeyboardKey from '../components/KeyboardKey';
+} from '@/components/base/Icons';
+import KeyboardKey from '@/components/KeyboardKey';
 
 export default function CommandBar({ children }) {
 	const router = useRouter();

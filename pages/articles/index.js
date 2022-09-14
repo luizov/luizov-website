@@ -1,10 +1,10 @@
 import { NextSeo } from "next-seo";
-import { getAllPosts } from '../../lib/api';
-import Page from '../../layouts/Page';
-import PageHeader from "../../components/PageHeader";
-import { HeroPostAlt } from '../../components/HeroPost';
-import MoreArticles from '../../components/MoreArticles';
-import Newsletter from '../../sections/Newsletter';
+import { getAllPosts } from '@/lib/api';
+import Page from '@/layouts/Page';
+import PageHeader from "@/components/PageHeader";
+import { HeroPostAlt } from '@/components/HeroPost';
+import MoreArticles from '@/components/MoreArticles';
+import Newsletter from '@/sections/Newsletter';
 
 export default function ArticlesPage({ allPosts }) {
 	const heroPost = allPosts[0];

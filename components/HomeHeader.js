@@ -1,5 +1,5 @@
 import { useKBar } from 'kbar';
-import { IconDown, IconSearch } from './base/Icons';
+import { IconDown, IconSearch } from '@/components/base/Icons';
 
 export default function HomeHeader({ title, description, children }) {
 	const { query } = useKBar();

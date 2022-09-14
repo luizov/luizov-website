@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import DateFormatter from "../base/DateFormatter";
+import DateFormatter from "@/components/base/DateFormatter";
 
 export default function BookmarkCard({
 	title,

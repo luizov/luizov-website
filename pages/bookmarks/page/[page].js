@@ -1,11 +1,11 @@
 import { NextSeo } from 'next-seo';
-import { getBookmarks } from '../../../lib/notion';
-import { getOpenGraphImage } from '../../../lib/openGraphScraper';
-import { config } from '../../../config';
-import Page from '../../../layouts/Page';
-import PageHeader from '../../../components/PageHeader';
-import Bookmarks from '../../../components/Bookmarks/Bookmarks';
-import BookmarksPagination from '../../../components/Bookmarks/BookmarksPagination';
+import { getBookmarks } from '@/lib/notion';
+import { getOpenGraphImage } from '@/lib/openGraphScraper';
+import { config } from 'config';
+import Page from '@/layouts/Page';
+import PageHeader from '@/components/PageHeader';
+import Bookmarks from '@/components/Bookmarks/Bookmarks';
+import BookmarksPagination from '@/components/Bookmarks/BookmarksPagination';
 
 export default function BookmarksIndexPage({ currentBookmarks, totalPages, currentPage }) {
 	const seoTitle = "Bookmarks · Luizov";

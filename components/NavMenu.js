@@ -1,7 +1,7 @@
+import { Fragment } from 'react';
 import Link from 'next/link';
 import { Menu, Transition } from '@headlessui/react';
-import { Fragment } from 'react';
-import { ThemeChanger } from './ThemeChanger';
+import { ThemeChanger } from '@/components/ThemeChanger';
 
 const links = [
 	{

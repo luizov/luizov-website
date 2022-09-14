@@ -1,11 +1,11 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import Page from '../../layouts/Page';
-import SnippetHeader from "../../components/SnippetHeader";
-import SnippetBody from '../../components/SnippetBody';
-import { getSnippetBySlug, getAllSnippets } from '../../lib/api';
-import markdownToHtml from '../../lib/markdownToHtml';
+import Page from '@/layouts/Page';
+import SnippetHeader from "@/components/SnippetHeader";
+import SnippetBody from '@/components/SnippetBody';
+import { getSnippetBySlug, getAllSnippets } from '@/lib/api';
+import markdownToHtml from '@/lib/markdownToHtml';
 
 export default function Snippet({ snippet }) {
 	const router = useRouter()

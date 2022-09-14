@@ -1,14 +1,14 @@
-import { config } from "../config";
-import { fetchRepos } from "../lib/github";
-import { getDatabase } from "../lib/notion";
+import { config } from "config";
+import { fetchRepos } from "@/lib/github";
+import { getDatabase } from "@/lib/notion";
 
-import Layout from '../layouts/Page';
+import Layout from '@/layouts/Page';
 
-import HomeHeader from '../components/HomeHeader';
-import Products from '../sections/Products';
-import Concepts from '../sections/Concepts';
-import Newsletter from '../sections/Newsletter';
-import { GithubActivity } from '../sections/GithubActivity';
+import HomeHeader from '@/components/HomeHeader';
+import Products from '@/sections/Products';
+import Concepts from '@/sections/Concepts';
+import Newsletter from '@/sections/Newsletter';
+import { GithubActivity } from '@/sections/GithubActivity';
 
 export default function HomePage({ repos }) {
 	const seoTitle = "Luizov · Frontend Designer and Developer";

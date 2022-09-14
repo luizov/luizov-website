@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import LogoFooter from './LogoFooter';
+import LogoFooter from '@/components/LogoFooter';
 import {
 	IconCopyright,
 	IconDribbble,
 	IconGithub,
 	IconInstagram,
 	IconTwitter
-} from '../components/base/Icons';
+} from '@/components/base/Icons';
 
 const FooterLink = ({ href, children }) => {
 	return (

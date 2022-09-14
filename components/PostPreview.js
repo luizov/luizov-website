@@ -1,6 +1,6 @@
-import CoverImage from './CoverImage';
-import PostMeta from '../components/PostMeta';
-import Link from 'next/link'
+import Link from 'next/link';
+import CoverImage from '@/components/CoverImage';
+import PostMeta from '@/components/PostMeta';
 
 export default function PostPreview({
 	title,

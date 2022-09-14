@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import products from '../../data/products';
+import products from '@/data/products';
 
 export function ProductCard({
 	name,
