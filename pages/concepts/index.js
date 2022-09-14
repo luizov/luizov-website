@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
 import Image from 'next/image';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PageHeader from '@/components/PageHeader';
 
 const IMAGE_LIST = [
@@ -105,7 +105,7 @@ export default function ConceptsPage() {
 	const seoDesc = "A collection of design concepts and product explorations.";
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -148,6 +148,8 @@ export default function ConceptsPage() {
 					</div>
 				</div>
 			</section>
-		</Page>
+		</>
 	)
 }
+
+ConceptsPage.layout = MainLayout;

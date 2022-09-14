@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import { getBookmarks, getPageProperties } from '@/lib/notion';
 import { getOpenGraphImage } from '@/lib/openGraphScraper';
 import { config } from 'config';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PageHeader from '@/components/PageHeader';
 import Bookmarks from '@/components/Bookmarks/Bookmarks';
 import BookmarksPagination from '@/components/Bookmarks/BookmarksPagination';
@@ -15,7 +15,7 @@ export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
 	const prevDisabled = parseInt(currentPage, 10) === 1;
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -53,9 +53,11 @@ export default function BookmarksPage({ bookmarks, totalPages, currentPage }) {
 				prevDisabled={prevDisabled}
 				nextDisabled={nextDisabled}
 			/>
-		</Page>
+		</>
 	)
 }
+
+BookmarksPage.layout = MainLayout;
 
 export const getStaticProps = async () => {
 	let results = [];

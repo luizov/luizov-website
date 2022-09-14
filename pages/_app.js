@@ -1,5 +1,6 @@
 import '@/styles/fonts.scss';
 import '@/styles/main.scss';
+import { useRouter } from 'next/router';
 import { ThemeProvider } from 'next-themes';
 import {
 	AnimatePresence,
@@ -9,7 +10,10 @@ import {
 import CommandBar from '@/components/CommandBar';
 import SEO from '@/components/Seo';
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
+	const router = useRouter();
+	const Layout = Component.layout || (({ children }) => children);
+
 	return (
 		<ThemeProvider
 			attribute="class"
@@ -23,7 +27,9 @@ function MyApp({ Component, pageProps, router }) {
 						initial={false}
 						onExitComplete={() => window.scrollTo(0, 0)}
 					>
-						<Component {...pageProps} key={router.route} />
+						<Layout key={router.route}>
+							<Component {...pageProps} />
+						</Layout>
 					</AnimatePresence>
 				</LazyMotion>
 			</CommandBar>

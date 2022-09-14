@@ -1,7 +1,7 @@
 import { NextSeo } from "next-seo";
 import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import SnippetHeader from "@/components/Snippet/SnippetHeader";
 import SnippetBody from '@/components/Snippet/SnippetBody';
 import { getSnippetBySlug, getAllSnippets } from '@/lib/api';
@@ -18,7 +18,7 @@ export default function Snippet({ snippet }) {
 	const url = `https://luizov.com/articles/${snippet.slug}`;
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -52,9 +52,11 @@ export default function Snippet({ snippet }) {
 				/>
 				<SnippetBody content={snippet.content} />
 			</article>
-		</Page>
+		</>
 	)
 }
+
+Snippet.layout = MainLayout;
 
 export async function getStaticProps({ params }) {
 	const snippet = getSnippetBySlug(params.slug, [

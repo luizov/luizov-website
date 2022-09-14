@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Link from 'next/link';
 import readingTime from 'reading-time';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PostHeader from '@/components/Post/PostHeader';
 import PostBody from '@/components/Post/PostBody';
 import { IconArrowLeftSmall } from "@/components/base/Icons";
@@ -23,7 +23,7 @@ export default function Article({ post }) {
 	const timeAsText = readingTime(post.content).text;
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -78,9 +78,11 @@ export default function Article({ post }) {
 				/>
 				<PostBody content={post.content} />
 			</article>
-		</Page>
+		</>
 	)
-};
+}
+
+Article.layout = MainLayout;
 
 export async function getStaticProps({ params }) {
 	const post = getPostBySlug(params.slug, [

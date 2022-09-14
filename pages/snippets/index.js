@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllSnippets } from '@/lib/api';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PageHeader from '@/components/PageHeader';
 
 export default function SnippetsPage({ allSnippets }) {
@@ -10,7 +10,7 @@ export default function SnippetsPage({ allSnippets }) {
 	const seoDesc = "A collection of useful code snippets that solve common problems.";
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -78,9 +78,11 @@ export default function SnippetsPage({ allSnippets }) {
 					</ul>
 				</div>
 			</section>
-		</Page>
+		</>
 	)
 }
+
+SnippetsPage.layout = MainLayout;
 
 export async function getStaticProps() {
 	const allSnippets = getAllSnippets([

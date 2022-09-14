@@ -8,7 +8,7 @@ const variants = {
 	exit: { opacity: 0, y: -64 },
 }
 
-export default function Layout({ children }) {
+export default function MainLayout({ children }) {
 	return (
 		<>
 			<Header />

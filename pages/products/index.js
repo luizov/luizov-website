@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PageHeader from '@/components/PageHeader';
 import { ProductCard } from '@/components/sections/Products';
 import products from '@/data/products';
@@ -9,7 +9,7 @@ export default function ProductsPage() {
 	const seoDesc = "A showcase of my most recent and interesting projects.";
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -56,6 +56,8 @@ export default function ProductsPage() {
 					</ul>
 				</div>
 			</section>
-		</Page>
+		</>
 	)
 }
+
+ProductsPage.layout = MainLayout;

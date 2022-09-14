@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import { getAllPosts } from '@/lib/api';
-import Page from '@/layouts/Page';
+import MainLayout from '@/layouts/MainLayout';
 import PageHeader from "@/components/PageHeader";
 import { HeroPostAlt } from '@/components/Post/HeroPost';
 import MoreArticles from '@/components/MoreArticles';
@@ -14,7 +14,7 @@ export default function ArticlesPage({ allPosts }) {
 	const seoDesc = "I write about development, design, React, CSS, animations and more!";
 
 	return (
-		<Page>
+		<>
 			<NextSeo
 				title={seoTitle}
 				description={seoDesc}
@@ -60,9 +60,11 @@ export default function ArticlesPage({ allPosts }) {
 			</section>
 			{morePosts.length > 0 && <MoreArticles posts={morePosts} />}
 			{/* 	<Newsletter /> */}
-		</Page>
+		</>
 	)
 }
+
+ArticlesPage.layout = MainLayout;
 
 export async function getStaticProps() {
 	const allPosts = getAllPosts([
