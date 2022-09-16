@@ -171,14 +171,14 @@ export default function Products() {
 		<section className="section bg-transparent dark:bg-transparent overflow-hidden">
 			<div className="max-w-5xl mx-auto px-4 sm:px-6">
 				<header className="mb-8 pb-8 border-b border-slate-6 dark:border-blueDark-6">
-					<h2 id="products" className="h2 font-headings text-slate-12 dark:text-whiteA-12 mb-2">
+					<h2 id="products" className="h1 font-headings text-slate-12 dark:text-whiteA-12 mb-4">
 						Products
 					</h2>
 					<p className="text-xl lg:text-2xl">
 						Recent projects that I loved working on
 					</p>
 				</header>
-				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-6 lg:gap-y-14">
+				<div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-6 lg:gap-y-16">
 					{products.map((entry) => (
 						<ProductCard
 							key={entry.name}
