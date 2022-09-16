@@ -3,10 +3,10 @@ import { fetchRepos } from "@/lib/github";
 import { getDatabase } from "@/lib/notion";
 import MainLayout from '@/layouts/MainLayout';
 import HomeHeader from '@/components/HomeHeader';
-import Products from '@/components/sections/Products';
-import Concepts from '@/components/sections/Concepts';
-import Newsletter from '@/components/sections/Newsletter';
-import { GithubActivity } from '@/components/sections/GithubActivity';
+import Products from '@/sections/Products';
+import Concepts from '@/sections/Concepts';
+import Newsletter from '@/sections/Newsletter';
+import { GithubActivity } from '@/sections/GithubActivity';
 
 export default function HomePage({ repos }) {
 	const seoTitle = "Luizov · Frontend Designer and Developer";

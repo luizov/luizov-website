@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo';
+import products from '@/data/products';
 import MainLayout from '@/layouts/MainLayout';
 import PageHeader from '@/components/PageHeader';
-import { ProductCard } from '@/components/sections/Products';
-import products from '@/data/products';
+import { ProductCard } from '@/sections/Products';
 
 export default function ProductsPage() {
 	const seoTitle = "Products · Luizov";
