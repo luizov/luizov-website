@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.1",
+    "@headlessui/react": "^1.7.2",
     "@mailchimp/mailchimp_marketing": "^3.0.78",
     "@notionhq/client": "^0.4.13",
     "classnames": "^2.3.2",
@@ -32,7 +32,7 @@
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.7",
-    "autoprefixer": "^10.4.10",
+    "autoprefixer": "^10.4.11",
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.10",
     "eslint": "^8.23.1",
